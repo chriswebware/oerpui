@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include oerpui *.css
+recursive-include oerpui *.csv
+recursive-include oerpui *.html
+recursive-include oerpui *.ico
+recursive-include oerpui *.js
+recursive-include oerpui *.json
+recursive-include oerpui *.md
+recursive-include oerpui *.png
+recursive-include oerpui *.py
+recursive-include oerpui *.svg
+recursive-include oerpui *.txt
+recursive-exclude oerpui *.pyc
