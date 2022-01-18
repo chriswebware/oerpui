@@ -1,0 +1,4452 @@
+{% extends "templates/web1.html" %}
+
+{% block title %}{{ _("OERP Dashboard") }}{% endblock %}
+{% block header %}<h1>{{ _("OERP Dashboard") }}</h1>{% endblock %}
+
+{% block content %}
+
+<input type="hidden" id="anPageName" name="page" value="dashboard" />
+<div
+class="dashboard auto-animated screen"
+data-page="dashboard"
+data-screens="utilities,utilities-1,accounting,dashboard,assets,build,buying,crm,hr,loans,payroll,projects,quality,selling,stock,support,website,settings,support-1,web-1920-25,web-1920-26,web-1920-21,web-1920-28,web-1920-30,web-1920-32,web-1920-34,website-1,settings-1,web-1920-23,web-1920-20,web-1920-11,web-1920-12,web-1920-2,web-1920-6,web-1920-8,web-1920-1,web-1920-18,web-1920-7,dashboard-4,web-1920-9,dashboard-1,dashboard-3,web-1920-17,dashboard-2"
+>
+<div class="rectangle-60-C61RwL"></div>
+<div class="reports-masters-C61RwL">Reports &amp; Masters</div>
+<div class="line-5-C61RwL"></div>
+<div class="rectangle-51-C61RwL"></div>
+<div class="utilities-C61RwL">Utilities</div>
+<div class="dashboard-utilities-C61RwL">
+  <span class="span0-S9sPxv">Dashboard &gt;</span><span class="span1-S9sPxv"> Utilities</span>
+</div>
+<div class="rectangle-2-C61RwL"></div>
+<div class="rectangle-1-C61RwL"></div>
+<div class="rectangle-18-C61RwL"></div>
+<div class="line-2-C61RwL"></div>
+<div class="group-16-C61RwL">
+  <div class="rectangle-10-vUOK69"></div>
+  <div class="icon-feather-search-vUOK69">
+    <div class="path-9-DMk7EK"></div>
+    <div class="path-10-DMk7EK"></div>
+  </div>
+  <div class="search-or-type-command-ctrl-g-vUOK69">Search or type command (Ctrl + G)</div>
+</div>
+<div class="group-15-C61RwL">
+  <div class="chandika-wz60dm">Chandika</div>
+  <div class="chandikawebwarecom-wz60dm">chandika@webware.com</div>
+</div>
+<div class="group-80-C61RwL">
+  <div class="help-CX7m3G">Help</div>
+  <div class="icon-awesome-question-circle-CX7m3G"></div>
+</div>
+<div class="group-81-C61RwL">
+  <div class="icon-material-dashboard-7olElM"></div>
+  <div class="shortcuts-7olElM">Shortcuts</div>
+</div>
+<div class="group-83-C61RwL">
+  <div class="group-82-jQ4qbJ">
+    <div class="icon-material-notifications-none-EAluhz"></div>
+    <div class="group-10-EAluhz">
+      <div class="ellipse-2-lnCQiU"></div>
+      <div class="number-lnCQiU">2</div>
+    </div>
+  </div>
+  <div class="notifications-jQ4qbJ">Notifications</div>
+</div>
+<div class="group-123-C61RwL">
+  <div class="customize-kVKiWv">Customize</div>
+  <div class="group-122-kVKiWv">
+    <div class="rectangle-52-SdWoA7"></div>
+    <div class="icon-feather-edit-SdWoA7">
+      <div class="path-176-L8qGKH"></div>
+      <div class="path-177-L8qGKH"></div>
+    </div>
+  </div>
+</div>
+<div class="mask-group-1-C61RwL"></div>
+<div class="scroll-group-4-C61RwL">
+  <div class="group-34-HO0KTV">
+    <div class="users-w1nuZO">Users</div>
+    <div class="icon-feather-user-w1nuZO">
+      <div class="path-90-o5Eb3Q"></div>
+      <div class="path-91-o5Eb3Q"></div>
+    </div>
+  </div>
+  <div class="group-33-HO0KTV">
+    <div class="tools-h5x6xs">Tools</div>
+    <div class="icon-metro-tools-h5x6xs"></div>
+  </div>
+  <div class="group-32-HO0KTV">
+    <div class="integrations-PTFSxz">Integrations</div>
+    <div class="icon-ionic-ios-color-filter-PTFSxz"></div>
+  </div>
+  <div class="group-31-HO0KTV">
+    <div class="customization-iDLjgD">Customization</div>
+    <div class="icon-material-filter-none-iDLjgD"></div>
+  </div>
+  <div class="administration-HO0KTV">ADMINISTRATION</div>
+  <div class="line-1-HO0KTV"></div>
+  <div class="rectangle-12-HO0KTV"></div>
+  <div
+    class="group-2-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23accounting,,ease-out,300;dashboard,dashboard%23accounting,,ease-out,300;assets,dashboard%23accounting,,ease-out,300;build,dashboard%23accounting,,ease-out,300;buying,dashboard%23accounting,,ease-out,300;crm,dashboard%23accounting,,ease-out,300;hr,dashboard%23accounting,,ease-out,300;loans,dashboard%23accounting,,ease-out,300;payroll,dashboard%23accounting,,ease-out,300;projects,dashboard%23accounting,,ease-out,300;quality,dashboard%23accounting,,ease-out,300;selling,dashboard%23accounting,,ease-out,300;stock,dashboard%23accounting,,ease-out,300;support,dashboard%23accounting,,ease-out,300;website,dashboard%23accounting,,ease-out,300;settings,dashboard%23accounting,,ease-out,300;support-1,dashboard%23accounting,,ease-out,300;web-1920-25,dashboard%23accounting,,ease-out,300;web-1920-26,dashboard%23accounting,,ease-out,300;web-1920-21,dashboard%23accounting,,ease-out,300;web-1920-28,dashboard%23accounting,,ease-out,300;web-1920-30,dashboard%23accounting,,ease-out,300;web-1920-32,dashboard%23accounting,,ease-out,300;web-1920-34,dashboard%23accounting,,ease-out,300;website-1,dashboard%23accounting,,ease-out,300;settings-1,dashboard%23accounting,,ease-out,300;web-1920-23,dashboard%23accounting,,ease-out,300;web-1920-20,dashboard%23accounting,,ease-out,300;web-1920-11,dashboard%23accounting,,ease-out,300;web-1920-12,dashboard%23accounting,,ease-out,300;web-1920-6,dashboard%23accounting,,ease-out,300;web-1920-8,dashboard%23accounting,,ease-out,300;web-1920-7,dashboard%23accounting,,ease-out,300;dashboard-4,dashboard%23accounting,,ease-out,300;web-1920-9,dashboard%23accounting,,ease-out,300;dashboard-1,dashboard%23dashboard-3,,ease-out,300;dashboard-3,dashboard%23accounting,,ease-out,300;web-1920-17,dashboard%23accounting,,ease-out,300;dashboard-2,dashboard%23dashboard-3,,ease-out,300', event)"
+  >
+    <div class="accounting-JxPxuj">Accounting</div>
+    <div class="icon-map-accounting-JxPxuj"></div>
+  </div>
+  <div
+    class="group-1-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23dashboard,,ease-out,300;accounting,dashboard%23dashboard,,ease-out,300;assets,dashboard%23dashboard,,ease-out,300;build,dashboard%23dashboard,,ease-out,300;buying,dashboard%23dashboard,,ease-out,300;crm,dashboard%23dashboard,,ease-out,300;hr,dashboard%23dashboard,,ease-out,300;loans,dashboard%23dashboard,,ease-out,300;payroll,dashboard%23dashboard,,ease-out,300;projects,dashboard%23dashboard,,ease-out,300;quality,dashboard%23dashboard,,ease-out,300;selling,dashboard%23dashboard,,ease-out,300;stock,dashboard%23dashboard,,ease-out,300;support,dashboard%23dashboard,,ease-out,300;website,dashboard%23dashboard,,ease-out,300;settings,dashboard%23dashboard,,ease-out,300;support-1,dashboard%23dashboard,,ease-out,300;web-1920-25,dashboard%23dashboard,,ease-out,300;web-1920-26,dashboard%23dashboard,,ease-out,300;web-1920-21,dashboard%23dashboard,,ease-out,300;web-1920-28,dashboard%23dashboard,,ease-out,300;web-1920-30,dashboard%23dashboard,,ease-out,300;web-1920-32,dashboard%23dashboard,,ease-out,300;web-1920-34,dashboard%23dashboard,,ease-out,300;website-1,dashboard%23dashboard,,ease-out,300;settings-1,dashboard%23dashboard,,ease-out,300;web-1920-23,dashboard%23dashboard,,ease-out,300;web-1920-20,dashboard%23dashboard,,ease-out,300;web-1920-11,dashboard%23dashboard,,ease-out,300;web-1920-12,dashboard%23dashboard,,ease-out,300;web-1920-2,dashboard%23dashboard,,ease-out,300;web-1920-6,dashboard%23dashboard,,ease-out,300;web-1920-8,dashboard%23dashboard,,ease-out,300;web-1920-1,dashboard%23dashboard,,ease-out,300;web-1920-18,dashboard%23dashboard,,ease-out,300;dashboard-4,dashboard%23dashboard-1,,ease-out,300;dashboard-3,dashboard%23dashboard-1,,ease-out,300', event)"
+  >
+    <div class="dashboard-IN81hb">Dashboard</div>
+    <div class="icon-feather-home-IN81hb">
+      <div class="path-1-XZsO3m"></div>
+      <div class="path-2-XZsO3m"></div>
+    </div>
+  </div>
+  <div class="modules-HO0KTV">MODULES</div>
+  <div class="rectangle-50-HO0KTV"></div>
+  <div class="icon-feather-search-HO0KTV">
+    <div class="path-9-txVwvI"></div>
+    <div class="path-10-txVwvI"></div>
+  </div>
+  <div class="search-HO0KTV">Search</div>
+  <div
+    class="group-3-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23assets,,ease-out,300;accounting,dashboard%23assets,,ease-out,300;dashboard,dashboard%23assets,,ease-out,300;build,dashboard%23assets,,ease-out,300;buying,dashboard%23assets,,ease-out,300;crm,dashboard%23assets,,ease-out,300;hr,dashboard%23assets,,ease-out,300;loans,dashboard%23assets,,ease-out,300;payroll,dashboard%23assets,,ease-out,300;projects,dashboard%23assets,,ease-out,300;quality,dashboard%23assets,,ease-out,300;selling,dashboard%23assets,,ease-out,300;stock,dashboard%23assets,,ease-out,300;support,dashboard%23assets,,ease-out,300;website,dashboard%23assets,,ease-out,300;settings,dashboard%23assets,,ease-out,300;support-1,dashboard%23assets,,ease-out,300;web-1920-25,dashboard%23assets,,ease-out,300;web-1920-26,dashboard%23assets,,ease-out,300;web-1920-21,dashboard%23assets,,ease-out,300;web-1920-28,dashboard%23assets,,ease-out,300;web-1920-30,dashboard%23assets,,ease-out,300;web-1920-32,dashboard%23assets,,ease-out,300;web-1920-34,dashboard%23assets,,ease-out,300;website-1,dashboard%23assets,,ease-out,300;settings-1,dashboard%23assets,,ease-out,300;web-1920-23,dashboard%23assets,,ease-out,300;web-1920-20,dashboard%23assets,,ease-out,300;web-1920-11,dashboard%23assets,,ease-out,300;web-1920-12,dashboard%23assets,,ease-out,300;web-1920-2,dashboard%23assets,,ease-out,300;web-1920-8,dashboard%23assets,,ease-out,300;web-1920-1,dashboard%23assets,,ease-out,300;web-1920-18,dashboard%23assets,,ease-out,300;web-1920-7,dashboard%23assets,,ease-out,300;dashboard-4,dashboard%23assets,,ease-out,300;web-1920-9,dashboard%23assets,,ease-out,300;dashboard-1,dashboard%23assets,,ease-out,300;dashboard-3,dashboard%23assets,,ease-out,300;web-1920-17,dashboard%23assets,,ease-out,300;dashboard-2,dashboard%23assets,,ease-out,300', event)"
+  >
+    <div class="assets-RjDloy">Assets</div>
+    <div class="icon-feather-shopping-bag-RjDloy">
+      <div class="path-7-JI0iXy"></div>
+      <div class="path-6-JI0iXy"></div>
+      <div class="path-8-JI0iXy"></div>
+    </div>
+  </div>
+  <div
+    class="group-67-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23build,,ease-out,300;accounting,dashboard%23build,,ease-out,300;dashboard,dashboard%23build,,ease-out,300;assets,dashboard%23build,,ease-out,300;buying,dashboard%23build,,ease-out,300;crm,dashboard%23build,,ease-out,300;hr,dashboard%23build,,ease-out,300;loans,dashboard%23build,,ease-out,300;payroll,dashboard%23build,,ease-out,300;projects,dashboard%23build,,ease-out,300;quality,dashboard%23build,,ease-out,300;selling,dashboard%23build,,ease-out,300;stock,dashboard%23build,,ease-out,300;support,dashboard%23build,,ease-out,300;website,dashboard%23build,,ease-out,300;settings,dashboard%23build,,ease-out,300;support-1,dashboard%23build,,ease-out,300;web-1920-25,dashboard%23build,,ease-out,300;web-1920-26,dashboard%23build,,ease-out,300;web-1920-21,dashboard%23build,,ease-out,300;web-1920-28,dashboard%23build,,ease-out,300;web-1920-30,dashboard%23build,,ease-out,300;web-1920-32,dashboard%23build,,ease-out,300;web-1920-34,dashboard%23build,,ease-out,300;website-1,dashboard%23build,,ease-out,300;settings-1,dashboard%23build,,ease-out,300;web-1920-23,dashboard%23build,,ease-out,300;web-1920-20,dashboard%23build,,ease-out,300;web-1920-11,dashboard%23build,,ease-out,300;web-1920-12,dashboard%23build,,ease-out,300;web-1920-2,dashboard%23build,,ease-out,300;web-1920-6,dashboard%23build,,ease-out,300;web-1920-1,dashboard%23build,,ease-out,300;web-1920-18,dashboard%23build,,ease-out,300;web-1920-7,dashboard%23build,,ease-out,300;dashboard-4,dashboard%23build,,ease-out,300;web-1920-9,dashboard%23build,,ease-out,300;dashboard-1,dashboard%23build,,ease-out,300;dashboard-3,dashboard%23build,,ease-out,300;web-1920-17,dashboard%23build,,ease-out,300;dashboard-2,dashboard%23build,,ease-out,300', event)"
+  >
+    <div class="group-4-g8GW9l">
+      <div class="build-bAkmET"></div>
+    </div>
+    <div class="icon-feather-settings-g8GW9l">
+      <div class="path-76-x1ENsy"></div>
+      <div class="path-77-x1ENsy"></div>
+    </div>
+  </div>
+  <div
+    class="group-68-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23buying,,ease-out,300;accounting,dashboard%23buying,,ease-out,300;dashboard,dashboard%23buying,,ease-out,300;assets,dashboard%23buying,,ease-out,300;build,dashboard%23buying,,ease-out,300;crm,dashboard%23buying,,ease-out,300;hr,dashboard%23buying,,ease-out,300;loans,dashboard%23buying,,ease-out,300;payroll,dashboard%23buying,,ease-out,300;projects,dashboard%23buying,,ease-out,300;quality,dashboard%23buying,,ease-out,300;selling,dashboard%23buying,,ease-out,300;stock,dashboard%23buying,,ease-out,300;support,dashboard%23buying,,ease-out,300;website,dashboard%23buying,,ease-out,300;settings,dashboard%23buying,,ease-out,300;support-1,dashboard%23buying,,ease-out,300;web-1920-25,dashboard%23buying,,ease-out,300;web-1920-26,dashboard%23buying,,ease-out,300;web-1920-21,dashboard%23buying,,ease-out,300;web-1920-28,dashboard%23buying,,ease-out,300;web-1920-30,dashboard%23buying,,ease-out,300;web-1920-32,dashboard%23buying,,ease-out,300;web-1920-34,dashboard%23buying,,ease-out,300;website-1,dashboard%23buying,,ease-out,300;settings-1,dashboard%23buying,,ease-out,300;web-1920-23,dashboard%23buying,,ease-out,300;web-1920-20,dashboard%23buying,,ease-out,300;web-1920-12,dashboard%23buying,,ease-out,300;web-1920-2,dashboard%23buying,,ease-out,300;web-1920-6,dashboard%23buying,,ease-out,300;web-1920-8,dashboard%23buying,,ease-out,300;web-1920-1,dashboard%23buying,,ease-out,300;web-1920-18,dashboard%23buying,,ease-out,300;web-1920-7,dashboard%23buying,,ease-out,300;dashboard-4,dashboard%23buying,,ease-out,300;web-1920-9,dashboard%23buying,,ease-out,300;dashboard-1,dashboard%23buying,,ease-out,300;dashboard-3,dashboard%23buying,,ease-out,300;web-1920-17,dashboard%23buying,,ease-out,300;dashboard-2,dashboard%23buying,,ease-out,300', event)"
+  >
+    <div class="buying-xMdbW6">Buying</div>
+    <div class="icon-feather-shopping-cart-xMdbW6">
+      <div class="path-78-1km4Ef"></div>
+      <div class="path-79-1km4Ef"></div>
+      <div class="path-80-1km4Ef"></div>
+    </div>
+  </div>
+  <div
+    class="group-20-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23crm,,ease-out,300;accounting,dashboard%23crm,,ease-out,300;dashboard,dashboard%23crm,,ease-out,300;assets,dashboard%23crm,,ease-out,300;build,dashboard%23crm,,ease-out,300;buying,dashboard%23crm,,ease-out,300;hr,dashboard%23crm,,ease-out,300;loans,dashboard%23crm,,ease-out,300;payroll,dashboard%23crm,,ease-out,300;projects,dashboard%23crm,,ease-out,300;quality,dashboard%23crm,,ease-out,300;selling,dashboard%23crm,,ease-out,300;stock,dashboard%23crm,,ease-out,300;support,dashboard%23crm,,ease-out,300;website,dashboard%23crm,,ease-out,300;settings,dashboard%23crm,,ease-out,300;support-1,dashboard%23crm,,ease-out,300;web-1920-25,dashboard%23crm,,ease-out,300;web-1920-26,dashboard%23crm,,ease-out,300;web-1920-21,dashboard%23crm,,ease-out,300;web-1920-28,dashboard%23crm,,ease-out,300;web-1920-30,dashboard%23crm,,ease-out,300;web-1920-32,dashboard%23crm,,ease-out,300;web-1920-34,dashboard%23crm,,ease-out,300;website-1,dashboard%23crm,,ease-out,300;settings-1,dashboard%23crm,,ease-out,300;web-1920-23,dashboard%23crm,,ease-out,300;web-1920-20,dashboard%23crm,,ease-out,300;web-1920-11,dashboard%23crm,,ease-out,300;web-1920-2,dashboard%23crm,,ease-out,300;web-1920-6,dashboard%23crm,,ease-out,300;web-1920-8,dashboard%23crm,,ease-out,300;web-1920-1,dashboard%23crm,,ease-out,300;web-1920-18,dashboard%23crm,,ease-out,300;web-1920-7,dashboard%23crm,,ease-out,300;dashboard-4,dashboard%23crm,,ease-out,300;web-1920-9,dashboard%23crm,,ease-out,300;dashboard-1,dashboard%23crm,,ease-out,300;dashboard-3,dashboard%23crm,,ease-out,300;web-1920-17,dashboard%23crm,,ease-out,300;dashboard-2,dashboard%23crm,,ease-out,300', event)"
+  >
+    <div class="crm-KQMFdm">CRM</div>
+    <div class="icon-metro-chart-pie-KQMFdm"></div>
+  </div>
+  <div
+    class="group-21-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23hr,,ease-out,300;accounting,dashboard%23hr,,ease-out,300;dashboard,dashboard%23hr,,ease-out,300;assets,dashboard%23hr,,ease-out,300;build,dashboard%23hr,,ease-out,300;buying,dashboard%23hr,,ease-out,300;crm,dashboard%23hr,,ease-out,300;loans,dashboard%23hr,,ease-out,300;payroll,dashboard%23web-1920-21,,ease-out,300;projects,dashboard%23hr,,ease-out,300;quality,dashboard%23hr,,ease-out,300;selling,dashboard%23hr,,ease-out,300;stock,dashboard%23hr,,ease-out,300;support,dashboard%23hr,,ease-out,300;website,dashboard%23hr,,ease-out,300;settings,dashboard%23hr,,ease-out,300;support-1,dashboard%23hr,,ease-out,300;web-1920-25,dashboard%23web-1920-21,,ease-out,300;web-1920-26,dashboard%23web-1920-21,,ease-out,300;web-1920-28,dashboard%23hr,,ease-out,300;web-1920-30,dashboard%23hr,,ease-out,300;web-1920-32,dashboard%23hr,,ease-out,300;web-1920-34,dashboard%23hr,,ease-out,300;website-1,dashboard%23hr,,ease-out,300;settings-1,dashboard%23hr,,ease-out,300;web-1920-23,dashboard%23hr,,ease-out,300;web-1920-11,dashboard%23hr,,ease-out,300;web-1920-12,dashboard%23hr,,ease-out,300;web-1920-2,dashboard%23hr,,ease-out,300;web-1920-6,dashboard%23hr,,ease-out,300;web-1920-8,dashboard%23hr,,ease-out,300;web-1920-1,dashboard%23hr,,ease-out,300;web-1920-18,dashboard%23hr,,ease-out,300;web-1920-7,dashboard%23hr,,ease-out,300;dashboard-4,dashboard%23hr,,ease-out,300;web-1920-9,dashboard%23hr,,ease-out,300;dashboard-1,dashboard%23hr,,ease-out,300;dashboard-3,dashboard%23hr,,ease-out,300;web-1920-17,dashboard%23hr,,ease-out,300;dashboard-2,dashboard%23hr,,ease-out,300', event)"
+  >
+    <div class="hr-nTjaxp">HR</div>
+    <div class="icon-metro-suitcase-nTjaxp"></div>
+  </div>
+  <div
+    class="group-22-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23loans,,ease-out,300;accounting,dashboard%23loans,,ease-out,300;dashboard,dashboard%23loans,,ease-out,300;assets,dashboard%23loans,,ease-out,300;build,dashboard%23loans,,ease-out,300;buying,dashboard%23loans,,ease-out,300;crm,dashboard%23loans,,ease-out,300;hr,dashboard%23loans,,ease-out,300;payroll,dashboard%23loans,,ease-out,300;projects,dashboard%23loans,,ease-out,300;quality,dashboard%23loans,,ease-out,300;selling,dashboard%23loans,,ease-out,300;stock,dashboard%23loans,,ease-out,300;support,dashboard%23loans,,ease-out,300;website,dashboard%23loans,,ease-out,300;settings,dashboard%23loans,,ease-out,300;support-1,dashboard%23loans,,ease-out,300;web-1920-25,dashboard%23loans,,ease-out,300;web-1920-26,dashboard%23loans,,ease-out,300;web-1920-21,dashboard%23loans,,ease-out,300;web-1920-28,dashboard%23loans,,ease-out,300;web-1920-30,dashboard%23loans,,ease-out,300;web-1920-32,dashboard%23loans,,ease-out,300;web-1920-34,dashboard%23loans,,ease-out,300;website-1,dashboard%23loans,,ease-out,300;settings-1,dashboard%23loans,,ease-out,300;web-1920-20,dashboard%23loans,,ease-out,300;web-1920-11,dashboard%23loans,,ease-out,300;web-1920-12,dashboard%23loans,,ease-out,300;web-1920-2,dashboard%23loans,,ease-out,300;web-1920-6,dashboard%23loans,,ease-out,300;web-1920-8,dashboard%23loans,,ease-out,300;web-1920-1,dashboard%23loans,,ease-out,300;web-1920-18,dashboard%23loans,,ease-out,300;web-1920-7,dashboard%23loans,,ease-out,300;dashboard-4,dashboard%23loans,,ease-out,300;web-1920-9,dashboard%23loans,,ease-out,300;dashboard-1,dashboard%23loans,,ease-out,300;dashboard-3,dashboard%23loans,,ease-out,300;web-1920-17,dashboard%23loans,,ease-out,300;dashboard-2,dashboard%23loans,,ease-out,300', event)"
+  >
+    <div class="loans-u51GXH">Loans</div>
+    <div class="icon-awesome-hand-holding-usd-u51GXH"></div>
+  </div>
+  <div
+    class="group-204-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23payroll,,ease-out,300;accounting,dashboard%23payroll,,ease-out,300;dashboard,dashboard%23payroll,,ease-out,300;assets,dashboard%23payroll,,ease-out,300;build,dashboard%23payroll,,ease-out,300;buying,dashboard%23payroll,,ease-out,300;crm,dashboard%23payroll,,ease-out,300;hr,dashboard%23payroll,,ease-out,300;loans,dashboard%23payroll,,ease-out,300;projects,dashboard%23payroll,,ease-out,300;quality,dashboard%23payroll,,ease-out,300;selling,dashboard%23payroll,,ease-out,300;stock,dashboard%23payroll,,ease-out,300;support,dashboard%23payroll,,ease-out,300;website,dashboard%23payroll,,ease-out,300;settings,dashboard%23payroll,,ease-out,300;support-1,dashboard%23payroll,,ease-out,300;web-1920-21,dashboard%23payroll,,ease-out,300;web-1920-28,dashboard%23payroll,,ease-out,300;web-1920-30,dashboard%23payroll,,ease-out,300;web-1920-32,dashboard%23payroll,,ease-out,300;web-1920-34,dashboard%23payroll,,ease-out,300;website-1,dashboard%23payroll,,ease-out,300;settings-1,dashboard%23payroll,,ease-out,300;web-1920-23,dashboard%23payroll,,ease-out,300;web-1920-20,dashboard%23payroll,,ease-out,300;web-1920-11,dashboard%23payroll,,ease-out,300;web-1920-12,dashboard%23payroll,,ease-out,300;web-1920-2,dashboard%23payroll,,ease-out,300;web-1920-6,dashboard%23payroll,,ease-out,300;web-1920-8,dashboard%23payroll,,ease-out,300;web-1920-1,dashboard%23payroll,,ease-out,300;web-1920-18,dashboard%23payroll,,ease-out,300;web-1920-7,dashboard%23payroll,,ease-out,300;dashboard-4,dashboard%23payroll,,ease-out,300;web-1920-9,dashboard%23payroll,,ease-out,300;dashboard-1,dashboard%23payroll,,ease-out,300;dashboard-3,dashboard%23payroll,,ease-out,300;web-1920-17,dashboard%23payroll,,ease-out,300;dashboard-2,dashboard%23payroll,,ease-out,300', event)"
+  >
+    <div class="payroll-VQzROs">Payroll</div>
+    <div class="noun_payroll-service_2845476-VQzROs">
+      <div class="path-397-hjL9IF"></div>
+      <div class="path-398-hjL9IF"></div>
+      <div class="path-399-hjL9IF"></div>
+      <div class="path-400-hjL9IF"></div>
+    </div>
+  </div>
+  <div
+    class="group-23-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23projects,,ease-out,300;accounting,dashboard%23projects,,ease-out,300;dashboard,dashboard%23projects,,ease-out,300;assets,dashboard%23projects,,ease-out,300;build,dashboard%23projects,,ease-out,300;buying,dashboard%23projects,,ease-out,300;crm,dashboard%23projects,,ease-out,300;hr,dashboard%23projects,,ease-out,300;loans,dashboard%23projects,,ease-out,300;payroll,dashboard%23projects,,ease-out,300;quality,dashboard%23projects,,ease-out,300;selling,dashboard%23projects,,ease-out,300;stock,dashboard%23projects,,ease-out,300;support,dashboard%23projects,,ease-out,300;website,dashboard%23projects,,ease-out,300;settings,dashboard%23projects,,ease-out,300;support-1,dashboard%23projects,,ease-out,300;web-1920-25,dashboard%23projects,,ease-out,300;web-1920-26,dashboard%23projects,,ease-out,300;web-1920-21,dashboard%23projects,,ease-out,300;web-1920-30,dashboard%23projects,,ease-out,300;web-1920-32,dashboard%23projects,,ease-out,300;web-1920-34,dashboard%23projects,,ease-out,300;website-1,dashboard%23projects,,ease-out,300;settings-1,dashboard%23projects,,ease-out,300;web-1920-23,dashboard%23projects,,ease-out,300;web-1920-20,dashboard%23projects,,ease-out,300;web-1920-11,dashboard%23projects,,ease-out,300;web-1920-12,dashboard%23projects,,ease-out,300;web-1920-2,dashboard%23projects,,ease-out,300;web-1920-6,dashboard%23projects,,ease-out,300;web-1920-8,dashboard%23projects,,ease-out,300;web-1920-1,dashboard%23projects,,ease-out,300;web-1920-18,dashboard%23projects,,ease-out,300;web-1920-7,dashboard%23projects,,ease-out,300;dashboard-4,dashboard%23projects,,ease-out,300;web-1920-9,dashboard%23projects,,ease-out,300;dashboard-1,dashboard%23projects,,ease-out,300;dashboard-3,dashboard%23projects,,ease-out,300;web-1920-17,dashboard%23projects,,ease-out,300;dashboard-2,dashboard%23projects,,ease-out,300', event)"
+  >
+    <div class="projects-bZxd5a">Projects</div>
+    <div class="icon-feather-folder-minus-bZxd5a">
+      <div class="path-81-gD8xea"></div>
+      <div class="path-82-gD8xea"></div>
+    </div>
+  </div>
+  <div
+    class="group-24-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23quality,,ease-out,300;accounting,dashboard%23quality,,ease-out,300;dashboard,dashboard%23quality,,ease-out,300;assets,dashboard%23quality,,ease-out,300;build,dashboard%23quality,,ease-out,300;buying,dashboard%23quality,,ease-out,300;crm,dashboard%23quality,,ease-out,300;hr,dashboard%23quality,,ease-out,300;loans,dashboard%23quality,,ease-out,300;payroll,dashboard%23quality,,ease-out,300;projects,dashboard%23quality,,ease-out,300;selling,dashboard%23quality,,ease-out,300;stock,dashboard%23quality,,ease-out,300;support,dashboard%23quality,,ease-out,300;website,dashboard%23quality,,ease-out,300;settings,dashboard%23quality,,ease-out,300;support-1,dashboard%23quality,,ease-out,300;web-1920-25,dashboard%23quality,,ease-out,300;web-1920-26,dashboard%23quality,,ease-out,300;web-1920-21,dashboard%23quality,,ease-out,300;web-1920-28,dashboard%23quality,,ease-out,300;web-1920-32,dashboard%23quality,,ease-out,300;web-1920-34,dashboard%23quality,,ease-out,300;website-1,dashboard%23quality,,ease-out,300;settings-1,dashboard%23quality,,ease-out,300;web-1920-23,dashboard%23quality,,ease-out,300;web-1920-20,dashboard%23quality,,ease-out,300;web-1920-11,dashboard%23quality,,ease-out,300;web-1920-12,dashboard%23quality,,ease-out,300;web-1920-2,dashboard%23quality,,ease-out,300;web-1920-6,dashboard%23quality,,ease-out,300;web-1920-8,dashboard%23quality,,ease-out,300;web-1920-1,dashboard%23quality,,ease-out,300;web-1920-18,dashboard%23quality,,ease-out,300;web-1920-7,dashboard%23quality,,ease-out,300;dashboard-4,dashboard%23quality,,ease-out,300;web-1920-9,dashboard%23quality,,ease-out,300;dashboard-1,dashboard%23quality,,ease-out,300;dashboard-3,dashboard%23quality,,ease-out,300;web-1920-17,dashboard%23quality,,ease-out,300;dashboard-2,dashboard%23quality,,ease-out,300', event)"
+  >
+    <div class="place-xpYnfw">Quality</div>
+    <div class="icon-feather-check-circle-xpYnfw">
+      <div class="path-83-HQ9uYm"></div>
+      <div class="path-84-HQ9uYm"></div>
+    </div>
+  </div>
+  <div
+    class="group-25-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23selling,,ease-out,300;accounting,dashboard%23selling,,ease-out,300;dashboard,dashboard%23selling,,ease-out,300;assets,dashboard%23selling,,ease-out,300;build,dashboard%23selling,,ease-out,300;buying,dashboard%23selling,,ease-out,300;crm,dashboard%23selling,,ease-out,300;hr,dashboard%23selling,,ease-out,300;loans,dashboard%23selling,,ease-out,300;payroll,dashboard%23selling,,ease-out,300;projects,dashboard%23selling,,ease-out,300;quality,dashboard%23selling,,ease-out,300;stock,dashboard%23selling,,ease-out,300;support,dashboard%23selling,,ease-out,300;website,dashboard%23selling,,ease-out,300;settings,dashboard%23selling,,ease-out,300;support-1,dashboard%23selling,,ease-out,300;web-1920-25,dashboard%23selling,,ease-out,300;web-1920-26,dashboard%23selling,,ease-out,300;web-1920-21,dashboard%23selling,,ease-out,300;web-1920-28,dashboard%23selling,,ease-out,300;web-1920-30,dashboard%23selling,,ease-out,300;web-1920-34,dashboard%23selling,,ease-out,300;website-1,dashboard%23selling,,ease-out,300;settings-1,dashboard%23selling,,ease-out,300;web-1920-23,dashboard%23selling,,ease-out,300;web-1920-20,dashboard%23selling,,ease-out,300;web-1920-11,dashboard%23selling,,ease-out,300;web-1920-12,dashboard%23selling,,ease-out,300;web-1920-2,dashboard%23selling,,ease-out,300;web-1920-6,dashboard%23selling,,ease-out,300;web-1920-8,dashboard%23selling,,ease-out,300;web-1920-1,dashboard%23selling,,ease-out,300;web-1920-18,dashboard%23selling,,ease-out,300;web-1920-7,dashboard%23selling,,ease-out,300;dashboard-4,dashboard%23selling,,ease-out,300;web-1920-9,dashboard%23selling,,ease-out,300;dashboard-1,dashboard%23selling,,ease-out,300;dashboard-3,dashboard%23selling,,ease-out,300;web-1920-17,dashboard%23selling,,ease-out,300;dashboard-2,dashboard%23selling,,ease-out,300', event)"
+  >
+    <div class="selling-xQcUtj">Selling</div>
+    <div class="icon-awesome-exchange-alt-xQcUtj"></div>
+  </div>
+  <div
+    class="group-26-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23stock,,ease-out,300;accounting,dashboard%23stock,,ease-out,300;dashboard,dashboard%23stock,,ease-out,300;assets,dashboard%23stock,,ease-out,300;build,dashboard%23stock,,ease-out,300;buying,dashboard%23stock,,ease-out,300;crm,dashboard%23stock,,ease-out,300;hr,dashboard%23stock,,ease-out,300;loans,dashboard%23stock,,ease-out,300;payroll,dashboard%23stock,,ease-out,300;projects,dashboard%23stock,,ease-out,300;quality,dashboard%23stock,,ease-out,300;selling,dashboard%23stock,,ease-out,300;support,dashboard%23stock,,ease-out,300;website,dashboard%23stock,,ease-out,300;settings,dashboard%23stock,,ease-out,300;support-1,dashboard%23stock,,ease-out,300;web-1920-25,dashboard%23stock,,ease-out,300;web-1920-26,dashboard%23stock,,ease-out,300;web-1920-21,dashboard%23stock,,ease-out,300;web-1920-28,dashboard%23stock,,ease-out,300;web-1920-30,dashboard%23stock,,ease-out,300;web-1920-32,dashboard%23stock,,ease-out,300;website-1,dashboard%23stock,,ease-out,300;settings-1,dashboard%23stock,,ease-out,300;web-1920-23,dashboard%23stock,,ease-out,300;web-1920-20,dashboard%23stock,,ease-out,300;web-1920-11,dashboard%23stock,,ease-out,300;web-1920-12,dashboard%23stock,,ease-out,300;web-1920-2,dashboard%23stock,,ease-out,300;web-1920-6,dashboard%23stock,,ease-out,300;web-1920-8,dashboard%23stock,,ease-out,300;web-1920-1,dashboard%23stock,,ease-out,300;web-1920-18,dashboard%23stock,,ease-out,300;web-1920-7,dashboard%23stock,,ease-out,300;dashboard-4,dashboard%23stock,,ease-out,300;web-1920-9,dashboard%23stock,,ease-out,300;dashboard-1,dashboard%23stock,,ease-out,300;dashboard-3,dashboard%23stock,,ease-out,300;web-1920-17,dashboard%23stock,,ease-out,300;dashboard-2,dashboard%23stock,,ease-out,300', event)"
+  >
+    <div class="place-x2iUSd">Stock</div>
+    <div class="icon-ionic-md-list-box-x2iUSd"></div>
+  </div>
+  <div
+    class="group-27-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23support,,ease-out,300;accounting,dashboard%23support,,ease-out,300;dashboard,dashboard%23support,,ease-out,300;assets,dashboard%23support,,ease-out,300;build,dashboard%23support,,ease-out,300;buying,dashboard%23support,,ease-out,300;crm,dashboard%23support,,ease-out,300;hr,dashboard%23support,,ease-out,300;loans,dashboard%23support,,ease-out,300;payroll,dashboard%23support,,ease-out,300;projects,dashboard%23support,,ease-out,300;quality,dashboard%23support,,ease-out,300;selling,dashboard%23support,,ease-out,300;stock,dashboard%23support,,ease-out,300;website,dashboard%23support,,ease-out,300;settings,dashboard%23support,,ease-out,300;web-1920-25,dashboard%23support,,ease-out,300;web-1920-26,dashboard%23support,,ease-out,300;web-1920-21,dashboard%23support,,ease-out,300;web-1920-28,dashboard%23support,,ease-out,300;web-1920-30,dashboard%23support,,ease-out,300;web-1920-32,dashboard%23support,,ease-out,300;web-1920-34,dashboard%23support,,ease-out,300;website-1,dashboard%23support,,ease-out,300;settings-1,dashboard%23support,,ease-out,300;web-1920-23,dashboard%23support,,ease-out,300;web-1920-20,dashboard%23support,,ease-out,300;web-1920-11,dashboard%23support,,ease-out,300;web-1920-12,dashboard%23support,,ease-out,300;web-1920-2,dashboard%23support,,ease-out,300;web-1920-6,dashboard%23support,,ease-out,300;web-1920-8,dashboard%23support,,ease-out,300;web-1920-1,dashboard%23support,,ease-out,300;web-1920-18,dashboard%23support,,ease-out,300;web-1920-7,dashboard%23support,,ease-out,300;dashboard-4,dashboard%23support,,ease-out,300;web-1920-9,dashboard%23support,,ease-out,300;dashboard-1,dashboard%23support,,ease-out,300;dashboard-3,dashboard%23support,,ease-out,300;web-1920-17,dashboard%23support,,ease-out,300;dashboard-2,dashboard%23support,,ease-out,300', event)"
+  >
+    <div class="support-8vZl7g">Support</div>
+    <div class="icon-feather-phone-call-8vZl7g"></div>
+  </div>
+  <div
+    class="group-28-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23website,,ease-out,300;accounting,dashboard%23website,,ease-out,300;dashboard,dashboard%23website,,ease-out,300;assets,dashboard%23website,,ease-out,300;build,dashboard%23website,,ease-out,300;buying,dashboard%23website,,ease-out,300;crm,dashboard%23website,,ease-out,300;hr,dashboard%23website,,ease-out,300;loans,dashboard%23website,,ease-out,300;payroll,dashboard%23website,,ease-out,300;projects,dashboard%23website,,ease-out,300;quality,dashboard%23website,,ease-out,300;selling,dashboard%23website,,ease-out,300;stock,dashboard%23website,,ease-out,300;support,dashboard%23website,,ease-out,300;settings,dashboard%23website,,ease-out,300;support-1,dashboard%23website,,ease-out,300;web-1920-25,dashboard%23website,,ease-out,300;web-1920-26,dashboard%23website,,ease-out,300;web-1920-21,dashboard%23website,,ease-out,300;web-1920-28,dashboard%23website,,ease-out,300;web-1920-30,dashboard%23website,,ease-out,300;web-1920-32,dashboard%23website,,ease-out,300;web-1920-34,dashboard%23website,,ease-out,300;settings-1,dashboard%23website,,ease-out,300;web-1920-23,dashboard%23website,,ease-out,300;web-1920-20,dashboard%23website,,ease-out,300;web-1920-11,dashboard%23website,,ease-out,300;web-1920-12,dashboard%23website,,ease-out,300;web-1920-2,dashboard%23website,,ease-out,300;web-1920-6,dashboard%23website,,ease-out,300;web-1920-8,dashboard%23website,,ease-out,300;web-1920-1,dashboard%23website,,ease-out,300;web-1920-18,dashboard%23website,,ease-out,300;web-1920-7,dashboard%23website,,ease-out,300;dashboard-4,dashboard%23website,,ease-out,300;web-1920-9,dashboard%23website,,ease-out,300;dashboard-1,dashboard%23website,,ease-out,300;dashboard-3,dashboard%23website,,ease-out,300;web-1920-17,dashboard%23website,,ease-out,300;dashboard-2,dashboard%23website,,ease-out,300', event)"
+  >
+    <div class="website-lEt463">Website</div>
+    <div class="icon-open-browser-lEt463"></div>
+  </div>
+  <div
+    class="group-29-HO0KTV"
+    onclick="Lib.autoanim_redirect('utilities,dashboard%23settings,,ease-out,300;accounting,dashboard%23settings,,ease-out,300;dashboard,dashboard%23settings,,ease-out,300;assets,dashboard%23settings,,ease-out,300;build,dashboard%23settings,,ease-out,300;buying,dashboard%23settings,,ease-out,300;crm,dashboard%23settings,,ease-out,300;hr,dashboard%23settings,,ease-out,300;loans,dashboard%23settings,,ease-out,300;payroll,dashboard%23settings,,ease-out,300;projects,dashboard%23settings,,ease-out,300;quality,dashboard%23settings,,ease-out,300;selling,dashboard%23settings,,ease-out,300;stock,dashboard%23settings,,ease-out,300;support,dashboard%23settings,,ease-out,300;website,dashboard%23settings,,ease-out,300;support-1,dashboard%23settings,,ease-out,300;web-1920-25,dashboard%23settings,,ease-out,300;web-1920-26,dashboard%23settings,,ease-out,300;web-1920-21,dashboard%23settings,,ease-out,300;web-1920-28,dashboard%23settings,,ease-out,300;web-1920-30,dashboard%23settings,,ease-out,300;web-1920-32,dashboard%23settings,,ease-out,300;web-1920-34,dashboard%23settings,,ease-out,300;website-1,dashboard%23settings,,ease-out,300;web-1920-23,dashboard%23settings,,ease-out,300;web-1920-20,dashboard%23settings,,ease-out,300;web-1920-11,dashboard%23settings,,ease-out,300;web-1920-12,dashboard%23settings,,ease-out,300;web-1920-2,dashboard%23settings,,ease-out,300;web-1920-6,dashboard%23settings,,ease-out,300;web-1920-8,dashboard%23settings,,ease-out,300;web-1920-1,dashboard%23settings,,ease-out,300;web-1920-18,dashboard%23settings,,ease-out,300;web-1920-7,dashboard%23settings,,ease-out,300;dashboard-4,dashboard%23settings,,ease-out,300;web-1920-9,dashboard%23settings,,ease-out,300;dashboard-1,dashboard%23settings,,ease-out,300;dashboard-3,dashboard%23settings,,ease-out,300;web-1920-17,dashboard%23settings,,ease-out,300;dashboard-2,dashboard%23settings,,ease-out,300', event)"
+  >
+    <div class="settings-W4jyOy">Settings</div>
+    <div class="icon-feather-settings-W4jyOy">
+      <div class="path-85-ExZ1x3"></div>
+      <div class="path-86-ExZ1x3"></div>
+    </div>
+  </div>
+  <div
+    class="group-30-HO0KTV"
+    onclick="Lib.autoanim_redirect('accounting,dashboard%23utilities,,ease-out,300;dashboard,dashboard%23utilities,,ease-out,300;assets,dashboard%23utilities,,ease-out,300;build,dashboard%23utilities,,ease-out,300;buying,dashboard%23utilities,,ease-out,300;crm,dashboard%23utilities,,ease-out,300;hr,dashboard%23utilities,,ease-out,300;loans,dashboard%23utilities,,ease-out,300;payroll,dashboard%23utilities,,ease-out,300;projects,dashboard%23utilities,,ease-out,300;quality,dashboard%23utilities,,ease-out,300;selling,dashboard%23utilities,,ease-out,300;stock,dashboard%23utilities,,ease-out,300;support,dashboard%23utilities,,ease-out,300;website,dashboard%23utilities,,ease-out,300;settings,dashboard%23utilities,,ease-out,300;support-1,dashboard%23utilities,,ease-out,300;web-1920-25,dashboard%23utilities,,ease-out,300;web-1920-26,dashboard%23utilities,,ease-out,300;web-1920-21,dashboard%23utilities,,ease-out,300;web-1920-28,dashboard%23utilities,,ease-out,300;web-1920-30,dashboard%23utilities,,ease-out,300;web-1920-32,dashboard%23utilities,,ease-out,300;web-1920-34,dashboard%23utilities,,ease-out,300;website-1,dashboard%23utilities,,ease-out,300;settings-1,dashboard%23utilities,,ease-out,300;web-1920-23,dashboard%23utilities,,ease-out,300;web-1920-20,dashboard%23utilities,,ease-out,300;web-1920-11,dashboard%23utilities,,ease-out,300;web-1920-12,dashboard%23utilities,,ease-out,300;web-1920-2,dashboard%23utilities,,ease-out,300;web-1920-6,dashboard%23utilities,,ease-out,300;web-1920-8,dashboard%23utilities,,ease-out,300;web-1920-1,dashboard%23utilities,,ease-out,300;web-1920-18,dashboard%23utilities,,ease-out,300;web-1920-7,dashboard%23utilities,,ease-out,300;dashboard-4,dashboard%23utilities,,ease-out,300;web-1920-9,dashboard%23utilities,,ease-out,300;dashboard-1,dashboard%23utilities,,ease-out,300;dashboard-3,dashboard%23utilities,,ease-out,300;web-1920-17,dashboard%23utilities,,ease-out,300;dashboard-2,dashboard%23utilities,,ease-out,300', event)"
+  >
+    <div class="utilities-KUVThU">Utilities</div>
+    <div class="icon-feather-more-vertical-KUVThU">
+      <div class="path-87-di7OsO"></div>
+      <div class="path-88-di7OsO"></div>
+      <div class="path-89-di7OsO"></div>
+    </div>
+  </div>
+</div>
+<div class="rectangle-3-C61RwL"></div>
+<div class="oerp_logo-C61RwL"></div>
+<div
+  class="icon-feather-menu-C61RwL"
+  onclick="Lib.autoanim_redirect('dashboard,dashboard%23dashboard-1,,ease-out,300;dashboard-4,dashboard%23web-1920-1,,ease-out,300;dashboard-1,dashboard%23dashboard,,ease-out,300;dashboard-3,dashboard%23accounting,,ease-out,300;dashboard-2,dashboard%23web-1920-17,,ease-out,300', event)"
+>
+  <div class="path-11-s58X9h"></div>
+  <div class="path-12-s58X9h"></div>
+  <div class="path-13-s58X9h"></div>
+</div>
+<div class="icon-feather-arrow-right-circle-C61RwL">
+  <div class="path-17-bW8Z2J"></div>
+  <div class="path-18-bW8Z2J"></div>
+  <div class="path-19-bW8Z2J"></div>
+</div>
+<div class="icon-feather-arrow-right-circle-VMr6Om">
+  <div class="path-17-LH8Fhp"></div>
+  <div class="path-18-LH8Fhp"></div>
+  <div class="path-19-LH8Fhp"></div>
+</div>
+<div
+  class="group-118-C61RwL"
+  onclick="Lib.autoanim_redirect('accounting,dashboard%23web-1920-1,,,;web-1920-18,dashboard%23web-1920-1,,,', event)"
+>
+  <div class="rectangle-78-T7vxb0"></div>
+  <div class="general-ledger-T7vxb0">General Ledger</div>
+  <div class="icon-ionic-ios-arrow-up-T7vxb0"></div>
+  <div class="icon-open-spreadsheet-T7vxb0"></div>
+</div>
+<div class="rectangle-47-C61RwL"></div>
+<div class="rectangle-53-C61RwL"></div>
+<div class="group-96-C61RwL">
+  <div class="text-3U5qE3">Text</div>
+  <div class="ellipse-79-3U5qE3"></div>
+  <div class="ellipse-80-3U5qE3"></div>
+  <div class="icon-material-attach-money-3U5qE3"></div>
+</div>
+<div class="group-95-C61RwL">
+  <div class="employee-IUHrKR">Employee</div>
+  <div class="ellipse-81-IUHrKR"></div>
+  <div class="icon-awesome-user-tie-IUHrKR"></div>
+</div>
+<div class="group-94-C61RwL">
+  <div class="something-NhvmeG">Something</div>
+  <div class="ellipse-82-NhvmeG"></div>
+  <div class="icon-feather-shopping-cart-NhvmeG">
+    <div class="path-173-5I2xJE"></div>
+    <div class="path-174-5I2xJE"></div>
+    <div class="path-175-5I2xJE"></div>
+  </div>
+</div>
+<div class="group-93-C61RwL">
+  <div class="some-text-Gs7AKB">Some Text</div>
+  <div class="ellipse-83-Gs7AKB"></div>
+  <div class="icon-feather-shopping-cart-Gs7AKB">
+    <div class="path-173-olJd1x"></div>
+    <div class="path-174-olJd1x"></div>
+    <div class="path-175-olJd1x"></div>
+  </div>
+</div>
+<div class="group-84-C61RwL">
+  <div class="path-178-ahGy4x"></div>
+  <div class="charts-ofaccount-ahGy4x"><a href="/app/account/view/tree">Charts of<br />Account</a></div>
+  <div class="icon-feather-box-ahGy4x">
+    <div class="path-14-VNbXvS"></div>
+    <div class="path-15-VNbXvS"></div>
+    <div class="path-16-VNbXvS"></div>
+  </div>
+  <div class="item-ahGy4x"><a href="/app/item">Item </a></div>
+  <div class="noun_item_2951122-ahGy4x">
+    <div class="group-145-xr7ZFw">
+      <div class="path-199-9ZEACk"></div>
+      <div class="path-200-9ZEACk"></div>
+      <div class="path-201-9ZEACk"></div>
+      <div class="path-202-9ZEACk"></div>
+      <div class="path-203-9ZEACk"></div>
+      <div class="path-204-9ZEACk"></div>
+      <div class="path-205-9ZEACk"></div>
+      <div class="path-206-9ZEACk"></div>
+      <div class="path-207-9ZEACk"></div>
+    </div>
+  </div>
+  <div class="doc-type-ahGy4x">Doc <br />Type</div>
+  <div class="noun_doc_4219486-ahGy4x">
+    <div class="path-223-Wd29Pt"></div>
+    <div class="path-224-Wd29Pt"></div>
+    <div class="path-225-Wd29Pt"></div>
+    <div class="path-226-Wd29Pt"></div>
+    <div class="path-227-Wd29Pt"></div>
+    <div class="path-228-Wd29Pt"></div>
+  </div>
+</div>
+<div class="group-85-C61RwL">
+  <div class="ellipse-70-rFX9Nh"></div>
+  <div class="salesinvoice-rFX9Nh"><a href="/app/sales-invoice">Sales<br />Invoice </a></div>
+  <div class="icon-feather-users-rFX9Nh">
+    <div class="path-169-XxKQZK"></div>
+    <div class="path-170-XxKQZK"></div>
+    <div class="path-171-XxKQZK"></div>
+    <div class="path-172-XxKQZK"></div>
+  </div>
+  <div class="customer-rFX9Nh"><a href="/app/customer">Customer</a></div>
+  <div class="people_alt_black_24dp-rFX9Nh">
+    <div class="group-141-J4btnx">
+      <div class="rectangle-85-EuHp0f"></div>
+    </div>
+    <div class="group-143-J4btnx">
+      <div class="group-142-Ynot3v">
+        <div class="path-191-th17Zf"></div>
+        <div class="path-192-th17Zf"></div>
+        <div class="path-193-th17Zf"></div>
+        <div class="path-194-th17Zf"></div>
+      </div>
+    </div>
+  </div>
+  <div class="workspace-rFX9Nh">Workspace</div>
+  <div class="noun_workspace_1533997-rFX9Nh">
+    <div class="group-1C4WZF">
+      <div class="compound-path-GHyCFj"></div>
+    </div>
+  </div>
+</div>
+<div class="group-86-C61RwL">
+  <div class="ellipse-71-cPi90N"></div>
+  <div class="purchaseinvoice-cPi90N"><a href="/app/purchase-invoice">Purchase<br />Invoice</a></div>
+  <div class="icon-awesome-exchange-alt-cPi90N"></div>
+  <div class="supplier-cPi90N"><a href="/app/supplier">Supplier</a></div>
+  <div class="noun_supplier_1923720-cPi90N">
+    <div class="path-208-WHHXns"></div>
+  </div>
+  <div class="report-cPi90N">Report</div>
+  <div class="noun_report_2001787-cPi90N">
+    <div class="group-166-N57f3s">
+      <div class="group-155-6fwMyF">
+        <div class="group-154-glNuX8">
+          <div class="path-229-ILJJ45"></div>
+        </div>
+      </div>
+      <div class="group-157-6fwMyF">
+        <div class="group-156-VHzxLU">
+          <div class="path-230-c8OyQp"></div>
+        </div>
+      </div>
+      <div class="group-159-6fwMyF">
+        <div class="group-158-HeMFgM">
+          <div class="path-231-0Fz0j2"></div>
+        </div>
+      </div>
+      <div class="group-161-6fwMyF">
+        <div class="group-160-yQnpBx">
+          <div class="path-232-U71tZa"></div>
+        </div>
+      </div>
+      <div class="group-163-6fwMyF">
+        <div class="group-162-ch50uW">
+          <div class="path-233-HRX5rW"></div>
+        </div>
+      </div>
+      <div class="group-165-6fwMyF">
+        <div class="group-164-feKrDl">
+          <div class="path-234-3KIaW9"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-87-C61RwL">
+  <div class="journalentry-D1n0rW"><a href="/app/journal-entry">Journal<br />Entry</a></div>
+  <div class="ellipse-72-D1n0rW"></div>
+  <div class="icon-payment-invoice-sign-alt-o-D1n0rW"></div>
+  <div class="salesinvoice-D1n0rW"><a href="/app/sales-invoice">Sales<br />Invoice</a></div>
+  <div class="noun_invoice_3897190-D1n0rW">
+    <div class="group-146-dz4TOR">
+      <div class="path-209-hZQKfD"></div>
+      <div class="path-210-hZQKfD"></div>
+      <div class="path-211-hZQKfD"></div>
+      <div class="path-212-hZQKfD"></div>
+      <div class="path-213-hZQKfD"></div>
+      <div class="path-214-hZQKfD"></div>
+    </div>
+  </div>
+</div>
+<div class="group-88-C61RwL">
+  <div class="paymententry-2p4Gmi">Payment<br />Entry</div>
+  <div class="ellipse-73-2p4Gmi"></div>
+  <div class="icon-ionic-md-clipboard-2p4Gmi"></div>
+  <div class="leaderboard-2p4Gmi"><a href="#">Leader<br />Board</a></div>
+  <div class="leaderboard_black_24dp-2p4Gmi">
+    <div class="rectangle-86-fLpTzs"></div>
+    <div class="group-147-fLpTzs">
+      <div class="path-215-p1uhmx"></div>
+    </div>
+  </div>
+</div>
+<div class="group-89-C61RwL">
+  <div class="accountsreceivabe-5brNdF"><a href="/app/query-report/Accounts%20Receivable">Accounts<br />Receivabe</a></div>
+  <div class="ellipse-74-5brNdF"></div>
+  <div class="ellipse-75-5brNdF"></div>
+  <div class="icon-material-attach-money-5brNdF"></div>
+</div>
+<div class="group-90-C61RwL">
+  <div class="generalledger-0N6bnk"><a href="/app/query-report/General%20Ledger">General<br />Ledger</a></div>
+  <div class="ellipse-76-0N6bnk"></div>
+  <div class="icon-awesome-user-tie-0N6bnk"></div>
+</div>
+<div class="group-91-C61RwL">
+  <div class="trialbalance-5bY6Fd">Trial<br />Balance</div>
+  <div class="ellipse-77-5bY6Fd"></div>
+  <div class="icon-metro-chart-bars-5bY6Fd"></div>
+</div>
+<div class="group-92-C61RwL">
+  <div class="dashboard-9ZROxt">Dashboard</div>
+  <div class="ellipse-78-9ZROxt"></div>
+  <div class="icon-material-dashboard-9ZROxt"></div>
+</div>
+<div class="your-shortcuts-C61RwL">Your Shortcuts</div>
+<div class="line-4-C61RwL"></div>
+<div class="accounting-C61RwL">Accounting</div>
+<div class="dashboard-accounting-C61RwL">
+  <span class="span0-4m8qHd">Dashboard &gt;</span><span class="span1-4m8qHd"> Accounting</span>
+</div>
+<div
+  class="group-120-C61RwL"
+  onclick="Lib.autoanim_redirect('accounting,dashboard%23web-1920-18,,linear,300;web-1920-18,dashboard%23web-1920-2,,linear,300', event)"
+>
+  <div class="customize-qN2EM8">Customize</div>
+  <div class="group-119-qN2EM8">
+    <div class="rectangle-52-uW5GFQ"></div>
+    <div class="icon-feather-edit-uW5GFQ">
+      <div class="path-176-J702oj"></div>
+      <div class="path-177-J702oj"></div>
+    </div>
+  </div>
+</div>
+<div class="icon-feather-arrow-right-circle-mzXdH9">
+  <div class="path-17-8ZuJB6"></div>
+  <div class="path-18-8ZuJB6"></div>
+  <div class="path-19-8ZuJB6"></div>
+</div>
+<div class="icon-feather-arrow-right-circle-QxM5SU">
+  <div class="path-17-fuv5KY"></div>
+  <div class="path-18-fuv5KY"></div>
+  <div class="path-19-fuv5KY"></div>
+</div>
+<div class="group-271-C61RwL">
+  <div class="rectangle-57-puZlij"></div>
+  <div class="place-puZlij">Stock</div>
+  <div class="icon-ionic-ios-arrow-up-puZlij"></div>
+  <div class="inventory_2_black_24dp-puZlij">
+    <div class="group-148-OF0fyS">
+      <div class="rectangle-87-w2hXwD"></div>
+    </div>
+    <div class="group-150-OF0fyS">
+      <div class="group-149-6NDf6k">
+        <div class="path-216-q7L0p8"></div>
+        <div class="rectangle-88-q7L0p8"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-273-C61RwL">
+  <div class="rectangle-59-EsSb0s"></div>
+  <div class="human-resource-EsSb0s">Human Resource</div>
+  <div class="icon-ionic-ios-arrow-up-EsSb0s"></div>
+  <div class="noun_-human-resource_2486160-EsSb0s">
+    <div class="group-151-CchGKT">
+      <div class="path-217-vghY7F"></div>
+      <div class="path-218-vghY7F"></div>
+      <div class="path-219-vghY7F"></div>
+    </div>
+  </div>
+</div>
+<div class="group-272-C61RwL">
+  <div class="rectangle-78-VBylhg"></div>
+  <div class="crm-VBylhg">CRM</div>
+  <div
+    class="icon-ionic-ios-arrow-up-VBylhg"
+    onclick="Lib.autoanim_redirect('dashboard,dashboard%23web-1920-17,,ease-out,300;dashboard-1,dashboard%23dashboard-2,,ease-out,300', event)"
+  ></div>
+  <div class="noun_crm_3950846-VBylhg">
+    <div class="group-152-xzbNHC">
+      <div class="path-220-dgws1i"></div>
+    </div>
+  </div>
+</div>
+<div class="group-274-C61RwL">
+  <div class="rectangle-61-fYVHxY"></div>
+  <div class="data-import-and-settings-fYVHxY">Data Import and Settings</div>
+  <div class="icon-ionic-ios-arrow-up-fYVHxY"></div>
+  <div class="noun_import-data_377982-fYVHxY">
+    <div class="group-153-uVeCVg">
+      <div class="path-221-oxxdj5"></div>
+      <div class="path-222-oxxdj5"></div>
+    </div>
+  </div>
+</div>
+<div class="dashboard-C61RwL">Dashboard</div>
+<div class="dashboard-VMr6Om">Dashboard</div>
+<div
+  class="group-121-C61RwL"
+  onclick="Lib.autoanim_redirect('dashboard,dashboard%23web-1920-9,,ease-out,300;web-1920-1,dashboard%23web-1920-18,,linear,300;dashboard-4,dashboard%23web-1920-9,,ease-out,300;dashboard-1,dashboard%23web-1920-9,,ease-out,300;dashboard-3,dashboard%23web-1920-9,,ease-out,300;dashboard-2,dashboard%23web-1920-9,,ease-out,300', event)"
+>
+  <div class="rectangle-52-bMOLvN"></div>
+  <div class="customize-bMOLvN">Customize</div>
+  <div class="icon-feather-edit-bMOLvN">
+    <div class="path-176-EwHwJO"></div>
+    <div class="path-177-EwHwJO"></div>
+  </div>
+</div>
+<div class="rectangle-75-C61RwL"></div>
+<div class="rectangle-76-C61RwL"></div>
+<div class="group-101-C61RwL">
+  <div class="path-178-wAIKMX"></div>
+  <div class="assets-wAIKMX"><a href="/app/assets">Assets</a></div>
+  <div class="item-wAIKMX"><a href="/app/item">Item</a></div>
+  <div class="noun_items_2915708-wAIKMX">
+    <div class="path-262-5eaW1W"></div>
+  </div>
+  <div class="place-wAIKMX"><a href="/app/lead">Lead</a></div>
+  <div class="leaderboard_black_24dp-1-wAIKMX">
+    <div class="rectangle-99-oqob8j"></div>
+    <div class="group-173-oqob8j">
+      <div class="path-275-iMcmRP"></div>
+    </div>
+  </div>
+  <div class="employee-wAIKMX"><a href="/app/employee">Employee</a></div>
+  <div class="badge_black_24dp-wAIKMX">
+    <div class="group-190-LxBS9t">
+      <div class="rectangle-109-ZofWWq"></div>
+    </div>
+    <div class="group-192-LxBS9t">
+      <div class="group-191-iyKe10">
+        <div class="rectangle-110-vYbQgY"></div>
+        <div class="rectangle-111-vYbQgY"></div>
+        <div class="path-349-vYbQgY"></div>
+        <div class="ellipse-90-vYbQgY"></div>
+        <div class="path-350-vYbQgY"></div>
+      </div>
+    </div>
+  </div>
+  <div class="loanapplication-wAIKMX">Loan<br />Application</div>
+  <div class="noun_loan_2101691-wAIKMX">
+    <div class="business-plan-survey-task-stsmSV">
+      <div class="path-388-dVop2W"></div>
+      <div class="path-389-dVop2W"></div>
+      <div class="path-390-dVop2W"></div>
+      <div class="path-391-dVop2W"></div>
+    </div>
+  </div>
+  <div class="salarystructure-wAIKMX"><a href="/app/salary-structure">Salary<br />Structure</a></div>
+  <div class="noun_salary_3534905-wAIKMX">
+    <div class="group-205-N43Zd7">
+      <div class="path-401-rObK14"></div>
+      <div class="path-402-rObK14"></div>
+    </div>
+  </div>
+  <div class="task-wAIKMX">Task</div>
+  <div class="noun_task_3939206-wAIKMX">
+    <div class="path-418-uAc6u7"></div>
+  </div>
+  <div class="qualitygoal-wAIKMX">Quality<br />Goal</div>
+  <div class="noun_goal_2442266-wAIKMX">
+    <div class="group-220-OKEj24">
+      <div class="group-218-d624Y9">
+        <div class="path-443-YBvBA7"></div>
+        <div class="path-444-YBvBA7"></div>
+      </div>
+      <div class="group-219-d624Y9">
+        <div class="path-445-2Emqy0"></div>
+        <div class="path-446-2Emqy0"></div>
+      </div>
+      <div class="path-447-d624Y9"></div>
+      <div class="path-448-d624Y9"></div>
+      <div class="ellipse-99-d624Y9"></div>
+    </div>
+  </div>
+  <div class="noun_items_2915708-1-wAIKMX">
+    <div class="path-483-KV6tAc"></div>
+  </div>
+  <div class="issue-wAIKMX">Issue</div>
+  <div class="noun_issue_1653604-wAIKMX">
+    <div class="path-524-JhGH8l"></div>
+    <div class="path-525-JhGH8l"></div>
+    <div class="path-526-JhGH8l"></div>
+  </div>
+  <div class="blogpost-wAIKMX">Blog<br />Post</div>
+  <div class="noun_-post-blog_1542411-wAIKMX">
+    <div class="group-257-N88qxt">
+      <div class="path-535-muTmTs"></div>
+      <div class="ellipse-103-muTmTs"></div>
+      <div class="ellipse-104-muTmTs"></div>
+      <div class="ellipse-105-muTmTs"></div>
+      <div class="path-536-muTmTs"></div>
+      <div class="path-537-muTmTs"></div>
+    </div>
+  </div>
+  <div class="websitesettings-wAIKMX">Website<br />Settings</div>
+  <div class="noun_website_3977699-wAIKMX">
+    <div class="path-570-dfdLvF"></div>
+  </div>
+  <div class="charts-ofaccount-wAIKMX">Charts of<br />Account</div>
+  <div class="icon-feather-box-wAIKMX">
+    <div class="path-14-hsAVSL"></div>
+    <div class="path-15-hsAVSL"></div>
+    <div class="path-16-hsAVSL"></div>
+  </div>
+</div>
+<div class="group-102-C61RwL">
+  <div class="ellipse-70-eYqyUC"></div>
+  <div class="assetcategory-eYqyUC"><a href="/app/asset-category">Asset<br />Category</a></div>
+  <div class="category_black_24dp-eYqyUC">
+    <div class="path-184-23Ot9K"></div>
+    <div class="path-185-23Ot9K"></div>
+  </div>
+  <div class="materialrequest-eYqyUC"><a href="/app/material-request">Material<br />Request</a></div>
+  <div class="request_quote_black_24dp-eYqyUC">
+    <div class="rectangle-98-c37XMG"></div>
+    <div class="path-261-c37XMG"></div>
+  </div>
+  <div class="opportunity-eYqyUC">Opportunity</div>
+  <div class="noun_opportunity_4391850-eYqyUC"></div>
+  <div class="leaveapplication-eYqyUC"><a href="/app/leave-application">Leave<br />Application</a></div>
+  <div class="noun_-leave_1262675-eYqyUC">
+    <div class="group-193-QjNC00"></div>
+  </div>
+  <div class="salesinvoice-eYqyUC">Sales<br />Invoice</div>
+  <div class="icon-feather-users-eYqyUC">
+    <div class="path-169-zbEx11"></div>
+    <div class="path-170-zbEx11"></div>
+    <div class="path-171-zbEx11"></div>
+    <div class="path-172-zbEx11"></div>
+  </div>
+</div>
+<div class="group-103-C61RwL">
+  <div class="ellipse-71-B08mCn"></div>
+  <div class="fixed-assetregister-B08mCn">Fixed Asset<br />Register</div>
+  <div class="app_registration_black_24dp-B08mCn">
+    <div class="group-138-vU64MP">
+      <div class="rectangle-79-CBJjxl"></div>
+    </div>
+    <div class="group-140-vU64MP">
+      <div class="group-139-zrVgXE">
+        <div class="rectangle-80-xsUde0"></div>
+        <div class="rectangle-81-xsUde0"></div>
+        <div class="rectangle-82-xsUde0"></div>
+        <div class="rectangle-83-xsUde0"></div>
+        <div class="rectangle-84-xsUde0"></div>
+        <div class="path-186-xsUde0"></div>
+        <div class="path-187-xsUde0"></div>
+        <div class="path-188-xsUde0"></div>
+      </div>
+    </div>
+  </div>
+  <div class="purchaseorder-B08mCn"><a href="/app/purchase-order">Purchase<br />Order</a></div>
+  <div class="noun_-purchase-order_4145467-B08mCn">
+    <div class="path-256-zdzLfv"></div>
+    <div class="path-257-zdzLfv"></div>
+    <div class="path-258-zdzLfv"></div>
+    <div class="path-259-zdzLfv"></div>
+    <div class="path-260-zdzLfv"></div>
+  </div>
+  <div class="customer-B08mCn"><a href="/app/customer">Customer</a></div>
+  <div class="group_black_24dp-B08mCn">
+    <div class="path-263-UzlcYN"></div>
+    <div class="path-264-UzlcYN"></div>
+  </div>
+  <div class="attendance-B08mCn"><a href="/app/attendance">Attendance</a></div>
+  <div class="noun_attendance_4027355-B08mCn">
+    <div class="path-361-wqSGx8"></div>
+    <div class="path-362-wqSGx8"></div>
+    <div class="path-363-wqSGx8"></div>
+    <div class="path-364-wqSGx8"></div>
+    <div class="path-365-wqSGx8"></div>
+    <div class="path-366-wqSGx8"></div>
+    <div class="path-367-wqSGx8"></div>
+    <div class="path-368-wqSGx8"></div>
+  </div>
+  <div class="dashboard-B08mCn">Dashboard</div>
+  <div class="icon-material-dashboard-B08mCn"></div>
+  <div class="salaryslip-B08mCn">Salary<br />Slip</div>
+  <div class="noun_-price-quote_1861930-B08mCn">
+    <div class="path-404-hcQp4D"></div>
+  </div>
+  <div class="timesheet-B08mCn">Timesheet</div>
+  <div class="noun_timesheet_1863659-B08mCn">
+    <div class="path-433-6e4WEC"></div>
+  </div>
+  <div class="qualityinspection-B08mCn">Quality<br />Inspection</div>
+  <div class="noun_inspection_1951701-B08mCn">
+    <div class="path-452-WpAxSF"></div>
+    <div class="path-453-WpAxSF"></div>
+  </div>
+  <div class="salesanalytics-B08mCn">Sales<br />Analytics</div>
+  <div class="noun_sales-analytic_3988543-B08mCn">
+    <div class="group-227-xnKg3F">
+      <div class="group-226-r4SIKg">
+        <div class="path-485-lWW0dT"></div>
+        <div class="path-486-lWW0dT"></div>
+      </div>
+    </div>
+  </div>
+  <div class="stockentry-B08mCn">Stock<br />Entry</div>
+  <div class="noun_entry_2826704-1-B08mCn">
+    <div class="path-505-5At3zX"></div>
+  </div>
+  <div class="servicelevelagreement-B08mCn">Service<br />Level<br />Agreement</div>
+  <div class="noun_agreement_4078163-B08mCn">
+    <div class="group-256-xZixuw">
+      <div class="path-532-JCI2Rk"></div>
+    </div>
+  </div>
+  <div class="web-page-B08mCn">Web <br />Page</div>
+  <div class="noun_webpages_4109780-B08mCn">
+    <div class="group-258-C8aEld">
+      <div class="path-539-JDqeyz"></div>
+      <div class="path-540-JDqeyz"></div>
+      <div class="path-541-JDqeyz"></div>
+      <div class="path-542-JDqeyz"></div>
+    </div>
+  </div>
+  <div class="stocksettings-B08mCn">Stock<br />Settings</div>
+  <div class="noun_-stock_4186924-B08mCn">
+    <div class="layer-22-Lv0x4Q">
+      <div class="path-573-Z9lqIg"></div>
+      <div class="path-574-Z9lqIg"></div>
+      <div class="path-575-Z9lqIg"></div>
+      <div class="path-576-Z9lqIg"></div>
+    </div>
+  </div>
+  <div class="purchaseinvoice-B08mCn">Purchase<br />Invoice</div>
+  <div class="icon-awesome-exchange-alt-B08mCn"></div>
+</div>
+<div class="group-109-C61RwL">
+  <div class="dashboard-IXHYxR">Dashboard</div>
+  <div class="ellipse-78-IXHYxR"></div>
+  <div class="icon-material-dashboard-IXHYxR"></div>
+</div>
+<div class="line-6-C61RwL"></div>
+<div class="icon-feather-shopping-bag-C61RwL">
+  <div class="path-7-9fAsm9"></div>
+  <div class="path-6-9fAsm9"></div>
+  <div class="path-8-9fAsm9"></div>
+</div>
+<div class="group-186-C61RwL">
+  <div class="rectangle-47-B5XaO8"></div>
+  <div class="asset-value-analytics-B5XaO8">Asset Value Analytics</div>
+  <div class="line-4-B5XaO8"></div>
+  <div class="group-49-B5XaO8">
+    <div class="path-40-ZO1w2O"></div>
+  </div>
+  <div class="group-62-B5XaO8">
+    <div class="rectangle-29-pbJDik"></div>
+    <div class="group-61-pbJDik">
+      <div class="group-60-mqXqrO">
+        <div class="group-58-Wpuj8t">
+          <div class="path-68-fDV8Js"></div>
+          <div class="path-69-fDV8Js"></div>
+          <div class="assets-fDV8Js">Assets</div>
+        </div>
+        <div class="group-59-Wpuj8t">
+          <div class="path-70-ZYGN8a"></div>
+          <div class="path-71-ZYGN8a"></div>
+          <div class="depreciated-ZYGN8a">Depreciated</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="group-185-B5XaO8">
+    <div class="group-48-Nrayku">
+      <div class="path-33-Ydsdxh"></div>
+      <div class="path-34-Ydsdxh"></div>
+      <div class="path-35-Ydsdxh"></div>
+      <div class="path-36-Ydsdxh"></div>
+      <div class="path-37-Ydsdxh"></div>
+    </div>
+    <div class="group-66-Nrayku"></div>
+    <div class="group-65-Nrayku"></div>
+    <div class="name-Nrayku">Jan</div>
+    <div class="feb-Nrayku">Feb</div>
+    <div class="place-Nrayku">Mar</div>
+    <div class="apr-Nrayku">Apr</div>
+    <div class="name-xuk3OZ">May</div>
+    <div class="jun-Nrayku">Jun</div>
+    <div class="jul-Nrayku">Jul</div>
+    <div class="aug-Nrayku">Aug</div>
+    <div class="sep-Nrayku">Sep</div>
+    <div class="oct-Nrayku">Oct</div>
+    <div class="nov-Nrayku">Nov</div>
+    <div class="dec-Nrayku">Dec</div>
+    <div class="group-64-Nrayku">
+      <div class="number-jLXi5x">0</div>
+      <div class="number-wKeMJH">1</div>
+      <div class="number-4jebUP">2</div>
+      <div class="number-vzOKLl">3</div>
+      <div class="number-GE8txd">4</div>
+    </div>
+  </div>
+  <div class="rectangle-77-B5XaO8"></div>
+  <div class="assets-value-B5XaO8">Assets Value</div>
+  <div class="line-7-B5XaO8"></div>
+  <div class="group-104-B5XaO8">
+    <div class="path-33-VjSJ6F"></div>
+    <div class="path-34-VjSJ6F"></div>
+    <div class="path-35-VjSJ6F"></div>
+    <div class="path-36-VjSJ6F"></div>
+    <div class="path-37-VjSJ6F"></div>
+  </div>
+  <div class="group-105-B5XaO8">
+    <div class="path-40-tEJI17"></div>
+  </div>
+  <div class="group-109-B5XaO8">
+    <div class="number-pAvW7x">0</div>
+    <div class="number-xxu03K">50</div>
+    <div class="number-u4dPIR">100</div>
+    <div class="number-fxf9AX">150</div>
+    <div class="number-QcTJ5d">200</div>
+  </div>
+  <div class="group-111-B5XaO8">
+    <div class="group-61-JTLO8v">
+      <div class="group-60-K8jx9S">
+        <div class="path-69-NBgPkx"></div>
+        <div class="category-1-NBgPkx">Category 1</div>
+      </div>
+    </div>
+    <div class="group-110-JTLO8v">
+      <div class="group-60-xzsSgT">
+        <div class="path-69-8UQxPS"></div>
+        <div class="category-2-8UQxPS">Category 2</div>
+      </div>
+    </div>
+  </div>
+  <div class="group-113-B5XaO8">
+    <div class="text-1-QIcR8I">Text 1</div>
+    <div class="group-112-QIcR8I">
+      <div class="rectangle-53-uWT40t"></div>
+      <div class="rectangle-54-uWT40t"></div>
+    </div>
+  </div>
+  <div class="group-114-B5XaO8">
+    <div class="text-1-bmNuFu">Text 1</div>
+    <div class="group-112-bmNuFu">
+      <div class="path-177-zDWshW"></div>
+      <div class="rectangle-54-zDWshW"></div>
+    </div>
+  </div>
+  <div class="group-115-B5XaO8">
+    <div class="text-1-aZ93nO">Text 1</div>
+    <div class="group-112-aZ93nO">
+      <div class="rectangle-53-7nFN9m"></div>
+      <div class="rectangle-54-7nFN9m"></div>
+    </div>
+  </div>
+  <div class="group-116-B5XaO8">
+    <div class="text-1-TdLLt3">Text 1</div>
+    <div class="group-112-TdLLt3">
+      <div class="rectangle-53-JY51FL"></div>
+      <div class="rectangle-54-JY51FL"></div>
+    </div>
+  </div>
+  <div class="group-117-B5XaO8">
+    <div class="text-1-zMlQPZ">Text 1</div>
+    <div class="group-112-zMlQPZ">
+      <div class="rectangle-53-ryxpQk"></div>
+      <div class="rectangle-54-ryxpQk"></div>
+    </div>
+  </div>
+  <div class="filter_list_black_24dp-B5XaO8">
+    <div class="path-299-xwIeuC"></div>
+    <div class="path-300-xwIeuC"></div>
+  </div>
+  <div class="more_horiz_black_24dp-B5XaO8">
+    <div class="path-301-KQUehy"></div>
+    <div class="path-302-KQUehy"></div>
+  </div>
+  <div class="filter_list_black_24dp-lAWmzS">
+    <div class="path-299-xvcdN1"></div>
+    <div class="path-300-xvcdN1"></div>
+  </div>
+  <div class="more_horiz_black_24dp-lAWmzS">
+    <div class="path-301-9BTnnh"></div>
+    <div class="path-302-9BTnnh"></div>
+  </div>
+  <div class="month-B5XaO8">Month</div>
+  <div class="asset-value-B5XaO8">Asset Value</div>
+  <div class="month-lAWmzS">Month</div>
+  <div class="asset-value-lAWmzS">Asset Value</div>
+</div>
+<div class="assets-C61RwL">Assets</div>
+<div class="dashboard-assets-C61RwL">
+  <span class="span0-IxxWPD">Dashboard &gt;</span><span class="span1-IxxWPD"> Assets</span>
+</div>
+<div class="elements-C61RwL">Elements</div>
+<div class="group-184-C61RwL">
+  <div class="rectangle-89-0xRKum"></div>
+  <div class="build-0xRKum">Build</div>
+  <div class="line-8-0xRKum"></div>
+  <div class="group-168-0xRKum">
+    <div class="group-48-oMqY4f">
+      <div class="path-33-YxHBZq"></div>
+      <div class="path-34-YxHBZq"></div>
+      <div class="path-35-YxHBZq"></div>
+      <div class="path-36-YxHBZq"></div>
+      <div class="path-37-YxHBZq"></div>
+    </div>
+    <div class="group-170-oMqY4f">
+      <div class="name-Zwy52x">Jan</div>
+      <div class="feb-Zwy52x">Feb</div>
+      <div class="place-Zwy52x">Mar</div>
+      <div class="apr-Zwy52x">Apr</div>
+      <div class="name-90AS6p">May</div>
+      <div class="jun-Zwy52x">Jun</div>
+      <div class="jul-Zwy52x">Jul</div>
+      <div class="aug-Zwy52x">Aug</div>
+      <div class="sep-Zwy52x">Sep</div>
+      <div class="oct-Zwy52x">Oct</div>
+      <div class="nov-Zwy52x">Nov</div>
+      <div class="dec-Zwy52x">Dec</div>
+    </div>
+    <div class="group-64-oMqY4f">
+      <div class="number-jQ0rAk">0</div>
+      <div class="number-7ZZKYO">1</div>
+      <div class="number-BokLfu">2</div>
+      <div class="number-dJVRmV">3</div>
+      <div class="number-55d7DR">4</div>
+    </div>
+  </div>
+  <div class="filter_list_black_24dp-0xRKum">
+    <div class="path-299-F8JiJ1"></div>
+    <div class="path-300-F8JiJ1"></div>
+  </div>
+  <div class="more_horiz_black_24dp-0xRKum">
+    <div class="path-301-gxF99s"></div>
+    <div class="path-302-gxF99s"></div>
+  </div>
+  <div class="group-180-0xRKum"></div>
+  <div class="group-181-0xRKum"></div>
+  <div class="group-182-0xRKum"></div>
+  <div class="group-183-0xRKum"></div>
+  <div class="month-0xRKum">Month</div>
+  <div class="build-tAW8Xx">Build</div>
+  <div class="group-111-0xRKum">
+    <div class="group-61-CLa7fT">
+      <div class="group-60-5T4YwJ">
+        <div class="path-69-oVUS8e"></div>
+        <div class="category-1-oVUS8e">Category 1</div>
+      </div>
+    </div>
+    <div class="group-110-CLa7fT">
+      <div class="group-60-2Rzx4x">
+        <div class="path-69-IlAqLd"></div>
+        <div class="category-2-IlAqLd">Category 2</div>
+      </div>
+    </div>
+  </div>
+  <div class="purchase-order-trends-0xRKum">Purchase Order Trends</div>
+  <div class="place-0xRKum">Purchase</div>
+  <div class="territory-wise-sales-0xRKum">Territory Wise Sales</div>
+  <div class="territory-0xRKum">Territory</div>
+  <div class="outgoing-salary-0xRKum">Outgoing Salary</div>
+  <div class="salary-0xRKum">Salary</div>
+  <div
+    class="group-189-0xRKum"
+    onclick="Lib.autoanim_redirect('hr,dashboard%23web-1920-20,,ease-out,300;web-1920-20,dashboard%23hr,,ease-out,300', event)"
+  >
+    <div class="group-188-llWBqP"><div class="custom-O6flhE">Custom</div></div>
+    <div class="download-2-llWBqP"></div>
+  </div>
+  <div class="loans-0xRKum">Loans</div>
+  <div class="loan-0xRKum">Loan</div>
+  <div class="projects-0xRKum">Projects</div>
+  <div class="projects-tAW8Xx">Projects</div>
+  <div class="place-tAW8Xx">Quality</div>
+  <div class="sales-order-trends-0xRKum">Sales Order Trends</div>
+  <div class="sale-trends-0xRKum">Sale Trends</div>
+  <div class="warehouse-wise-stock-value-0xRKum">Warehouse wise Stock Value</div>
+  <div class="stock-value-0xRKum">Stock Value</div>
+  <div class="support-0xRKum">Support</div>
+  <div class="support-tAW8Xx">Support</div>
+  <div class="attendance-0xRKum">Attendance</div>
+  <div class="attendance-tAW8Xx">Attendance</div>
+</div>
+<div class="build-C61RwL">Build</div>
+<div class="dashboard-build-C61RwL">
+  <span class="span0-ZeZBzg">Dashboard &gt;</span><span class="span1-ZeZBzg"> Build</span>
+</div>
+<div class="group-104-C61RwL">
+  <div class="purchaseanalytics-yXv3Oh"><a href="/app/query-report/Purchase%20Analytics">Purchase<br />Analytics</a></div>
+  <div class="ellipse-72-yXv3Oh"></div>
+  <div class="noun_-traffic_2742104-yXv3Oh">
+    <div class="layer-2-zWEQph">
+      <div class="path-251-sGA9zO"></div>
+      <div class="path-252-sGA9zO"></div>
+      <div class="path-253-sGA9zO"></div>
+      <div class="path-254-sGA9zO"></div>
+      <div class="path-255-sGA9zO"></div>
+    </div>
+  </div>
+  <div class="salesanalytics-yXv3Oh">Sales<br />Analytics</div>
+  <div class="jobapplicant-yXv3Oh">Job<br />Applicant</div>
+  <div class="noun_jobseeker_4184412-yXv3Oh">
+    <div class="x24-jobseeker-6vtHCo">
+      <div class="path-369-NG97Ns"></div>
+    </div>
+  </div>
+  <div class="incometax-slab-yXv3Oh">Income<br />Tax Slab</div>
+  <div class="noun_tax-returns_3570081-yXv3Oh">
+    <div class="path-405-DLXZZV"></div>
+    <div class="path-406-DLXZZV"></div>
+    <div class="path-407-DLXZZV"></div>
+    <div class="path-408-DLXZZV"></div>
+    <div class="path-409-DLXZZV"></div>
+  </div>
+  <div class="projectbillingsummary-yXv3Oh">Project<br />Billing<br />Summary</div>
+  <div class="noun_summary_3082102-yXv3Oh">
+    <div class="group-215-XbxSMd">
+      <div class="path-434-OSwuE1"></div>
+      <div class="path-435-OSwuE1"></div>
+      <div class="path-436-OSwuE1"></div>
+      <div class="path-437-OSwuE1"></div>
+      <div class="ellipse-92-OSwuE1"></div>
+      <div class="ellipse-93-OSwuE1"></div>
+      <div class="ellipse-94-OSwuE1"></div>
+    </div>
+  </div>
+  <div class="qualityreview-yXv3Oh">Quality<br />Review</div>
+  <div class="noun_review_3485558-yXv3Oh">
+    <div class="path-454-gEQm2i"></div>
+    <div class="path-455-gEQm2i"></div>
+  </div>
+  <div class="salesorderanalysis-yXv3Oh">Sales<br />Order<br />Analysis</div>
+  <div class="noun_analysis_690432-yXv3Oh">
+    <div class="group-229-Wux6OZ">
+      <div class="path-487-5YN3yr"></div>
+      <div class="path-488-5YN3yr"></div>
+      <div class="group-228-5YN3yr">
+        <div class="path-489-yj0IMw"></div>
+        <div class="path-490-yj0IMw"></div>
+        <div class="path-491-yj0IMw"></div>
+      </div>
+    </div>
+  </div>
+  <div class="purchasereceipt-yXv3Oh">Purchase<br />Receipt</div>
+  <div class="noun_receipt_1134097-yXv3Oh">
+    <div class="path-504-dMAtnC"></div>
+  </div>
+  <div class="webform-yXv3Oh">Web<br />Form</div>
+  <div class="noun_form_2034112-yXv3Oh">
+    <div class="group-265-0WFcvC">
+      <div class="group-259-IxKtv5">
+        <div class="path-543-KxlJPP"></div>
+      </div>
+      <div class="group-260-IxKtv5">
+        <div class="path-544-VZqNrx"></div>
+      </div>
+      <div class="group-261-IxKtv5">
+        <div class="path-545-qxeFpg"></div>
+      </div>
+      <div class="group-262-IxKtv5">
+        <div class="path-546-fzwS1d"></div>
+      </div>
+      <div class="group-264-IxKtv5">
+        <div class="group-263-57sVK1">
+          <div class="path-547-Me1ElP"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="journalentry-yXv3Oh">Journal<br />Entry</div>
+  <div class="icon-payment-invoice-sign-alt-o-yXv3Oh"></div>
+</div>
+<div class="group-105-C61RwL">
+  <div class="purchaseorderanalysis-a77sPZ">Purchase<br />Order<br />Analysis</div>
+  <div class="ellipse-73-a77sPZ"></div>
+  <div class="noun_purchasing-order_4067194-a77sPZ">
+    <div class="path-245-xHHetE"></div>
+    <div class="path-246-xHHetE"></div>
+    <div class="path-247-xHHetE"></div>
+    <div class="path-248-xHHetE"></div>
+    <div class="path-249-xHHetE"></div>
+    <div class="path-250-xHHetE"></div>
+  </div>
+  <div class="dashboard-a77sPZ">Dashboard</div>
+  <div class="icon-material-dashboard-a77sPZ"></div>
+  <div class="monthlyattendancesheet-a77sPZ">Monthly<br />Attendance<br />Sheet</div>
+  <div class="noun_-calendar_394664-a77sPZ">
+    <div class="group-194-J4xkzV">
+      <div class="path-370-xnYfRx"></div>
+    </div>
+  </div>
+  <div class="salaryregister-a77sPZ">Salary<br />Register</div>
+  <div class="noun_register_2588932-a77sPZ">
+    <div class="group-206-zy5aOK">
+      <div class="path-410-864fo4"></div>
+    </div>
+  </div>
+  <div class="qualityaction-a77sPZ">Quality<br />Action</div>
+  <div class="layer-2-a77sPZ">
+    <div class="layer-1-BHqCTi">
+      <div class="path-456-ooTx51"></div>
+      <div class="path-457-ooTx51"></div>
+      <div class="path-458-ooTx51"></div>
+    </div>
+  </div>
+  <div class="deliverynote-a77sPZ">Delivery<br />Note</div>
+  <div class="noun_-checklist_1627618-a77sPZ">
+    <div class="group-234-9LT23b">
+      <div class="path-503-WZx4MI"></div>
+    </div>
+  </div>
+  <div class="paymententry-a77sPZ">Payment<br />Entry</div>
+  <div class="icon-ionic-md-clipboard-a77sPZ"></div>
+</div>
+<div class="group-106-C61RwL">
+  <div class="dashboard-PwO50P">Dashboard</div>
+  <div class="ellipse-74-PwO50P"></div>
+  <div class="ellipse-75-PwO50P"></div>
+  <div class="icon-material-dashboard-PwO50P"></div>
+  <div class="non-conformance-PwO50P">Non <br />Conformance</div>
+  <div class="noun_-cross_4411174-PwO50P">
+    <div class="x8-graph-UYTF0C">
+      <div class="path-459-MDRE0a"></div>
+    </div>
+  </div>
+  <div class="stockledger-PwO50P">Stock<br />Ledger</div>
+  <div class="noun_ledger_2637573-PwO50P">
+    <div class="group-233-0SNd25">
+      <div class="path-502-V1WW2e"></div>
+    </div>
+  </div>
+  <div class="accountsreceivable-PwO50P">Accounts<br />Receivable</div>
+  <div class="icon-material-attach-money-PwO50P"></div>
+</div>
+<div class="buying-C61RwL">Buying</div>
+<div class="dashboard-buying-C61RwL">
+  <span class="span0-btlR8O">Dashboard &gt;</span><span class="span1-btlR8O"> Buying</span>
+</div>
+<div class="crm-C61RwL">CRM</div>
+<div class="dashboard-crm-C61RwL">
+  <span class="span0-38RZcH">Dashboard &gt;</span><span class="span1-38RZcH"> CRM</span>
+</div>
+<div class="icon-feather-settings-C61RwL">
+  <div class="path-179-pAbU6m"></div>
+  <div class="path-180-pAbU6m"></div>
+</div>
+<div class="hr-C61RwL">HR</div>
+<div class="dashboard-hr-C61RwL">
+  <span class="span0-qkLTE8">Dashboard &gt;</span><span class="span1-qkLTE8"> HR</span>
+</div>
+<div class="group-203-C61RwL">
+  <div class="group-102-ewjMjz">
+    <div class="ellipse-70-b6YwZj"></div>
+    <div class="loan-b6YwZj">Loan</div>
+    <div class="payrollentry-b6YwZj"><a href="/app/payroll-entry">Payroll<br />Entry</a></div>
+    <div class="project-b6YwZj">Project</div>
+    <div class="noun_-project_2560953-b6YwZj">
+      <div class="group-214-c2uLUz">
+        <div class="group-209-iseS1m">
+          <div class="path-429-rG5E8y"></div>
+        </div>
+        <div class="group-210-iseS1m">
+          <div class="path-430-3D28RA"></div>
+        </div>
+        <div class="group-213-iseS1m">
+          <div class="group-211-hSCNvS">
+            <div class="path-431-CxpgM7"></div>
+          </div>
+          <div class="group-212-hSCNvS">
+            <div class="path-432-thISX3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="qualityprocedure-b6YwZj">Quality<br />Procedure</div>
+    <div class="noun_procedure_4421193-b6YwZj">
+      <div class="group-221-OZxOwc">
+        <div class="path-449-YEFlHX"></div>
+        <div class="path-450-YEFlHX"></div>
+        <div class="path-451-YEFlHX"></div>
+      </div>
+    </div>
+    <div class="salesorder-b6YwZj">Sales<br />Order</div>
+    <div class="noun_sales-order-item_1589696-b6YwZj">
+      <div class="group-225-6rQLhK">
+        <div class="path-484-jEsJlq"></div>
+      </div>
+    </div>
+    <div class="group-235-b6YwZj">
+      <div class="ellipse-70-HVEedy"></div>
+      <div class="materialrequest-HVEedy">Material<br />Request</div>
+      <div class="noun_request_540038-HVEedy">
+        <div class="path-506-rjJjtO"></div>
+      </div>
+      <div class="maintenancevisit-HVEedy">Maintenance<br />Visit</div>
+      <div class="noun_maintenance_2048411-HVEedy">
+        <div class="group-255-Yx2xjn">
+          <div class="path-530-jMSL0f"></div>
+          <div class="path-531-jMSL0f"></div>
+        </div>
+      </div>
+      <div class="blogger-HVEedy">Blogger</div>
+      <div class="noun_blogger_1433470-HVEedy">
+        <div class="path-538-DCzkbi"></div>
+      </div>
+      <div class="accountssettings-HVEedy">Accounts<br />Settings</div>
+      <div class="noun_account_4428716-HVEedy">
+        <div class="path-571-hLXxwC"></div>
+        <div class="path-572-hLXxwC"></div>
+      </div>
+    </div>
+  </div>
+  <div class="noun_loan_2745125-ewjMjz">
+    <div class="layer-2-GIrbK4">
+      <div class="path-374-x9x2zM"></div>
+      <div class="path-375-x9x2zM"></div>
+      <div class="path-377-x9x2zM"></div>
+    </div>
+  </div>
+  <div class="noun_entry_2826704-ewjMjz">
+    <div class="path-403-0FaRxe"></div>
+  </div>
+</div>
+<div class="loans-C61RwL">Loans</div>
+<div class="dashboard-loans-C61RwL">
+  <span class="span0-SWN0GF">Dashboard &gt;</span><span class="span1-SWN0GF"> Loans</span>
+</div>
+<div
+  class="group-189-C61RwL"
+  onclick="Lib.autoanim_redirect('payroll,dashboard%23web-1920-25,,ease-out,300;web-1920-25,dashboard%23payroll,,ease-out,300', event)"
+>
+  <div class="group-188-2XlVrD"><div class="custom-W61e3o">Custom</div></div>
+  <div class="download-2-2XlVrD"></div>
+</div>
+<div class="payroll-C61RwL">Payroll</div>
+<div class="dashboard-payroll-C61RwL">
+  <span class="span0-YAhWbG">Dashboard &gt;</span><span class="span1-YAhWbG"> Payroll</span>
+</div>
+<div class="projects-C61RwL">Projects</div>
+<div class="dashboard-projects-C61RwL">
+  <span class="span0-JRdi4O">Dashboard &gt;</span><span class="span1-JRdi4O"> Projects</span>
+</div>
+<div class="place-C61RwL">Quality</div>
+<div class="dashboard-quality-C61RwL">
+  <span class="span0-Wxzk9H">Dashboard &gt;</span><span class="span1-Wxzk9H"> Quality</span>
+</div>
+<div class="selling-C61RwL">Selling</div>
+<div class="dashboard-selling-C61RwL">
+  <span class="span0-kHQsnD">Dashboard &gt;</span><span class="span1-kHQsnD"> Selling</span>
+</div>
+<div class="group-107-C61RwL">
+  <div class="stockbalance-ywhXR6">Stock<br />Balance</div>
+  <div class="ellipse-76-ywhXR6"></div>
+  <div class="noun_stock-balance_3751135-ywhXR6">
+    <div class="group-232-QqdI2h">
+      <div class="path-499-anwj5G"></div>
+      <div class="path-500-anwj5G"></div>
+      <div class="path-501-anwj5G"></div>
+    </div>
+  </div>
+  <div class="generalledger-ywhXR6">General<br />Ledger</div>
+  <div class="icon-awesome-user-tie-ywhXR6"></div>
+</div>
+<div class="group-108-C61RwL">
+  <div class="dashboard-nxrt5P">Dashboard</div>
+  <div class="ellipse-77-nxrt5P"></div>
+  <div class="icon-material-dashboard-nxrt5P"></div>
+  <div class="trialbalance-nxrt5P">Trial<br />Balance</div>
+  <div class="icon-metro-chart-bars-nxrt5P"></div>
+</div>
+<div class="dashboard-stock-C61RwL">
+  <span class="span0-clxWVN">Dashboard &gt;</span><span class="span1-clxWVN"> Stock</span>
+</div>
+<div class="support-C61RwL">Support</div>
+<div class="dashboard-support-C61RwL">
+  <span class="span0-scTwYx">Dashboard &gt;</span><span class="span1-scTwYx"> Support</span>
+</div>
+<div class="group-266-C61RwL">
+  <div class="group-105-mVZ9e5">
+    <div class="websitesettings-Pp7LTQ">Website<br />Settings</div>
+    <div class="ellipse-73-Pp7LTQ"></div>
+  </div>
+  <div class="icon-feather-settings-mVZ9e5">
+    <div class="path-179-cvUKYQ"></div>
+    <div class="path-180-cvUKYQ"></div>
+  </div>
+</div>
+<div class="website-C61RwL">Website</div>
+<div class="dashboard-website-C61RwL">
+  <span class="span0-VrQlPu">Dashboard &gt;</span><span class="span1-VrQlPu"> Website</span>
+</div>
+<div class="settings-C61RwL">Settings</div>
+<div class="group-268-C61RwL">
+  <div class="group-104-ESsBue">
+    <div class="portalsettings-dYa5DB">Portal<br />Settings</div>
+    <div class="ellipse-72-dYa5DB"></div>
+  </div>
+  <div class="noun_client-portal_2601595-ESsBue">
+    <div class="path-577-ZEoRUk"></div>
+  </div>
+</div>
+<div class="settings-VMr6Om">Settings</div>
+<div class="dashboard-settings-C61RwL">
+  <span class="span0-DgHVNp">Dashboard &gt;</span><span class="span1-DgHVNp"> Settings</span>
+</div>
+<div class="group-201-C61RwL">
+  <div class="rectangle-121-LQA9zj"></div>
+  <div class="last-7-days-LQA9zj">Last 7 days</div>
+  <div class="last-30-days-LQA9zj">Last 30 days</div>
+  <div class="last-1-year-LQA9zj">Last 1 year</div>
+  <div class="custom-range-LQA9zj">Custom Range</div>
+  <div class="line-10-LQA9zj"></div>
+</div>
+<div class="rectangle-89-C61RwL"></div>
+<div class="rectangle-93-C61RwL"></div>
+<div
+  class="new-chart-C61RwL"
+  onclick="Lib.autoanim_redirect('web-1920-18,dashboard%23web-1920-2,,ease-out,300;web-1920-9,dashboard%23web-1920-7,,ease-out,300', event)"
+>
+  + New Chart
+</div>
+<div class="rectangle-94-C61RwL"></div>
+<div class="new-shortcut-C61RwL">+ New <br />Shortcut</div>
+<div class="group-517-C61RwL">
+  <div class="rectangle-60-TwqNS6"></div>
+  <div class="reports-masters-TwqNS6">Reports &amp; Masters</div>
+  <div class="line-5-TwqNS6"></div>
+  <div class="icon-feather-arrow-right-circle-TwqNS6">
+    <div class="path-17-kR96cP"></div>
+    <div class="path-18-kR96cP"></div>
+    <div class="path-19-kR96cP"></div>
+  </div>
+  <div class="icon-feather-arrow-right-circle-2cjDAp">
+    <div class="path-17-XdjW2B"></div>
+    <div class="path-18-XdjW2B"></div>
+    <div class="path-19-XdjW2B"></div>
+  </div>
+  <div class="group-287-TwqNS6">
+    <div class="rectangle-57-FsNrGk"></div>
+    <div class="accounting-masters-FsNrGk">Accounting &amp; Masters</div>
+    <div class="icon-open-calculator-FsNrGk"></div>
+    <div class="icon-ionic-ios-arrow-up-FsNrGk"></div>
+  </div>
+  <div class="group-296-TwqNS6">
+    <div class="rectangle-63-d0EjcU"></div>
+    <div class="financial-statements-d0EjcU">Financial Statements</div>
+    <div class="icon-ionic-ios-arrow-up-d0EjcU"></div>
+    <div class="icon-open-spreadsheet-d0EjcU"></div>
+  </div>
+  <div class="group-297-TwqNS6">
+    <div class="rectangle-65-VIRcuy"></div>
+    <div class="settings-VIRcuy">Settings</div>
+    <div class="icon-ionic-ios-arrow-up-VIRcuy"></div>
+    <div class="icon-feather-settings-VIRcuy">
+      <div class="path-179-xfRJfW"></div>
+      <div class="path-180-xfRJfW"></div>
+    </div>
+  </div>
+  <div class="group-298-TwqNS6">
+    <div class="rectangle-67-gyQu4s"></div>
+    <div class="subscription-management-gyQu4s">Subscription Management</div>
+    <div class="icon-ionic-ios-arrow-up-gyQu4s"></div>
+    <div class="icon-material-dashboard-gyQu4s"></div>
+  </div>
+  <div class="group-300-TwqNS6">
+    <div class="rectangle-71-ckGKFD"></div>
+    <div class="taxes-ckGKFD">Taxes</div>
+    <div class="icon-ionic-ios-arrow-up-ckGKFD"></div>
+    <div class="icon-metro-chart-bars-ckGKFD"></div>
+  </div>
+  <div class="group-299-TwqNS6">
+    <div class="rectangle-69-JCwjys"></div>
+    <div class="cost-center-and-budgeting-JCwjys">Cost Center and Budgeting</div>
+    <div class="icon-ionic-ios-arrow-up-JCwjys"></div>
+    <div class="icon-material-bubble-chart-JCwjys">
+      <div class="path-181-T7WkhW"></div>
+      <div class="path-182-T7WkhW"></div>
+      <div class="path-183-T7WkhW"></div>
+    </div>
+  </div>
+  <div class="group-294-TwqNS6">
+    <div class="rectangle-59-ZUf8ei"></div>
+    <div class="accounts-receivable-ZUf8ei">Accounts Receivable</div>
+    <div class="icon-ionic-ios-arrow-up-ZUf8ei"></div>
+    <div class="icon-awesome-sort-amount-down-ZUf8ei"></div>
+  </div>
+  <div class="group-295-TwqNS6">
+    <div class="rectangle-61-ZwOw9A"></div>
+    <div class="accounts-payable-ZwOw9A">Accounts Payable</div>
+    <div class="icon-ionic-ios-arrow-up-ZwOw9A"></div>
+    <div class="icon-awesome-sort-amount-up-ZwOw9A"></div>
+  </div>
+  <div class="group-288-TwqNS6">
+    <div class="rectangle-64-sClPOx"></div>
+    <div class="reports-sClPOx">Reports</div>
+    <div class="icon-ionic-ios-arrow-up-sClPOx"></div>
+    <div class="icon-ionic-ios-trending-up-sClPOx"></div>
+  </div>
+  <div class="group-289-TwqNS6">
+    <div class="rectangle-66-rTxQ1S"></div>
+    <div class="multi-currency-rTxQ1S">Multi Currency</div>
+    <div class="icon-ionic-ios-arrow-up-rTxQ1S"></div>
+    <div class="icon-awesome-money-bill-alt-rTxQ1S"></div>
+  </div>
+  <div class="group-290-TwqNS6">
+    <div class="rectangle-68-erOJVp"></div>
+    <div class="banking-and-payments-erOJVp">Banking and Payments</div>
+    <div class="icon-ionic-ios-arrow-up-erOJVp"></div>
+    <div class="icon-awesome-piggy-bank-erOJVp"></div>
+  </div>
+  <div class="group-291-TwqNS6">
+    <div class="rectangle-70-kkjlEl"></div>
+    <div class="share-management-kkjlEl">Share Management</div>
+    <div class="icon-ionic-ios-arrow-up-kkjlEl"></div>
+    <div class="icon-awesome-creative-commons-share-kkjlEl"></div>
+  </div>
+  <div class="group-292-TwqNS6">
+    <div class="rectangle-72-nr6zrr"></div>
+    <div class="opening-and-closing-nr6zrr">Opening and Closing</div>
+    <div class="icon-ionic-ios-arrow-up-nr6zrr"></div>
+    <div class="icon-material-account-balance-nr6zrr"></div>
+  </div>
+  <div class="group-293-TwqNS6">
+    <div class="rectangle-74-QPiPXd"></div>
+    <div class="profitability-QPiPXd">Profitability</div>
+    <div class="icon-ionic-ios-arrow-up-QPiPXd"></div>
+    <div class="icon-awesome-balance-scale-left-QPiPXd"></div>
+  </div>
+  <div class="rectangle-47-TwqNS6"></div>
+  <div class="rectangle-53-TwqNS6"></div>
+  <div class="group-96-TwqNS6">
+    <div class="text-Vj54iY">Text</div>
+    <div class="ellipse-79-Vj54iY"></div>
+    <div class="ellipse-80-Vj54iY"></div>
+    <div class="icon-material-attach-money-Vj54iY"></div>
+  </div>
+  <div class="group-95-TwqNS6">
+    <div class="employee-dTKMni">Employee</div>
+    <div class="ellipse-81-dTKMni"></div>
+    <div class="icon-awesome-user-tie-dTKMni"></div>
+  </div>
+  <div class="group-94-TwqNS6">
+    <div class="something-opNUjZ">Something</div>
+    <div class="ellipse-82-opNUjZ"></div>
+    <div class="icon-feather-shopping-cart-opNUjZ">
+      <div class="path-173-IHG4Bm"></div>
+      <div class="path-174-IHG4Bm"></div>
+      <div class="path-175-IHG4Bm"></div>
+    </div>
+  </div>
+  <div class="group-93-TwqNS6">
+    <div class="some-text-zuG5yT">Some Text</div>
+    <div class="ellipse-83-zuG5yT"></div>
+    <div class="icon-feather-shopping-cart-zuG5yT">
+      <div class="path-173-49ommZ"></div>
+      <div class="path-174-49ommZ"></div>
+      <div class="path-175-49ommZ"></div>
+    </div>
+  </div>
+  <div class="group-84-TwqNS6">
+    <div class="path-178-Id58tM"></div>
+    <div class="charts-ofaccount-Id58tM">Charts of<br />Account</div>
+    <div class="icon-feather-box-Id58tM">
+      <div class="path-14-4JA0gy"></div>
+      <div class="path-15-4JA0gy"></div>
+      <div class="path-16-4JA0gy"></div>
+    </div>
+  </div>
+  <div class="group-85-TwqNS6">
+    <div class="ellipse-70-lWn7An"></div>
+    <div class="salesinvoice-lWn7An">Sales<br />Invoice</div>
+    <div class="icon-feather-users-lWn7An">
+      <div class="path-169-khKjLH"></div>
+      <div class="path-170-khKjLH"></div>
+      <div class="path-171-khKjLH"></div>
+      <div class="path-172-khKjLH"></div>
+    </div>
+  </div>
+  <div class="group-86-TwqNS6">
+    <div class="ellipse-71-13ZMkE"></div>
+    <div class="purchaseinvoice-13ZMkE">Purchase<br />Invoice</div>
+    <div class="icon-awesome-exchange-alt-13ZMkE"></div>
+  </div>
+  <div class="group-87-TwqNS6">
+    <div class="journalentry-iWxKgX">Journal<br />Entry</div>
+    <div class="ellipse-72-iWxKgX"></div>
+    <div class="icon-payment-invoice-sign-alt-o-iWxKgX"></div>
+  </div>
+  <div class="group-88-TwqNS6">
+    <div class="paymententry-J4lReq">Payment<br />Entry</div>
+    <div class="ellipse-73-J4lReq"></div>
+    <div class="icon-ionic-md-clipboard-J4lReq"></div>
+  </div>
+  <div class="group-89-TwqNS6">
+    <div class="accountsreceivabe-utqps2">Accounts<br />Receivabe</div>
+    <div class="ellipse-74-utqps2"></div>
+    <div class="ellipse-75-utqps2"></div>
+    <div class="icon-material-attach-money-utqps2"></div>
+  </div>
+  <div class="group-90-TwqNS6">
+    <div class="generalledger-7zxhOk">General<br />Ledger</div>
+    <div class="ellipse-76-7zxhOk"></div>
+    <div class="icon-awesome-user-tie-7zxhOk"></div>
+  </div>
+  <div class="group-91-TwqNS6">
+    <div class="trialbalance-0xozNT">Trial<br />Balance</div>
+    <div class="ellipse-77-0xozNT"></div>
+    <div class="icon-metro-chart-bars-0xozNT"></div>
+  </div>
+  <div class="group-92-TwqNS6">
+    <div class="dashboard-F0EIX0">Dashboard</div>
+    <div class="ellipse-78-F0EIX0"></div>
+    <div class="icon-material-dashboard-F0EIX0"></div>
+  </div>
+  <div class="your-shortcuts-TwqNS6">Your Shortcuts</div>
+  <div class="line-4-TwqNS6"></div>
+  <div class="group-302-TwqNS6">
+    <div class="rectangle-62-P8EGCU"></div>
+    <div class="rectangle-78-P8EGCU"></div>
+    <div class="general-ledger-P8EGCU">General Ledger</div>
+    <div class="journal-entryjourna-P8EGCU">
+      Journal Entry<br />Journal Entry Template<br />General Ledger<br />Customer Ledger Summary<br />Supplier
+      Ledger Summary
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-P8EGCU"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-XOb6ka"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-hxpJke"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-SJZkJB"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-Ohkitw"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-P8EGCU"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23dashboard-3,,ease-out,300', event)"
+    ></div>
+    <div class="icon-open-spreadsheet-P8EGCU"></div>
+  </div>
+  <div class="group-118-TwqNS6">
+    <div class="rectangle-78-Af0xLa"></div>
+    <div class="general-ledger-Af0xLa">General Ledger</div>
+    <div
+      class="icon-ionic-ios-arrow-up-Af0xLa"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23dashboard-4,,ease-out,300', event)"
+    ></div>
+    <div class="icon-open-spreadsheet-Af0xLa"></div>
+  </div>
+</div>
+<div class="group-277-C61RwL">
+  <div class="rectangle-62-I5MPfv"></div>
+  <div class="rectangle-78-I5MPfv"></div>
+  <div class="crm-I5MPfv">CRM</div>
+  <div class="leadcustomer-groupterritory-I5MPfv">Lead<br />Customer Group<br />Territory</div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-I5MPfv"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-0ngG2r"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-zEl8wY"></div>
+  <div
+    class="icon-ionic-ios-arrow-up-I5MPfv"
+    onclick="Lib.autoanim_redirect('web-1920-17,dashboard%23dashboard,,ease-out,300;dashboard-2,dashboard%23dashboard-1,,ease-out,300', event)"
+  ></div>
+  <div class="noun_crm_3950846-I5MPfv">
+    <div class="group-152-jA0S3A">
+      <div class="path-220-VcV1O9"></div>
+    </div>
+  </div>
+</div>
+<div class="group-515-C61RwL">
+  <div class="rectangle-57-NWQZea"></div>
+  <div class="video-NWQZea">Video</div>
+  <div
+    class="icon-ionic-ios-arrow-up-NWQZea"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23utilities-1,,ease-out,300', event)"
+  ></div>
+  <div class="noun_-video_1018039-NWQZea">
+    <div class="group-270-s8fNOl">
+      <div class="path-592-FG3joe"></div>
+      <div class="path-593-FG3joe"></div>
+    </div>
+  </div>
+</div>
+<div class="component-1-1-C61RwL"></div>
+<div class="group-287-C61RwL">
+  <div class="rectangle-57-dxpL0E"></div>
+  <div class="accounting-masters-dxpL0E">Accounting &amp; Masters</div>
+  <div class="icon-open-calculator-dxpL0E"></div>
+  <div class="icon-ionic-ios-arrow-up-dxpL0E"></div>
+</div>
+<div class="group-296-C61RwL">
+  <div class="rectangle-63-lblWAE"></div>
+  <div class="financial-statements-lblWAE">Financial Statements</div>
+  <div class="icon-ionic-ios-arrow-up-lblWAE"></div>
+  <div class="icon-open-spreadsheet-lblWAE"></div>
+</div>
+<div class="group-297-C61RwL">
+  <div class="rectangle-65-UbM58D"></div>
+  <div class="settings-UbM58D">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-UbM58D"></div>
+  <div class="icon-feather-settings-UbM58D">
+    <div class="path-179-3vxYrf"></div>
+    <div class="path-180-3vxYrf"></div>
+  </div>
+</div>
+<div class="group-298-C61RwL">
+  <div class="rectangle-67-kZ2APh"></div>
+  <div class="subscription-management-kZ2APh">Subscription Management</div>
+  <div class="icon-ionic-ios-arrow-up-kZ2APh"></div>
+  <div class="icon-material-dashboard-kZ2APh"></div>
+</div>
+<div class="group-300-C61RwL">
+  <div class="rectangle-71-E9Dkin"></div>
+  <div class="taxes-E9Dkin">Taxes</div>
+  <div class="icon-ionic-ios-arrow-up-E9Dkin"></div>
+  <div class="icon-metro-chart-bars-E9Dkin"></div>
+</div>
+<div class="group-299-C61RwL">
+  <div class="rectangle-69-9CWDUR"></div>
+  <div class="cost-center-and-budgeting-9CWDUR">Cost Center and Budgeting</div>
+  <div class="icon-ionic-ios-arrow-up-9CWDUR"></div>
+  <div class="icon-material-bubble-chart-9CWDUR">
+    <div class="path-181-P1xCy7"></div>
+    <div class="path-182-P1xCy7"></div>
+    <div class="path-183-P1xCy7"></div>
+  </div>
+</div>
+<div class="group-294-C61RwL">
+  <div class="rectangle-59-BzFfJT"></div>
+  <div class="accounts-receivable-BzFfJT">Accounts Receivable</div>
+  <div class="icon-ionic-ios-arrow-up-BzFfJT"></div>
+  <div class="icon-awesome-sort-amount-down-BzFfJT"></div>
+</div>
+<div class="group-295-C61RwL">
+  <div class="rectangle-61-JCEIaN"></div>
+  <div class="accounts-payable-JCEIaN">Accounts Payable</div>
+  <div class="icon-ionic-ios-arrow-up-JCEIaN"></div>
+  <div class="icon-awesome-sort-amount-up-JCEIaN"></div>
+</div>
+<div class="group-288-C61RwL">
+  <div class="rectangle-64-8k1j8R"></div>
+  <div class="reports-8k1j8R">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-8k1j8R"></div>
+  <div class="icon-ionic-ios-trending-up-8k1j8R"></div>
+</div>
+<div class="group-289-C61RwL">
+  <div class="rectangle-66-jgn3mV"></div>
+  <div class="multi-currency-jgn3mV">Multi Currency</div>
+  <div class="icon-ionic-ios-arrow-up-jgn3mV"></div>
+  <div class="icon-awesome-money-bill-alt-jgn3mV"></div>
+</div>
+<div class="group-290-C61RwL">
+  <div class="rectangle-68-yExXv1"></div>
+  <div class="banking-and-payments-yExXv1">Banking and Payments</div>
+  <div class="icon-ionic-ios-arrow-up-yExXv1"></div>
+  <div class="icon-awesome-piggy-bank-yExXv1"></div>
+</div>
+<div class="group-291-C61RwL">
+  <div class="rectangle-70-A2f579"></div>
+  <div class="share-management-A2f579">Share Management</div>
+  <div class="icon-ionic-ios-arrow-up-A2f579"></div>
+  <div class="icon-awesome-creative-commons-share-A2f579"></div>
+</div>
+<div class="group-292-C61RwL">
+  <div class="rectangle-72-54rxDA"></div>
+  <div class="opening-and-closing-54rxDA">Opening and Closing</div>
+  <div class="icon-ionic-ios-arrow-up-54rxDA"></div>
+  <div class="icon-material-account-balance-54rxDA"></div>
+</div>
+<div class="group-293-C61RwL">
+  <div class="rectangle-74-xlHGDl"></div>
+  <div class="profitability-xlHGDl">Profitability</div>
+  <div class="icon-ionic-ios-arrow-up-xlHGDl"></div>
+  <div class="icon-awesome-balance-scale-left-xlHGDl"></div>
+</div>
+<div class="group-346-C61RwL">
+  <div class="rectangle-78-pBvyXN"></div>
+  <div class="reports-pBvyXN">Reports</div>
+  <div
+    class="icon-ionic-ios-arrow-up-pBvyXN"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-6,,ease-out,300', event)"
+  ></div>
+  <div class="icon-ionic-ios-trending-up-pBvyXN"></div>
+</div>
+<div class="group-345-C61RwL">
+  <div class="rectangle-57-OqWyuM"></div>
+  <div class="assets-OqWyuM">Assets</div>
+  <div class="icon-ionic-ios-arrow-up-OqWyuM"></div>
+  <div class="icon-feather-shopping-bag-OqWyuM">
+    <div class="path-7-J7l5CC"></div>
+    <div class="path-6-J7l5CC"></div>
+    <div class="path-8-J7l5CC"></div>
+  </div>
+</div>
+<div class="group-347-C61RwL">
+  <div class="rectangle-59-SSt6xv"></div>
+  <div class="maintenance-SSt6xv">Maintenance</div>
+  <div class="icon-ionic-ios-arrow-up-SSt6xv"></div>
+  <div class="build_black_24dp-SSt6xv">
+    <div class="path-189-I0lErG"></div>
+    <div class="path-190-I0lErG"></div>
+  </div>
+</div>
+<div class="group-351-C61RwL">
+  <div class="rectangle-57-l78Mad"></div>
+  <div class="modules-l78Mad">Modules</div>
+  <div class="icon-ionic-ios-arrow-up-l78Mad"></div>
+  <div class="noun_module_1688184-l78Mad">
+    <div class="group-167-9YsgDE">
+      <div class="path-235-xvpkIx"></div>
+    </div>
+  </div>
+</div>
+<div class="group-352-C61RwL">
+  <div class="rectangle-78-twZCEg"></div>
+  <div class="views-twZCEg">Views</div>
+  <div
+    class="icon-ionic-ios-arrow-up-twZCEg"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-8,,ease-out,300', event)"
+  ></div>
+  <div class="noun_-view_1251294-twZCEg">
+    <div class="path-236-U7bikx"></div>
+    <div class="path-237-U7bikx"></div>
+  </div>
+</div>
+<div class="group-353-C61RwL">
+  <div class="rectangle-59-xOHhF4"></div>
+  <div class="models-xOHhF4">Models</div>
+  <div class="icon-ionic-ios-arrow-up-xOHhF4"></div>
+  <div class="noun_model_2710235-xOHhF4">
+    <div class="path-238-4moDba"></div>
+  </div>
+</div>
+<div class="group-354-C61RwL">
+  <div class="rectangle-61-zKI3W0"></div>
+  <div class="scripting-zKI3W0">Scripting</div>
+  <div class="icon-ionic-ios-arrow-up-zKI3W0"></div>
+  <div class="noun_script_4414698-zKI3W0">
+    <div class="group-169-oYI2D3">
+      <div class="path-239-xjqFVO"></div>
+      <div class="rectangle-90-xjqFVO"></div>
+      <div class="rectangle-91-xjqFVO"></div>
+      <div class="rectangle-92-xjqFVO"></div>
+    </div>
+  </div>
+</div>
+<div class="group-359-C61RwL">
+  <div class="rectangle-57-QUyv8i"></div>
+  <div class="buying-QUyv8i">Buying</div>
+  <div class="icon-ionic-ios-arrow-up-QUyv8i"></div>
+  <div class="noun_buy_4416897-QUyv8i">
+    <div class="group-171-vxA1JV">
+      <div class="path-240-hAladR"></div>
+    </div>
+  </div>
+</div>
+<div class="group-363-C61RwL">
+  <div class="rectangle-59-cr9vAJ"></div>
+  <div class="items-pricing-cr9vAJ">Items &amp; Pricing</div>
+  <div class="icon-ionic-ios-arrow-up-cr9vAJ"></div>
+  <div class="noun_price_3423577-cr9vAJ">
+    <div class="path-241-vGDIxA"></div>
+    <div class="path-242-vGDIxA"></div>
+  </div>
+</div>
+<div class="group-360-C61RwL">
+  <div class="rectangle-78-nC0wER"></div>
+  <div class="settings-nC0wER">Settings</div>
+  <div
+    class="icon-ionic-ios-arrow-up-nC0wER"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-11,,ease-out,300', event)"
+  ></div>
+  <div class="icon-feather-settings-nC0wER">
+    <div class="path-179-4EDVsg"></div>
+    <div class="path-180-4EDVsg"></div>
+  </div>
+</div>
+<div class="group-364-C61RwL">
+  <div class="rectangle-61-yiJods"></div>
+  <div class="supplier-yiJods">Supplier</div>
+  <div class="icon-ionic-ios-arrow-up-yiJods"></div>
+  <div class="noun_supplier_1923720-yiJods">
+    <div class="path-208-ADHU5g"></div>
+  </div>
+</div>
+<div class="group-361-C61RwL">
+  <div class="rectangle-95-tnY84x"></div>
+  <div class="supplier-scorecard-tnY84x">Supplier Scorecard</div>
+  <div class="icon-ionic-ios-arrow-up-tnY84x"></div>
+  <div class="noun_-report-card_4234312-tnY84x">
+    <div class="group-172-NQVr5y">
+      <div class="path-243-gVWINo"></div>
+    </div>
+  </div>
+</div>
+<div class="group-365-C61RwL">
+  <div class="rectangle-96-kuNNJs"></div>
+  <div class="surname-kuNNJs">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-kuNNJs"></div>
+  <div class="icon-ionic-ios-trending-up-kuNNJs"></div>
+</div>
+<div class="group-362-C61RwL">
+  <div class="rectangle-97-tp2sIk"></div>
+  <div class="other-reports-tp2sIk">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-tp2sIk"></div>
+  <div class="noun_other_3656613-tp2sIk">
+    <div class="path-244-rvW40V"></div>
+    <div class="ellipse-84-rvW40V"></div>
+    <div class="ellipse-85-rvW40V"></div>
+    <div class="ellipse-86-rvW40V"></div>
+  </div>
+</div>
+<div class="group-381-C61RwL">
+  <div class="rectangle-59-pjdTrz"></div>
+  <div class="reports-pjdTrz">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-pjdTrz"></div>
+  <div class="icon-ionic-ios-trending-up-pjdTrz"></div>
+</div>
+<div class="group-380-C61RwL">
+  <div class="rectangle-95-eknsQj"></div>
+  <div class="settings-eknsQj">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-eknsQj"></div>
+  <div class="icon-feather-settings-eknsQj">
+    <div class="path-179-wfrIaG"></div>
+    <div class="path-180-wfrIaG"></div>
+  </div>
+</div>
+<div class="group-382-C61RwL">
+  <div class="rectangle-61-UC6Wde"></div>
+  <div class="campaign-UC6Wde">Campaign</div>
+  <div class="icon-ionic-ios-arrow-up-UC6Wde"></div>
+  <div class="campaign_black_24dp-UC6Wde">
+    <div class="group-174-AN1CcA">
+      <div class="rectangle-100-WQhmeV"></div>
+    </div>
+    <div class="path-276-AN1CcA"></div>
+    <div class="path-277-AN1CcA"></div>
+    <div class="path-278-AN1CcA"></div>
+    <div class="path-279-AN1CcA"></div>
+    <div class="path-280-AN1CcA"></div>
+  </div>
+</div>
+<div class="group-378-C61RwL">
+  <div class="rectangle-57-Ufye0Z"></div>
+  <div class="sales-pipeline-Ufye0Z">Sales Pipeline</div>
+  <div class="icon-ionic-ios-arrow-up-Ufye0Z"></div>
+  <div class="noun_-sales-pipeline_1845011-Ufye0Z">
+    <div class="group-175-KS9xMh">
+      <div class="rectangle-101-ehoqt3"></div>
+      <div class="ellipse-87-ehoqt3"></div>
+      <div class="ellipse-88-ehoqt3"></div>
+      <div class="ellipse-89-ehoqt3"></div>
+      <div class="rectangle-102-ehoqt3"></div>
+      <div class="path-281-ehoqt3"></div>
+      <div class="path-282-ehoqt3"></div>
+      <div class="path-283-ehoqt3"></div>
+      <div class="path-284-ehoqt3"></div>
+      <div class="path-285-ehoqt3"></div>
+      <div class="path-286-ehoqt3"></div>
+      <div class="path-287-ehoqt3"></div>
+      <div class="path-288-ehoqt3"></div>
+      <div class="path-289-ehoqt3"></div>
+      <div class="path-290-ehoqt3"></div>
+      <div class="path-291-ehoqt3"></div>
+      <div class="path-292-ehoqt3"></div>
+      <div class="path-293-ehoqt3"></div>
+      <div class="path-294-ehoqt3"></div>
+    </div>
+  </div>
+</div>
+<div class="group-379-C61RwL">
+  <div class="rectangle-78-XNfcCv"></div>
+  <div class="maintenance-XNfcCv">Maintenance</div>
+  <div
+    class="icon-ionic-ios-arrow-up-XNfcCv"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-12,,ease-out,300', event)"
+  ></div>
+  <div class="noun_maintenance_3370538-XNfcCv">
+    <div class="path-295-t2xxxP"></div>
+    <div class="path-296-t2xxxP"></div>
+    <div class="path-297-t2xxxP"></div>
+    <div class="path-298-t2xxxP"></div>
+  </div>
+</div>
+<div class="group-400-C61RwL">
+  <div class="rectangle-115-9B9id2"></div>
+  <div class="settings-9B9id2">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-9B9id2"></div>
+</div>
+<div class="group-403-C61RwL">
+  <div class="rectangle-119-1opY24"></div>
+  <div class="surname-1opY24">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-1opY24"></div>
+  <div class="icon-ionic-ios-trending-up-1opY24"></div>
+</div>
+<div class="group-410-C61RwL">
+  <div class="rectangle-120-71x4r9"></div>
+  <div class="other-reports-71x4r9">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-71x4r9"></div>
+  <div class="noun_other_3656613-71x4r9">
+    <div class="path-244-Zk135i"></div>
+    <div class="ellipse-84-Zk135i"></div>
+    <div class="ellipse-85-Zk135i"></div>
+    <div class="ellipse-86-Zk135i"></div>
+  </div>
+</div>
+<div class="group-409-C61RwL">
+  <div class="rectangle-118-7Nsbfj"></div>
+  <div class="performance-7Nsbfj">Performance</div>
+  <div class="icon-ionic-ios-arrow-up-7Nsbfj"></div>
+  <div class="noun_performance_3844323-7Nsbfj">
+    <div class="group-195-K1Cbj4">
+      <div class="path-371-BZmgDL"></div>
+    </div>
+  </div>
+</div>
+<div class="group-402-C61RwL">
+  <div class="rectangle-117-uS5rdd"></div>
+  <div class="training-uS5rdd">Training</div>
+  <div class="icon-ionic-ios-arrow-up-uS5rdd"></div>
+  <div class="noun_training_3893309-uS5rdd">
+    <div class="group-196-yPU1Oo">
+      <div class="path-372-BFDG0y"></div>
+      <div class="path-373-BFDG0y"></div>
+    </div>
+  </div>
+</div>
+<div class="group-408-C61RwL">
+  <div class="rectangle-116-EN8lw3"></div>
+  <div class="loans-EN8lw3">Loans</div>
+  <div class="icon-ionic-ios-arrow-up-EN8lw3"></div>
+  <div class="noun_loan_2745125-EN8lw3">
+    <div class="layer-2-ZdSvRK">
+      <div class="path-374-64rxaY"></div>
+      <div class="path-375-64rxaY"></div>
+      <div class="path-376-64rxaY"></div>
+      <div class="path-377-64rxaY"></div>
+    </div>
+  </div>
+</div>
+<div class="group-401-C61RwL">
+  <div class="rectangle-113-8xEr18"></div>
+  <div class="recruitment-8xEr18">Recruitment</div>
+  <div class="icon-ionic-ios-arrow-up-8xEr18"></div>
+  <div class="noun_recruit-employees_2900366-8xEr18">
+    <div class="group-197-GxDLOc">
+      <div class="path-378-Ti5SjH"></div>
+    </div>
+  </div>
+</div>
+<div class="group-407-C61RwL">
+  <div class="rectangle-114-rExVxl"></div>
+  <div class="fleet-management-rExVxl">Fleet Management</div>
+  <div class="icon-ionic-ios-arrow-up-rExVxl"></div>
+  <div class="noun_management_3308557-rExVxl">
+    <div class="group-198-zqHaN7">
+      <div class="path-379-lL1raM"></div>
+      <div class="path-380-lL1raM"></div>
+      <div class="path-381-lL1raM"></div>
+    </div>
+  </div>
+</div>
+<div class="group-399-C61RwL">
+  <div class="rectangle-95-6yYpND"></div>
+  <div class="attendance-6yYpND">Attendance</div>
+  <div class="icon-ionic-ios-arrow-up-6yYpND"></div>
+  <div class="noun_attendance_4027355-6yYpND">
+    <div class="path-361-EoiLTK"></div>
+    <div class="path-362-EoiLTK"></div>
+    <div class="path-363-EoiLTK"></div>
+    <div class="path-364-EoiLTK"></div>
+    <div class="path-365-EoiLTK"></div>
+    <div class="path-366-EoiLTK"></div>
+    <div class="path-367-EoiLTK"></div>
+    <div class="path-368-EoiLTK"></div>
+  </div>
+</div>
+<div class="group-405-C61RwL">
+  <div class="rectangle-61-mgxbyx"></div>
+  <div class="leaves-mgxbyx">Leaves</div>
+  <div class="icon-ionic-ios-arrow-up-mgxbyx"></div>
+  <div class="noun_-leave_1262675-mgxbyx">
+    <div class="group-193-LaSNBw"></div>
+  </div>
+</div>
+<div class="group-406-C61RwL">
+  <div class="rectangle-112-5hxNt9"></div>
+  <div class="expense-claims-5hxNt9">Expense Claims</div>
+  <div class="icon-ionic-ios-arrow-up-5hxNt9"></div>
+  <div class="noun_claim_944743-5hxNt9">
+    <div class="group-199-qSTKTI">
+      <div class="path-382-m1FxB2"></div>
+    </div>
+  </div>
+</div>
+<div class="group-398-C61RwL">
+  <div class="rectangle-78-30iBO0"></div>
+  <div class="shift-management-30iBO0">Shift Management</div>
+  <div
+    class="icon-ionic-ios-arrow-up-30iBO0"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-21,,ease-out,300', event)"
+  ></div>
+  <div class="noun_shift_3056999-30iBO0">
+    <div class="group-200-xf65IA">
+      <div class="path-383-0uBVEc"></div>
+      <div class="path-384-0uBVEc"></div>
+    </div>
+  </div>
+</div>
+<div class="group-404-C61RwL">
+  <div class="rectangle-59-DUFMZe"></div>
+  <div class="employee-lifecycle-DUFMZe">Employee Lifecycle</div>
+  <div class="icon-ionic-ios-arrow-up-DUFMZe"></div>
+  <div class="noun_-reuse_4297386-DUFMZe">
+    <div class="path-385-X8elhJ"></div>
+    <div class="path-386-X8elhJ"></div>
+  </div>
+</div>
+<div class="group-397-C61RwL">
+  <div class="rectangle-57-WHSHUJ"></div>
+  <div class="employee-WHSHUJ">Employee</div>
+  <div class="icon-ionic-ios-arrow-up-WHSHUJ"></div>
+  <div class="noun_-employee_3038477-WHSHUJ">
+    <div class="path-387-jZAJfD"></div>
+  </div>
+</div>
+<div class="group-425-C61RwL">
+  <div class="rectangle-57-MjGloF"></div>
+  <div class="loan-MjGloF">Loan</div>
+  <div class="icon-ionic-ios-arrow-up-MjGloF"></div>
+  <div class="noun_loan_2745125-MjGloF">
+    <div class="layer-2-oqTpct">
+      <div class="path-374-a071ct"></div>
+      <div class="path-375-a071ct"></div>
+      <div class="path-376-a071ct"></div>
+      <div class="path-377-a071ct"></div>
+    </div>
+  </div>
+</div>
+<div class="group-428-C61RwL">
+  <div class="rectangle-59-SQ3jV7"></div>
+  <div class="loan-processes-SQ3jV7">Loan Processes</div>
+  <div class="icon-ionic-ios-arrow-up-SQ3jV7"></div>
+  <div class="noun_process_2021778-SQ3jV7">
+    <div class="path-392-U7gnK4"></div>
+  </div>
+</div>
+<div class="group-426-C61RwL">
+  <div class="rectangle-78-ekhDTI"></div>
+  <div class="disbursement-and-repayment-ekhDTI">Disbursement and Repayment</div>
+  <div
+    class="icon-ionic-ios-arrow-up-ekhDTI"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-23,,ease-out,300', event)"
+  ></div>
+  <div class="noun_earning_1695309-ekhDTI">
+    <div class="path-393-I2Zcz4"></div>
+    <div class="ellipse-91-I2Zcz4"></div>
+  </div>
+</div>
+<div class="group-429-C61RwL">
+  <div class="rectangle-61-EJdkiF"></div>
+  <div class="loan-security-EJdkiF">Loan Security</div>
+  <div class="icon-ionic-ios-arrow-up-EJdkiF"></div>
+  <div class="noun_-security_2770792-EJdkiF">
+    <div class="x96-privacy-P6G9VD">
+      <div class="path-394-wcN6U4"></div>
+      <div class="path-395-wcN6U4"></div>
+      <div class="path-396-wcN6U4"></div>
+    </div>
+  </div>
+</div>
+<div class="group-427-C61RwL">
+  <div class="rectangle-95-iqg9xI"></div>
+  <div class="reports-iqg9xI">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-iqg9xI"></div>
+  <div class="icon-ionic-ios-trending-up-iqg9xI"></div>
+</div>
+<div class="group-439-C61RwL">
+  <div class="rectangle-57-oY6eb8"></div>
+  <div class="payroll-oY6eb8">Payroll</div>
+  <div class="icon-ionic-ios-arrow-up-oY6eb8"></div>
+  <div class="noun_loan_2745125-oY6eb8">
+    <div class="layer-2-lrM1nO">
+      <div class="path-374-dFuTao"></div>
+      <div class="path-375-dFuTao"></div>
+      <div class="path-376-dFuTao"></div>
+      <div class="path-377-dFuTao"></div>
+    </div>
+  </div>
+</div>
+<div class="group-442-C61RwL">
+  <div class="rectangle-61-F4zuTt"></div>
+  <div class="reports-F4zuTt">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-F4zuTt"></div>
+  <div class="icon-ionic-ios-trending-up-F4zuTt"></div>
+</div>
+<div class="group-441-C61RwL">
+  <div class="rectangle-59-mMR0Wx"></div>
+  <div class="taxation-mMR0Wx">Taxation</div>
+  <div class="icon-ionic-ios-arrow-up-mMR0Wx"></div>
+  <div class="noun_taxation_4197525-mMR0Wx">
+    <div class="path-411-oHncWv"></div>
+    <div class="path-412-oHncWv"></div>
+    <div class="path-413-oHncWv"></div>
+    <div class="path-414-oHncWv"></div>
+    <div class="path-415-oHncWv"></div>
+    <div class="path-416-oHncWv"></div>
+  </div>
+</div>
+<div class="group-440-C61RwL">
+  <div class="rectangle-78-pxdsPz"></div>
+  <div class="compensations-pxdsPz">Compensations</div>
+  <div
+    class="icon-ionic-ios-arrow-up-pxdsPz"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-26,,ease-out,300', event)"
+  ></div>
+  <div class="noun_compensation_4066314-pxdsPz">
+    <div class="path-417-O6Ks0a"></div>
+  </div>
+</div>
+<div class="group-448-C61RwL">
+  <div class="rectangle-78-i16eTY"></div>
+  <div class="reports-i16eTY">Reports</div>
+  <div
+    class="icon-ionic-ios-arrow-up-i16eTY"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-28,,ease-out,300', event)"
+  ></div>
+  <div class="icon-ionic-ios-trending-up-i16eTY"></div>
+</div>
+<div class="group-447-C61RwL">
+  <div class="rectangle-57-MP4F6x"></div>
+  <div class="projects-MP4F6x">Projects</div>
+  <div class="icon-ionic-ios-arrow-up-MP4F6x"></div>
+  <div class="noun_-project_2560953-MP4F6x">
+    <div class="group-214-9eoXkf">
+      <div class="group-209-Hh5UUa">
+        <div class="path-429-bqQssi"></div>
+      </div>
+      <div class="group-210-Hh5UUa">
+        <div class="path-430-fOh3iY"></div>
+      </div>
+      <div class="group-213-Hh5UUa">
+        <div class="group-211-GpPYAm">
+          <div class="path-431-hBs4P0"></div>
+        </div>
+        <div class="group-212-GpPYAm">
+          <div class="path-432-Vr4zzJ"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-449-C61RwL">
+  <div class="rectangle-59-OxCZCa"></div>
+  <div class="time-tracking-OxCZCa">Time Tracking</div>
+  <div class="icon-ionic-ios-arrow-up-OxCZCa"></div>
+  <div class="noun_clock_2552116-OxCZCa">
+    <div class="group-217-5xojIU">
+      <div class="group-216-5aDfVm">
+        <div class="path-438-spIwzW"></div>
+        <div class="path-439-spIwzW"></div>
+        <div class="path-440-spIwzW"></div>
+        <div class="path-441-spIwzW"></div>
+        <div class="path-442-spIwzW"></div>
+        <div class="ellipse-95-spIwzW"></div>
+        <div class="ellipse-96-spIwzW"></div>
+        <div class="ellipse-97-spIwzW"></div>
+        <div class="ellipse-98-spIwzW"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-453-C61RwL">
+  <div class="rectangle-57-fuZr9o"></div>
+  <div class="goal-and-procedure-fuZr9o">Goal and Procedure</div>
+  <div class="icon-ionic-ios-arrow-up-fuZr9o"></div>
+  <div class="noun_-goals_2338316-fuZr9o"></div>
+</div>
+<div class="group-455-C61RwL">
+  <div class="rectangle-59-7O28FV"></div>
+  <div class="feedback-7O28FV">Feedback</div>
+  <div class="icon-ionic-ios-arrow-up-7O28FV"></div>
+  <div class="noun_feedback_4418597-7O28FV">
+    <div class="group-223-RqgGh3">
+      <div class="path-475-RW9pJj"></div>
+    </div>
+  </div>
+</div>
+<div class="group-456-C61RwL">
+  <div class="rectangle-122-kIPpRx"></div>
+  <div class="review-and-action-kIPpRx">Review and Action</div>
+  <div class="icon-ionic-ios-arrow-up-kIPpRx"></div>
+  <div class="noun_review_1989766-kIPpRx">
+    <div class="group-224-Hl2Mwp">
+      <div class="path-476-eM4Qm1"></div>
+      <div class="path-477-eM4Qm1"></div>
+      <div class="path-478-eM4Qm1"></div>
+      <div class="path-479-eM4Qm1"></div>
+      <div class="path-480-eM4Qm1"></div>
+      <div class="path-481-eM4Qm1"></div>
+      <div class="rectangle-123-eM4Qm1"></div>
+      <div class="rectangle-124-eM4Qm1"></div>
+      <div class="rectangle-125-eM4Qm1"></div>
+      <div class="rectangle-126-eM4Qm1"></div>
+      <div class="path-482-eM4Qm1"></div>
+    </div>
+  </div>
+</div>
+<div class="group-454-C61RwL">
+  <div class="rectangle-78-lfqRiz"></div>
+  <div class="meeting-lfqRiz">Meeting</div>
+  <div
+    class="icon-ionic-ios-arrow-up-lfqRiz"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-30,,ease-out,300', event)"
+  ></div>
+  <div class="noun_-meeting_1956362-lfqRiz">
+    <div class="group-222-QBicTC">
+      <div class="path-472-DirTHF"></div>
+      <div class="path-473-DirTHF"></div>
+      <div class="path-474-DirTHF"></div>
+      <div class="ellipse-100-DirTHF"></div>
+      <div class="ellipse-101-DirTHF"></div>
+      <div class="ellipse-102-DirTHF"></div>
+    </div>
+  </div>
+</div>
+<div class="group-461-C61RwL">
+  <div class="rectangle-57-RfTnrv"></div>
+  <div class="selling-RfTnrv">Selling</div>
+  <div class="icon-ionic-ios-arrow-up-RfTnrv"></div>
+  <div class="noun_selling_3085951-RfTnrv">
+    <div class="group-230-ydLb5C">
+      <div class="path-492-b1IxqP"></div>
+      <div class="path-493-b1IxqP"></div>
+    </div>
+  </div>
+</div>
+<div class="group-462-C61RwL">
+  <div class="rectangle-78-YEcHkt"></div>
+  <div class="settings-YEcHkt">Settings</div>
+  <div
+    class="icon-ionic-ios-arrow-up-YEcHkt"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-32,,ease-out,300', event)"
+  ></div>
+  <div class="icon-feather-settings-YEcHkt">
+    <div class="path-179-gRjww1"></div>
+    <div class="path-180-gRjww1"></div>
+  </div>
+</div>
+<div class="group-465-C61RwL">
+  <div class="rectangle-122-mQthsR"></div>
+  <div class="surname-mQthsR">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-mQthsR"></div>
+  <div class="icon-ionic-ios-trending-up-mQthsR"></div>
+</div>
+<div class="group-463-C61RwL">
+  <div class="rectangle-127-ElJHGr"></div>
+  <div class="other-reports-ElJHGr">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-ElJHGr"></div>
+  <div class="noun_other_3656613-ElJHGr">
+    <div class="path-244-ZRVbCQ"></div>
+    <div class="ellipse-84-ZRVbCQ"></div>
+    <div class="ellipse-85-ZRVbCQ"></div>
+    <div class="ellipse-86-ZRVbCQ"></div>
+  </div>
+</div>
+<div class="group-464-C61RwL">
+  <div class="rectangle-59-68KN2x"></div>
+  <div class="items-and-pricing-68KN2x">Items and Pricing</div>
+  <div class="icon-ionic-ios-arrow-up-68KN2x"></div>
+  <div class="noun_price_4025331-68KN2x">
+    <div class="group-231-Smwucq">
+      <div class="path-494-MgYrOH"></div>
+      <div class="path-495-MgYrOH"></div>
+      <div class="path-496-MgYrOH"></div>
+      <div class="path-497-MgYrOH"></div>
+      <div class="path-498-MgYrOH"></div>
+    </div>
+  </div>
+</div>
+<div class="group-477-C61RwL">
+  <div class="rectangle-122-D18vcP"></div>
+  <div class="settings-D18vcP">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-D18vcP"></div>
+  <div class="icon-feather-settings-D18vcP">
+    <div class="path-179-VhOHnU"></div>
+    <div class="path-180-VhOHnU"></div>
+  </div>
+</div>
+<div class="group-471-C61RwL">
+  <div class="rectangle-57-4DxHyt"></div>
+  <div class="items-and-pricing-4DxHyt">Items and Pricing</div>
+  <div class="icon-ionic-ios-arrow-up-4DxHyt"></div>
+  <div class="noun_price_4025331-4DxHyt">
+    <div class="group-231-UhHnoi">
+      <div class="path-494-BVCQxh"></div>
+      <div class="path-495-BVCQxh"></div>
+      <div class="path-496-BVCQxh"></div>
+      <div class="path-497-BVCQxh"></div>
+      <div class="path-498-BVCQxh"></div>
+    </div>
+  </div>
+</div>
+<div class="group-474-C61RwL">
+  <div class="rectangle-128-bvNWv5"></div>
+  <div class="surname-bvNWv5">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-bvNWv5"></div>
+  <div class="icon-ionic-ios-trending-up-bvNWv5"></div>
+</div>
+<div class="group-479-C61RwL">
+  <div class="rectangle-130-OyT886"></div>
+  <div class="other-reports-OyT886">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-OyT886"></div>
+  <div class="noun_other_3656613-OyT886">
+    <div class="path-244-G0xm7x"></div>
+    <div class="ellipse-84-G0xm7x"></div>
+    <div class="ellipse-85-G0xm7x"></div>
+    <div class="ellipse-86-G0xm7x"></div>
+  </div>
+</div>
+<div class="group-472-C61RwL">
+  <div class="rectangle-78-akG49r"></div>
+  <div class="stock-reports-akG49r">Stock Reports</div>
+  <div
+    class="icon-ionic-ios-arrow-up-akG49r"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23web-1920-34,,ease-out,300', event)"
+  ></div>
+  <div class="noun_-stock-report_3752871-akG49r">
+    <div class="group-252-1xK3Dc">
+      <div class="group-237-w5lix3">
+        <div class="group-236-66xixU">
+          <div class="path-507-ma19Gx"></div>
+        </div>
+      </div>
+      <div class="group-239-w5lix3">
+        <div class="group-238-G4CY5v">
+          <div class="path-508-ufaBmx"></div>
+        </div>
+      </div>
+      <div class="group-241-w5lix3">
+        <div class="group-240-K6xNST">
+          <div class="path-509-5xk9m6"></div>
+        </div>
+      </div>
+      <div class="group-243-w5lix3">
+        <div class="group-242-2Lc79C">
+          <div class="path-510-z2ErJu"></div>
+        </div>
+      </div>
+      <div class="group-245-w5lix3">
+        <div class="group-244-xqCvxF">
+          <div class="path-511-ZXBeSz"></div>
+        </div>
+      </div>
+      <div class="group-247-w5lix3">
+        <div class="group-246-FARNx6">
+          <div class="path-512-Mg47wx"></div>
+        </div>
+      </div>
+      <div class="group-249-w5lix3">
+        <div class="group-248-FUM735">
+          <div class="path-513-KiN4jF"></div>
+        </div>
+      </div>
+      <div class="group-251-w5lix3">
+        <div class="group-250-Es5N3n">
+          <div class="path-514-E9J9Xm"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-478-C61RwL">
+  <div class="rectangle-129-shZkxI"></div>
+  <div class="tools-shZkxI">Tools</div>
+  <div class="icon-ionic-ios-arrow-up-shZkxI"></div>
+  <div class="noun_tools_4410166-shZkxI">
+    <div class="path-515-jVguFk"></div>
+    <div class="path-516-jVguFk"></div>
+  </div>
+</div>
+<div class="group-476-C61RwL">
+  <div class="rectangle-59-rPZJKH"></div>
+  <div class="stock-transaction-rPZJKH">Stock Transaction</div>
+  <div class="icon-ionic-ios-arrow-up-rPZJKH"></div>
+  <div class="noun_transaction_2392268-rPZJKH">
+    <div class="path-517-9jOG17"></div>
+    <div class="path-518-9jOG17"></div>
+  </div>
+</div>
+<div class="group-473-C61RwL">
+  <div class="rectangle-127-Odaxj6"></div>
+  <div class="serial-no-and-batch-Odaxj6">Serial No. and Batch</div>
+  <div class="icon-ionic-ios-arrow-up-Odaxj6"></div>
+  <div class="noun_sequence_2708671-Odaxj6">
+    <div class="layer-34-lFSvVw">
+      <div class="path-519-3ZxweU"></div>
+      <div class="path-520-3ZxweU"></div>
+      <div class="path-521-3ZxweU"></div>
+    </div>
+  </div>
+</div>
+<div class="group-475-C61RwL">
+  <div class="rectangle-131-M0n1us"></div>
+  <div class="incorrect-data-report-M0n1us">Incorrect Data Report</div>
+  <div class="icon-ionic-ios-arrow-up-M0n1us"></div>
+  <div class="noun_-folder-cross_444232-M0n1us">
+    <div class="group-254-2F74ai">
+      <div class="group-253-btSQUw">
+        <div class="path-522-4m7roS"></div>
+        <div class="path-523-4m7roS"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-491-C61RwL">
+  <div class="rectangle-127-xB0Kk1"></div>
+  <div class="reports-xB0Kk1">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-xB0Kk1"></div>
+  <div class="icon-ionic-ios-trending-up-xB0Kk1"></div>
+</div>
+<div class="group-489-C61RwL">
+  <div class="rectangle-57-yQw26s"></div>
+  <div class="issues-yQw26s">Issues</div>
+  <div class="icon-ionic-ios-arrow-up-yQw26s"></div>
+  <div class="noun_issue_1653604-yQw26s">
+    <div class="path-527-oDCbUY"></div>
+    <div class="path-528-oDCbUY"></div>
+    <div class="path-529-oDCbUY"></div>
+  </div>
+</div>
+<div class="group-492-C61RwL">
+  <div class="rectangle-59-CPieFk"></div>
+  <div class="maintenance-CPieFk">Maintenance</div>
+  <div class="icon-ionic-ios-arrow-up-CPieFk"></div>
+  <div class="noun_maintenance_2048411-CPieFk">
+    <div class="group-255-k1qop5">
+      <div class="path-530-YapcsN"></div>
+      <div class="path-531-YapcsN"></div>
+    </div>
+  </div>
+</div>
+<div class="group-490-C61RwL">
+  <div class="rectangle-78-GRwIXj"></div>
+  <div class="service-level-agreement-GRwIXj">Service Level Agreement</div>
+  <div
+    class="icon-ionic-ios-arrow-up-GRwIXj"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23support-1,,ease-out,300', event)"
+  ></div>
+  <div class="noun_agreement_4078163-GRwIXj">
+    <div class="group-256-IvJe6q">
+      <div class="path-532-QQK0lx"></div>
+    </div>
+  </div>
+</div>
+<div class="group-493-C61RwL">
+  <div class="rectangle-122-6YYSP9"></div>
+  <div class="warranty-6YYSP9">Warranty</div>
+  <div class="icon-ionic-ios-arrow-up-6YYSP9"></div>
+  <div class="noun_warranty_3378396-6YYSP9">
+    <div class="path-533-KONxov"></div>
+    <div class="path-534-KONxov"></div>
+  </div>
+</div>
+<div class="group-500-C61RwL">
+  <div class="rectangle-78-LmJ50y"></div>
+  <div class="website-LmJ50y">Website</div>
+  <div
+    class="icon-ionic-ios-arrow-up-LmJ50y"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23website-1,,ease-out,300', event)"
+  ></div>
+  <div class="noun_webpages_4109780-LmJ50y">
+    <div class="group-258-eJqAff">
+      <div class="path-539-5kUnP0"></div>
+      <div class="path-540-5kUnP0"></div>
+      <div class="path-541-5kUnP0"></div>
+      <div class="path-542-5kUnP0"></div>
+    </div>
+  </div>
+</div>
+<div class="group-502-C61RwL">
+  <div class="rectangle-59-xixHUi"></div>
+  <div class="blog-xixHUi">Blog</div>
+  <div class="icon-ionic-ios-arrow-up-xixHUi"></div>
+  <div class="noun_-post-blog_1542411-xixHUi">
+    <div class="group-257-62pHGi">
+      <div class="path-535-2IVzyP"></div>
+      <div class="ellipse-103-2IVzyP"></div>
+      <div class="ellipse-104-2IVzyP"></div>
+      <div class="ellipse-105-2IVzyP"></div>
+      <div class="path-536-2IVzyP"></div>
+      <div class="path-537-2IVzyP"></div>
+    </div>
+  </div>
+</div>
+<div class="group-499-C61RwL">
+  <div class="rectangle-57-nd8BAL"></div>
+  <div class="setup-nd8BAL">Setup</div>
+  <div class="icon-ionic-ios-arrow-up-nd8BAL"></div>
+  <div class="noun_setup_950788-nd8BAL">
+    <div class="line-11-qhvUL8"></div>
+    <div class="line-12-qhvUL8"></div>
+    <div class="line-13-qhvUL8"></div>
+    <div class="line-14-qhvUL8"></div>
+    <div class="line-15-qhvUL8"></div>
+    <div class="line-16-qhvUL8"></div>
+    <div class="ellipse-106-qhvUL8"></div>
+    <div class="ellipse-107-qhvUL8"></div>
+    <div class="ellipse-108-qhvUL8"></div>
+  </div>
+</div>
+<div class="group-503-C61RwL">
+  <div class="rectangle-133-F0lCxR"></div>
+  <div class="place-F0lCxR">Portal</div>
+  <div class="icon-ionic-ios-arrow-up-F0lCxR"></div>
+  <div class="noun_portal_2512234-F0lCxR"></div>
+</div>
+<div class="group-501-C61RwL">
+  <div class="rectangle-132-q5DuKa"></div>
+  <div class="knowledge-base-q5DuKa">Knowledge Base</div>
+  <div class="icon-ionic-ios-arrow-up-q5DuKa"></div>
+  <div class="noun_instruction_2292701-q5DuKa">
+    <div class="group-267-Zp0jeb">
+      <div class="path-561-p3Afpi"></div>
+      <div class="path-562-p3Afpi"></div>
+      <div class="path-563-p3Afpi"></div>
+      <div class="path-564-p3Afpi"></div>
+      <div class="path-565-p3Afpi"></div>
+      <div class="path-566-p3Afpi"></div>
+      <div class="path-567-p3Afpi"></div>
+      <div class="path-568-p3Afpi"></div>
+      <div class="path-569-p3Afpi"></div>
+    </div>
+  </div>
+</div>
+<div class="group-512-C61RwL">
+  <div class="rectangle-57-xNQNrV"></div>
+  <div class="email-notifications-xNQNrV">Email / Notifications</div>
+  <div class="icon-ionic-ios-arrow-up-xNQNrV"></div>
+  <div class="noun_notification_1521811-xNQNrV">
+    <div class="group-269-lnV3QQ">
+      <div class="path-578-zGedaC"></div>
+      <div class="path-579-zGedaC"></div>
+      <div class="path-580-zGedaC"></div>
+    </div>
+  </div>
+</div>
+<div class="group-514-C61RwL">
+  <div class="rectangle-59-XFA9wC"></div>
+  <div class="website-XFA9wC">Website</div>
+  <div class="icon-ionic-ios-arrow-up-XFA9wC"></div>
+  <div class="noun_website_41432-XFA9wC">
+    <div class="rectangle-134-5WOxmj"></div>
+    <div class="rectangle-135-5WOxmj"></div>
+    <div class="path-581-5WOxmj"></div>
+    <div class="path-582-5WOxmj"></div>
+    <div class="path-583-5WOxmj"></div>
+    <div class="path-584-5WOxmj"></div>
+  </div>
+</div>
+<div class="group-513-C61RwL">
+  <div class="rectangle-78-wJdKlF"></div>
+  <div class="workflow-wJdKlF">Workflow</div>
+  <div
+    class="icon-ionic-ios-arrow-up-wJdKlF"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23settings-1,,ease-out,300', event)"
+  ></div>
+  <div class="noun_-workflow_1251605-wJdKlF">
+    <div class="path-585-4mVsPY"></div>
+    <div class="path-586-4mVsPY"></div>
+    <div class="path-587-4mVsPY"></div>
+    <div class="path-588-4mVsPY"></div>
+    <div class="path-589-4mVsPY"></div>
+    <div class="path-590-4mVsPY"></div>
+    <div class="path-591-4mVsPY"></div>
+  </div>
+</div>
+<div class="group-496-C61RwL">
+  <div class="rectangle-127-DSiK0m"></div>
+  <div class="reports-DSiK0m">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-DSiK0m"></div>
+  <div class="icon-ionic-ios-trending-up-DSiK0m"></div>
+</div>
+<div class="group-494-C61RwL">
+  <div class="rectangle-57-bBtQ63"></div>
+  <div class="issues-bBtQ63">Issues</div>
+  <div class="icon-ionic-ios-arrow-up-bBtQ63"></div>
+  <div class="noun_issue_1653604-bBtQ63">
+    <div class="path-527-69v9Xn"></div>
+    <div class="path-528-69v9Xn"></div>
+    <div class="path-529-69v9Xn"></div>
+  </div>
+</div>
+<div class="group-497-C61RwL">
+  <div class="rectangle-59-km2UG1"></div>
+  <div class="maintenance-km2UG1">Maintenance</div>
+  <div class="icon-ionic-ios-arrow-up-km2UG1"></div>
+  <div class="noun_maintenance_2048411-km2UG1">
+    <div class="group-255-VNhfvb">
+      <div class="path-530-xeN2id"></div>
+      <div class="path-531-xeN2id"></div>
+    </div>
+  </div>
+</div>
+<div class="group-498-C61RwL">
+  <div class="rectangle-122-u02vAd"></div>
+  <div class="warranty-u02vAd">Warranty</div>
+  <div class="icon-ionic-ios-arrow-up-u02vAd"></div>
+  <div class="noun_warranty_3378396-u02vAd">
+    <div class="path-533-qgBtPK"></div>
+    <div class="path-534-qgBtPK"></div>
+  </div>
+</div>
+<div class="group-495-C61RwL">
+  <div class="group-202-s9PExJ">
+    <div class="rectangle-62-oC3W0l"></div>
+    <div class="rectangle-78-oC3W0l"></div>
+    <div class="service-level-agreement-oC3W0l">Service Level Agreement</div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-oC3W0l"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-oC3W0l"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23support,,ease-out,300', event)"
+    ></div>
+  </div>
+  <div class="service-level-agreement-s9PExJ">Service Level Agreement</div>
+  <div class="noun_agreement_4078163-s9PExJ">
+    <div class="group-256-xD4JFz">
+      <div class="path-532-QgirKJ"></div>
+    </div>
+  </div>
+</div>
+<div class="group-435-C61RwL">
+  <div class="rectangle-57-X0qrp9"></div>
+  <div class="payroll-X0qrp9">Payroll</div>
+  <div class="icon-ionic-ios-arrow-up-X0qrp9"></div>
+  <div class="noun_loan_2745125-X0qrp9">
+    <div class="layer-2-593042">
+      <div class="path-374-EI7sXK"></div>
+      <div class="path-375-EI7sXK"></div>
+      <div class="path-376-EI7sXK"></div>
+      <div class="path-377-EI7sXK"></div>
+    </div>
+  </div>
+</div>
+<div class="group-438-C61RwL">
+  <div class="rectangle-61-xTX1aG"></div>
+  <div class="reports-xTX1aG">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-xTX1aG"></div>
+  <div class="icon-ionic-ios-trending-up-xTX1aG"></div>
+</div>
+<div class="group-437-C61RwL">
+  <div class="rectangle-59-KNKzTy"></div>
+  <div class="taxation-KNKzTy">Taxation</div>
+  <div class="icon-ionic-ios-arrow-up-KNKzTy"></div>
+  <div class="noun_taxation_4197525-KNKzTy">
+    <div class="path-411-rzn3ep"></div>
+    <div class="path-412-rzn3ep"></div>
+    <div class="path-413-rzn3ep"></div>
+    <div class="path-414-rzn3ep"></div>
+    <div class="path-415-rzn3ep"></div>
+    <div class="path-416-rzn3ep"></div>
+  </div>
+</div>
+<div class="group-436-C61RwL">
+  <div class="rectangle-78-K5uxMB"></div>
+  <div class="compensations-K5uxMB">Compensations</div>
+  <div class="icon-ionic-ios-arrow-up-K5uxMB"></div>
+  <div class="noun_compensation_4066314-K5uxMB">
+    <div class="path-417-333c3M"></div>
+  </div>
+</div>
+<div class="group-443-C61RwL">
+  <div class="rectangle-57-UEcmbV"></div>
+  <div class="payroll-UEcmbV">Payroll</div>
+  <div class="icon-ionic-ios-arrow-up-UEcmbV"></div>
+  <div class="noun_loan_2745125-UEcmbV">
+    <div class="layer-2-xcu81n">
+      <div class="path-374-0W2Fs6"></div>
+      <div class="path-375-0W2Fs6"></div>
+      <div class="path-376-0W2Fs6"></div>
+      <div class="path-377-0W2Fs6"></div>
+    </div>
+  </div>
+</div>
+<div class="group-446-C61RwL">
+  <div class="rectangle-61-LD25NS"></div>
+  <div class="reports-LD25NS">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-LD25NS"></div>
+  <div class="icon-ionic-ios-trending-up-LD25NS"></div>
+</div>
+<div class="group-445-C61RwL">
+  <div class="rectangle-59-JncQI9"></div>
+  <div class="taxation-JncQI9">Taxation</div>
+  <div class="icon-ionic-ios-arrow-up-JncQI9"></div>
+  <div class="noun_taxation_4197525-JncQI9">
+    <div class="path-411-kxocxT"></div>
+    <div class="path-412-kxocxT"></div>
+    <div class="path-413-kxocxT"></div>
+    <div class="path-414-kxocxT"></div>
+    <div class="path-415-kxocxT"></div>
+    <div class="path-416-kxocxT"></div>
+  </div>
+</div>
+<div class="icon-ionic-ios-arrow-dropright-circle-C61RwL"></div>
+<div class="group-444-C61RwL">
+  <div class="group-202-CUX03R">
+    <div class="rectangle-62-vhPM1Q"></div>
+    <div class="rectangle-78-vhPM1Q"></div>
+    <div class="additional-salaryre-vhPM1Q">
+      Additional Salary<br />Retention Bonus<br />Employee Incentive<br />Employee Benefit Application<br />Employee
+      Benefit Claim
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-vhPM1Q"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-CxhcAb"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-xnFerS"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-vhPM1Q"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23payroll,,ease-out,300', event)"
+    ></div>
+  </div>
+  <div class="compensations-CUX03R">Compensations</div>
+  <div class="noun_compensation_4066314-CUX03R">
+    <div class="path-417-1QNBig"></div>
+  </div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-CUX03R"></div>
+</div>
+<div class="group-420-C61RwL">
+  <div class="rectangle-112-MLytYc"></div>
+  <div class="expense-claims-MLytYc">Expense Claims</div>
+  <div class="icon-ionic-ios-arrow-up-MLytYc"></div>
+</div>
+<div class="group-414-C61RwL">
+  <div class="rectangle-115-MbFiEL"></div>
+  <div class="settings-MbFiEL">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-MbFiEL"></div>
+</div>
+<div class="group-417-C61RwL">
+  <div class="rectangle-119-9aXxCd"></div>
+  <div class="surname-9aXxCd">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-9aXxCd"></div>
+  <div class="icon-ionic-ios-trending-up-9aXxCd"></div>
+</div>
+<div class="group-423-C61RwL">
+  <div class="rectangle-120-VXmK86"></div>
+  <div class="other-reports-VXmK86">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-VXmK86"></div>
+  <div class="noun_other_3656613-VXmK86">
+    <div class="path-244-ymKDA6"></div>
+    <div class="ellipse-84-ymKDA6"></div>
+    <div class="ellipse-85-ymKDA6"></div>
+    <div class="ellipse-86-ymKDA6"></div>
+  </div>
+</div>
+<div class="group-422-C61RwL">
+  <div class="rectangle-118-wjnRKV"></div>
+  <div class="performance-wjnRKV">Performance</div>
+  <div class="icon-ionic-ios-arrow-up-wjnRKV"></div>
+  <div class="noun_performance_3844323-wjnRKV">
+    <div class="group-195-DKvdyH">
+      <div class="path-371-WBIy3r"></div>
+    </div>
+  </div>
+</div>
+<div class="group-416-C61RwL">
+  <div class="rectangle-117-FNrzU3"></div>
+  <div class="training-FNrzU3">Training</div>
+  <div class="icon-ionic-ios-arrow-up-FNrzU3"></div>
+  <div class="noun_training_3893309-FNrzU3">
+    <div class="group-196-DtYEz4">
+      <div class="path-372-5rvtb2"></div>
+      <div class="path-373-5rvtb2"></div>
+    </div>
+  </div>
+</div>
+<div class="group-424-C61RwL">
+  <div class="rectangle-116-Z05Wgd"></div>
+  <div class="loans-Z05Wgd">Loans</div>
+  <div class="icon-ionic-ios-arrow-up-Z05Wgd"></div>
+  <div class="noun_loan_2745125-Z05Wgd">
+    <div class="layer-2-axZb4M">
+      <div class="path-374-jWFyXz"></div>
+      <div class="path-375-jWFyXz"></div>
+      <div class="path-376-jWFyXz"></div>
+      <div class="path-377-jWFyXz"></div>
+    </div>
+  </div>
+</div>
+<div class="group-415-C61RwL">
+  <div class="rectangle-113-DnRaKG"></div>
+  <div class="recruitment-DnRaKG">Recruitment</div>
+  <div class="icon-ionic-ios-arrow-up-DnRaKG"></div>
+  <div class="noun_recruit-employees_2900366-DnRaKG">
+    <div class="group-197-4sdg7U">
+      <div class="path-378-gkg07S"></div>
+    </div>
+  </div>
+</div>
+<div class="group-421-C61RwL">
+  <div class="rectangle-114-iQjWRP"></div>
+  <div class="fleet-management-iQjWRP">Fleet Management</div>
+  <div class="icon-ionic-ios-arrow-up-iQjWRP"></div>
+  <div class="noun_management_3308557-iQjWRP">
+    <div class="group-198-W6C2l8">
+      <div class="path-379-avXeJK"></div>
+      <div class="path-380-avXeJK"></div>
+      <div class="path-381-avXeJK"></div>
+    </div>
+  </div>
+</div>
+<div class="group-413-C61RwL">
+  <div class="rectangle-95-K1uN8P"></div>
+  <div class="attendance-K1uN8P">Attendance</div>
+  <div class="icon-ionic-ios-arrow-up-K1uN8P"></div>
+  <div class="noun_attendance_4027355-K1uN8P">
+    <div class="path-361-jTs3ER"></div>
+    <div class="path-362-jTs3ER"></div>
+    <div class="path-363-jTs3ER"></div>
+    <div class="path-364-jTs3ER"></div>
+    <div class="path-365-jTs3ER"></div>
+    <div class="path-366-jTs3ER"></div>
+    <div class="path-367-jTs3ER"></div>
+    <div class="path-368-jTs3ER"></div>
+  </div>
+</div>
+<div class="group-419-C61RwL">
+  <div class="rectangle-61-0jwhPo"></div>
+  <div class="leaves-0jwhPo">Leaves</div>
+  <div class="icon-ionic-ios-arrow-up-0jwhPo"></div>
+  <div class="noun_-leave_1262675-0jwhPo">
+    <div class="group-193-OV5uxB"></div>
+  </div>
+</div>
+<div class="noun_claim_944743-C61RwL">
+  <div class="group-199-hYOxL4">
+    <div class="path-382-8pyNIf"></div>
+  </div>
+</div>
+<div class="group-418-C61RwL">
+  <div class="rectangle-59-RUTEYE"></div>
+  <div class="employee-lifecycle-RUTEYE">Employee Lifecycle</div>
+  <div class="icon-ionic-ios-arrow-up-RUTEYE"></div>
+  <div class="noun_-reuse_4297386-RUTEYE">
+    <div class="path-385-8UtSQE"></div>
+    <div class="path-386-8UtSQE"></div>
+  </div>
+</div>
+<div class="group-411-C61RwL">
+  <div class="rectangle-57-Zl1ngI"></div>
+  <div class="employee-Zl1ngI">Employee</div>
+  <div class="icon-ionic-ios-arrow-up-Zl1ngI"></div>
+  <div class="noun_-employee_3038477-Zl1ngI">
+    <div class="path-387-CbSGzM"></div>
+  </div>
+</div>
+<div class="group-412-C61RwL">
+  <div class="group-202-QHOAvV">
+    <div class="rectangle-62-qXetMN"></div>
+    <div class="rectangle-78-qXetMN"></div>
+    <div class="shift-typeshift-req-qXetMN">Shift Type<br />Shift Request<br />Shift Assignment</div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-qXetMN"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-YdL5q5"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-UG7KLT"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-qXetMN"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23hr,,ease-out,300', event)"
+    ></div>
+  </div>
+  <div class="shift-management-QHOAvV">Shift Management</div>
+  <div class="noun_shift_3056999-QHOAvV">
+    <div class="group-200-J5xbyE">
+      <div class="path-383-kxVDXI"></div>
+      <div class="path-384-kxVDXI"></div>
+    </div>
+  </div>
+</div>
+<div class="group-450-C61RwL">
+  <div class="rectangle-57-4Cql9M"></div>
+  <div class="projects-4Cql9M">Projects</div>
+  <div class="icon-ionic-ios-arrow-up-4Cql9M"></div>
+  <div class="noun_-project_2560953-4Cql9M">
+    <div class="group-214-k8xQCh">
+      <div class="group-209-zA4VDP">
+        <div class="path-429-W6Ql4X"></div>
+      </div>
+      <div class="group-210-zA4VDP">
+        <div class="path-430-Jgo1xm"></div>
+      </div>
+      <div class="group-213-zA4VDP">
+        <div class="group-211-RuyDqF">
+          <div class="path-431-mFJf3c"></div>
+        </div>
+        <div class="group-212-RuyDqF">
+          <div class="path-432-X0pzVm"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-452-C61RwL">
+  <div class="rectangle-59-qONYTY"></div>
+  <div class="time-tracking-qONYTY">Time Tracking</div>
+  <div class="icon-ionic-ios-arrow-up-qONYTY"></div>
+  <div class="noun_clock_2552116-qONYTY">
+    <div class="group-217-xCaD6f">
+      <div class="group-216-QXM8RD">
+        <div class="path-438-aD0gDh"></div>
+        <div class="path-439-aD0gDh"></div>
+        <div class="path-440-aD0gDh"></div>
+        <div class="path-441-aD0gDh"></div>
+        <div class="path-442-aD0gDh"></div>
+        <div class="ellipse-95-aD0gDh"></div>
+        <div class="ellipse-96-aD0gDh"></div>
+        <div class="ellipse-97-aD0gDh"></div>
+        <div class="ellipse-98-aD0gDh"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-451-C61RwL">
+  <div class="group-202-9Sf517">
+    <div class="rectangle-62-GuubqJ"></div>
+    <div class="rectangle-78-GuubqJ"></div>
+    <div class="daily-timesheet-summ-GuubqJ">
+      Daily Timesheet Summary<br />Project Profitability<br />Project wise Stock Tracking<br />Project Billing
+      Summary<br />Delayed Tasks Summary
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-GuubqJ"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-VxJqrd"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-UvDr7U"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-GuubqJ"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23projects,,ease-out,300', event)"
+    ></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-BJls00"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-UOjQpt"></div>
+  </div>
+  <div class="reports-9Sf517">Reports</div>
+  <div class="icon-ionic-ios-trending-up-9Sf517"></div>
+</div>
+<div class="group-457-C61RwL">
+  <div class="rectangle-57-n5tClJ"></div>
+  <div class="goal-and-procedure-n5tClJ">Goal and Procedure</div>
+  <div class="icon-ionic-ios-arrow-up-n5tClJ"></div>
+  <div class="noun_-goals_2338316-n5tClJ"></div>
+</div>
+<div class="group-459-C61RwL">
+  <div class="rectangle-59-qLr3rf"></div>
+  <div class="feedback-qLr3rf">Feedback</div>
+  <div class="icon-ionic-ios-arrow-up-qLr3rf"></div>
+  <div class="noun_feedback_4418597-qLr3rf">
+    <div class="group-223-HkEQrD">
+      <div class="path-475-w4TN8z"></div>
+    </div>
+  </div>
+</div>
+<div class="group-460-C61RwL">
+  <div class="rectangle-122-dLROtL"></div>
+  <div class="review-and-action-dLROtL">Review and Action</div>
+  <div class="icon-ionic-ios-arrow-up-dLROtL"></div>
+  <div class="noun_review_1989766-dLROtL">
+    <div class="group-224-DyeIgR">
+      <div class="path-476-oSMzh0"></div>
+      <div class="path-477-oSMzh0"></div>
+      <div class="path-478-oSMzh0"></div>
+      <div class="path-479-oSMzh0"></div>
+      <div class="path-480-oSMzh0"></div>
+      <div class="path-481-oSMzh0"></div>
+      <div class="rectangle-123-oSMzh0"></div>
+      <div class="rectangle-124-oSMzh0"></div>
+      <div class="rectangle-125-oSMzh0"></div>
+      <div class="rectangle-126-oSMzh0"></div>
+      <div class="path-482-oSMzh0"></div>
+    </div>
+  </div>
+</div>
+<div class="group-458-C61RwL">
+  <div class="group-202-6r6Cmx">
+    <div class="rectangle-62-h1x92i"></div>
+    <div class="rectangle-78-h1x92i"></div>
+    <div class="quality-meeting-h1x92i">Quality Meeting</div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-h1x92i"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-h1x92i"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23quality,,ease-out,300', event)"
+    ></div>
+  </div>
+  <div class="meeting-6r6Cmx">Meeting</div>
+  <div class="noun_-meeting_1956362-6r6Cmx">
+    <div class="group-222-c4unsI">
+      <div class="path-472-K0LEXt"></div>
+      <div class="path-473-K0LEXt"></div>
+      <div class="path-474-K0LEXt"></div>
+      <div class="ellipse-100-K0LEXt"></div>
+      <div class="ellipse-101-K0LEXt"></div>
+      <div class="ellipse-102-K0LEXt"></div>
+    </div>
+  </div>
+</div>
+<div class="group-467-C61RwL">
+  <div class="rectangle-57-veG9tg"></div>
+  <div class="selling-veG9tg">Selling</div>
+  <div class="icon-ionic-ios-arrow-up-veG9tg"></div>
+  <div class="noun_selling_3085951-veG9tg">
+    <div class="group-230-KBfWNw">
+      <div class="path-492-tVD6rS"></div>
+      <div class="path-493-tVD6rS"></div>
+    </div>
+  </div>
+</div>
+<div class="group-470-C61RwL">
+  <div class="rectangle-122-AJtPU5"></div>
+  <div class="surname-AJtPU5">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-AJtPU5"></div>
+  <div class="icon-ionic-ios-trending-up-AJtPU5"></div>
+</div>
+<div class="group-468-C61RwL">
+  <div class="rectangle-127-UNaB6s"></div>
+  <div class="other-reports-UNaB6s">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-UNaB6s"></div>
+  <div class="noun_other_3656613-UNaB6s">
+    <div class="path-244-IDsrok"></div>
+    <div class="ellipse-84-IDsrok"></div>
+    <div class="ellipse-85-IDsrok"></div>
+    <div class="ellipse-86-IDsrok"></div>
+  </div>
+</div>
+<div class="group-469-C61RwL">
+  <div class="rectangle-59-vNRTZA"></div>
+  <div class="items-and-pricing-vNRTZA">Items and Pricing</div>
+  <div class="icon-ionic-ios-arrow-up-vNRTZA"></div>
+  <div class="noun_price_4025331-vNRTZA">
+    <div class="group-231-xLekMa">
+      <div class="path-494-6K5NI2"></div>
+      <div class="path-495-6K5NI2"></div>
+      <div class="path-496-6K5NI2"></div>
+      <div class="path-497-6K5NI2"></div>
+      <div class="path-498-6K5NI2"></div>
+    </div>
+  </div>
+</div>
+<div class="group-466-C61RwL">
+  <div class="group-202-tdgtZd">
+    <div class="rectangle-62-Xu2Ife"></div>
+    <div class="rectangle-78-Xu2Ife"></div>
+    <div class="selling-settingster-Xu2Ife">
+      Selling Settings<br />Terms and Conditions Template<br />Sales Taxes and Charges Template<br />Lead
+      Source<br />Customer Group<br />Contact<br />Address<br />Territory<br />Campaign
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-Xu2Ife"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-3Z4VxO"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-8WYzZa"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-Xu2Ife"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23selling,,ease-out,300', event)"
+    ></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-qmfJeu"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-cFC5aP"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-sfWGwN"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-ifXRfN"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-ts8ipD"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-1CR4dO"></div>
+  </div>
+  <div class="settings-tdgtZd">Settings</div>
+  <div class="icon-feather-settings-tdgtZd">
+    <div class="path-179-hyYdxs"></div>
+    <div class="path-180-hyYdxs"></div>
+  </div>
+</div>
+<div class="icon-ionic-ios-arrow-up-C61RwL"></div>
+<div class="group-486-C61RwL">
+  <div class="rectangle-122-Ut6VgO"></div>
+  <div class="settings-Ut6VgO">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-Ut6VgO"></div>
+  <div class="icon-feather-settings-Ut6VgO">
+    <div class="path-179-RaZp0z"></div>
+    <div class="path-180-RaZp0z"></div>
+  </div>
+</div>
+<div class="group-480-C61RwL">
+  <div class="rectangle-57-kvF0dO"></div>
+  <div class="items-and-pricing-kvF0dO">Items and Pricing</div>
+  <div class="noun_price_4025331-kvF0dO">
+    <div class="group-231-9xwUxn">
+      <div class="path-494-CQIn2E"></div>
+      <div class="path-495-CQIn2E"></div>
+      <div class="path-496-CQIn2E"></div>
+      <div class="path-497-CQIn2E"></div>
+      <div class="path-498-CQIn2E"></div>
+    </div>
+  </div>
+</div>
+<div class="group-488-C61RwL">
+  <div class="rectangle-130-80VLz8"></div>
+  <div class="other-reports-80VLz8">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-80VLz8"></div>
+  <div class="noun_other_3656613-80VLz8">
+    <div class="path-244-z4yRK3"></div>
+    <div class="ellipse-84-z4yRK3"></div>
+    <div class="ellipse-85-z4yRK3"></div>
+    <div class="ellipse-86-z4yRK3"></div>
+  </div>
+</div>
+<div class="group-487-C61RwL">
+  <div class="rectangle-129-D3e0ic"></div>
+  <div class="tools-D3e0ic">Tools</div>
+  <div class="icon-ionic-ios-arrow-up-D3e0ic"></div>
+  <div class="noun_tools_4410166-D3e0ic">
+    <div class="path-515-yYb68q"></div>
+    <div class="path-516-yYb68q"></div>
+  </div>
+</div>
+<div class="group-485-C61RwL">
+  <div class="rectangle-59-aORszx"></div>
+  <div class="stock-transaction-aORszx">Stock Transaction</div>
+  <div class="icon-ionic-ios-arrow-up-aORszx"></div>
+  <div class="noun_transaction_2392268-aORszx">
+    <div class="path-517-R2wDxB"></div>
+    <div class="path-518-R2wDxB"></div>
+  </div>
+</div>
+<div class="group-483-C61RwL">
+  <div class="rectangle-128-VUAYfS"></div>
+  <div class="surname-VUAYfS">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-VUAYfS"></div>
+  <div class="icon-ionic-ios-trending-up-VUAYfS"></div>
+</div>
+<div class="group-482-C61RwL">
+  <div class="rectangle-127-TCdNoF"></div>
+  <div class="serial-no-and-batch-TCdNoF">Serial No. and Batch</div>
+  <div class="icon-ionic-ios-arrow-up-TCdNoF"></div>
+  <div class="noun_sequence_2708671-TCdNoF">
+    <div class="layer-34-oxG3u4">
+      <div class="path-519-zYVBQx"></div>
+      <div class="path-520-zYVBQx"></div>
+      <div class="path-521-zYVBQx"></div>
+    </div>
+  </div>
+</div>
+<div class="group-484-C61RwL">
+  <div class="rectangle-131-xJndx7"></div>
+  <div class="incorrect-data-report-xJndx7">Incorrect Data Report</div>
+  <div class="icon-ionic-ios-arrow-up-xJndx7"></div>
+  <div class="noun_-folder-cross_444232-xJndx7">
+    <div class="group-254-YPsPc8">
+      <div class="group-253-poPkaw">
+        <div class="path-522-a5iEsF"></div>
+        <div class="path-523-a5iEsF"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-481-C61RwL">
+  <div class="group-202-xn10E9">
+    <div class="rectangle-62-G5P7F3"></div>
+    <div class="rectangle-78-G5P7F3"></div>
+    <div class="stock-ledgerstock-b-G5P7F3">
+      Stock Ledger<br />Stock Balance<br />Stock Projected Qty<br />Stock Summary<br />Stock Ageing<br />Item
+      Price Stock
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-G5P7F3"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-UfQNIy"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-tXgQHE"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-G5P7F3"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23stock,,ease-out,300', event)"
+    ></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-jn2Jcd"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-HLy7ax"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-F5fWAC"></div>
+  </div>
+  <div class="stock-report-xn10E9">Stock Report</div>
+  <div class="noun_-stock-report_3752871-xn10E9">
+    <div class="group-252-qnmFlS">
+      <div class="group-237-TwXHic">
+        <div class="group-236-Jy2dKG">
+          <div class="path-507-zcBVg5"></div>
+        </div>
+      </div>
+      <div class="group-239-TwXHic">
+        <div class="group-238-gNH7m0">
+          <div class="path-508-1HWT2A"></div>
+        </div>
+      </div>
+      <div class="group-241-TwXHic">
+        <div class="group-240-D5B4tz">
+          <div class="path-509-xvruNi"></div>
+        </div>
+      </div>
+      <div class="group-243-TwXHic">
+        <div class="group-242-iJEuMP">
+          <div class="path-510-nxo4dD"></div>
+        </div>
+      </div>
+      <div class="group-245-TwXHic">
+        <div class="group-244-iykWZQ">
+          <div class="path-511-TQEnUW"></div>
+        </div>
+      </div>
+      <div class="group-247-TwXHic">
+        <div class="group-246-IOLIxH">
+          <div class="path-512-ITbGpH"></div>
+        </div>
+      </div>
+      <div class="group-249-TwXHic">
+        <div class="group-248-03alO3">
+          <div class="path-513-vsrgFo"></div>
+        </div>
+      </div>
+      <div class="group-251-TwXHic">
+        <div class="group-250-xX9eLD">
+          <div class="path-514-CCcBxx"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-507-C61RwL">
+  <div class="rectangle-59-jqgC3z"></div>
+  <div class="blog-jqgC3z">Blog</div>
+  <div class="icon-ionic-ios-arrow-up-jqgC3z"></div>
+  <div class="noun_-post-blog_1542411-jqgC3z">
+    <div class="group-257-3Tr90F">
+      <div class="path-535-HZKCax"></div>
+      <div class="ellipse-103-HZKCax"></div>
+      <div class="ellipse-104-HZKCax"></div>
+      <div class="ellipse-105-HZKCax"></div>
+      <div class="path-536-HZKCax"></div>
+      <div class="path-537-HZKCax"></div>
+    </div>
+  </div>
+</div>
+<div class="group-504-C61RwL">
+  <div class="rectangle-57-1RtxUq"></div>
+  <div class="setup-1RtxUq">Setup</div>
+  <div class="icon-ionic-ios-arrow-up-1RtxUq"></div>
+  <div class="noun_setup_950788-1RtxUq">
+    <div class="line-11-pG12F8"></div>
+    <div class="line-12-pG12F8"></div>
+    <div class="line-13-pG12F8"></div>
+    <div class="line-14-pG12F8"></div>
+    <div class="line-15-pG12F8"></div>
+    <div class="line-16-pG12F8"></div>
+    <div class="ellipse-106-pG12F8"></div>
+    <div class="ellipse-107-pG12F8"></div>
+    <div class="ellipse-108-pG12F8"></div>
+  </div>
+</div>
+<div class="group-508-C61RwL">
+  <div class="rectangle-133-m1RVuH"></div>
+  <div class="place-m1RVuH">Portal</div>
+  <div class="icon-ionic-ios-arrow-up-m1RVuH"></div>
+  <div class="noun_portal_2512234-m1RVuH"></div>
+</div>
+<div class="group-506-C61RwL">
+  <div class="rectangle-132-VjNV3r"></div>
+  <div class="knowledge-base-VjNV3r">Knowledge Base</div>
+  <div class="icon-ionic-ios-arrow-up-VjNV3r"></div>
+  <div class="noun_instruction_2292701-VjNV3r">
+    <div class="group-267-n0MPKw">
+      <div class="path-561-plFEjx"></div>
+      <div class="path-562-plFEjx"></div>
+      <div class="path-563-plFEjx"></div>
+      <div class="path-564-plFEjx"></div>
+      <div class="path-565-plFEjx"></div>
+      <div class="path-566-plFEjx"></div>
+      <div class="path-567-plFEjx"></div>
+      <div class="path-568-plFEjx"></div>
+      <div class="path-569-plFEjx"></div>
+    </div>
+  </div>
+</div>
+<div class="group-505-C61RwL">
+  <div class="group-202-3hY3Ss">
+    <div class="rectangle-62-TQoQ8q"></div>
+    <div class="rectangle-78-TQoQ8q"></div>
+    <div class="web-pageweb-formwe-TQoQ8q">
+      Web Page<br />Web Form<br />Website Sidebar<br />Website Slideshow
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-TQoQ8q"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-HS6yX6"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-fvCefF"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-TQoQ8q"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23website,,ease-out,300', event)"
+    ></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-9RFjbp"></div>
+  </div>
+  <div class="website-3hY3Ss">Website</div>
+  <div class="noun_webpages_4109780-3hY3Ss">
+    <div class="group-258-zceMFx">
+      <div class="path-539-d0qS0z"></div>
+      <div class="path-540-d0qS0z"></div>
+      <div class="path-541-d0qS0z"></div>
+      <div class="path-542-d0qS0z"></div>
+    </div>
+  </div>
+</div>
+<div class="group-509-C61RwL">
+  <div class="rectangle-57-s6QV5A"></div>
+  <div class="email-notifications-s6QV5A">Email / Notifications</div>
+  <div class="icon-ionic-ios-arrow-up-s6QV5A"></div>
+  <div class="noun_notification_1521811-s6QV5A">
+    <div class="group-269-a3RF0x">
+      <div class="path-578-xJ3D17"></div>
+      <div class="path-579-xJ3D17"></div>
+      <div class="path-580-xJ3D17"></div>
+    </div>
+  </div>
+</div>
+<div class="group-511-C61RwL">
+  <div class="rectangle-59-l3LmI9"></div>
+  <div class="website-l3LmI9">Website</div>
+  <div class="icon-ionic-ios-arrow-up-l3LmI9"></div>
+  <div class="noun_website_41432-l3LmI9">
+    <div class="rectangle-134-OFa79B"></div>
+    <div class="rectangle-135-OFa79B"></div>
+    <div class="path-581-OFa79B"></div>
+    <div class="path-582-OFa79B"></div>
+    <div class="path-583-OFa79B"></div>
+    <div class="path-584-OFa79B"></div>
+  </div>
+</div>
+<div class="group-510-C61RwL">
+  <div class="group-202-DgLLfh">
+    <div class="rectangle-62-0Rwfk1"></div>
+    <div class="rectangle-78-0Rwfk1"></div>
+    <div class="workflow-action-0Rwfk1">Workflow Action</div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-0Rwfk1"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-0Rwfk1"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23settings,,ease-out,300', event)"
+    ></div>
+  </div>
+  <div class="workflow-DgLLfh">Workflow</div>
+  <div class="noun_-workflow_1251605-DgLLfh">
+    <div class="path-585-O4oQ2v"></div>
+    <div class="path-586-O4oQ2v"></div>
+    <div class="path-587-O4oQ2v"></div>
+    <div class="path-588-O4oQ2v"></div>
+    <div class="path-589-O4oQ2v"></div>
+    <div class="path-590-O4oQ2v"></div>
+    <div class="path-591-O4oQ2v"></div>
+  </div>
+</div>
+<div class="group-430-C61RwL">
+  <div class="rectangle-57-ik9wIf"></div>
+  <div class="loan-ik9wIf">Loan</div>
+  <div class="icon-ionic-ios-arrow-up-ik9wIf"></div>
+  <div class="noun_loan_2745125-ik9wIf">
+    <div class="layer-2-oo2Zot">
+      <div class="path-374-0fuh7J"></div>
+      <div class="path-375-0fuh7J"></div>
+      <div class="path-376-0fuh7J"></div>
+      <div class="path-377-0fuh7J"></div>
+    </div>
+  </div>
+</div>
+<div class="group-433-C61RwL">
+  <div class="rectangle-59-0rzzbT"></div>
+  <div class="loan-processes-0rzzbT">Loan Processes</div>
+  <div class="icon-ionic-ios-arrow-up-0rzzbT"></div>
+  <div class="noun_process_2021778-0rzzbT">
+    <div class="path-392-vzqLt3"></div>
+  </div>
+</div>
+<div class="group-434-C61RwL">
+  <div class="rectangle-61-28XrWP"></div>
+  <div class="loan-security-28XrWP">Loan Security</div>
+  <div class="icon-ionic-ios-arrow-up-28XrWP"></div>
+  <div class="noun_-security_2770792-28XrWP">
+    <div class="x96-privacy-xDeM3c">
+      <div class="path-394-5vsf49"></div>
+      <div class="path-395-5vsf49"></div>
+      <div class="path-396-5vsf49"></div>
+    </div>
+  </div>
+</div>
+<div class="group-432-C61RwL">
+  <div class="rectangle-95-uwxtGw"></div>
+  <div class="reports-uwxtGw">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-uwxtGw"></div>
+  <div class="icon-ionic-ios-trending-up-uwxtGw"></div>
+</div>
+<div class="group-431-C61RwL">
+  <div class="group-202-d7K9Kb">
+    <div class="rectangle-62-V7wEfJ"></div>
+    <div class="rectangle-78-V7wEfJ"></div>
+    <div class="loan-disbursementlo-V7wEfJ">
+      Loan Disbursement<br />Loan Repayment<br />Loan Write Off<br />Loan Interest Accrual
+    </div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-V7wEfJ"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-PayME3"></div>
+    <div class="icon-ionic-ios-arrow-dropright-circle-ewU1mP"></div>
+    <div
+      class="icon-ionic-ios-arrow-up-V7wEfJ"
+      onclick="Lib.autoanim_redirect('%2A,dashboard%23loans,,ease-out,300', event)"
+    ></div>
+  </div>
+  <div class="disbursement-and-repayment-d7K9Kb">Disbursement and Repayment</div>
+  <div class="noun_earning_1695309-d7K9Kb">
+    <div class="path-393-TjstOW"></div>
+    <div class="ellipse-91-TjstOW"></div>
+  </div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-d7K9Kb"></div>
+</div>
+<div class="group-386-C61RwL">
+  <div class="rectangle-115-QreW9k"></div>
+  <div class="settings-QreW9k">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-QreW9k"></div>
+</div>
+<div class="performance-C61RwL">Performance</div>
+<div class="group-389-C61RwL">
+  <div class="rectangle-119-t8iY49"></div>
+  <div class="surname-t8iY49">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-t8iY49"></div>
+  <div class="icon-ionic-ios-trending-up-t8iY49"></div>
+</div>
+<div class="group-396-C61RwL">
+  <div class="rectangle-120-iwCUtu"></div>
+  <div class="other-reports-iwCUtu">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-iwCUtu"></div>
+  <div class="noun_other_3656613-iwCUtu">
+    <div class="path-244-nxyxxc"></div>
+    <div class="ellipse-84-nxyxxc"></div>
+    <div class="ellipse-85-nxyxxc"></div>
+    <div class="ellipse-86-nxyxxc"></div>
+  </div>
+</div>
+<div class="group-395-C61RwL">
+  <div class="rectangle-118-oNO7wX"></div>
+  <div class="icon-ionic-ios-arrow-up-oNO7wX"></div>
+  <div class="noun_performance_3844323-oNO7wX">
+    <div class="group-195-LSF74D">
+      <div class="path-371-q9746x"></div>
+    </div>
+  </div>
+</div>
+<div class="group-388-C61RwL">
+  <div class="rectangle-117-bCGeQx"></div>
+  <div class="training-bCGeQx">Training</div>
+  <div class="icon-ionic-ios-arrow-up-bCGeQx"></div>
+  <div class="noun_training_3893309-bCGeQx">
+    <div class="group-196-rAJ3RK">
+      <div class="path-372-XyyMsS"></div>
+      <div class="path-373-XyyMsS"></div>
+    </div>
+  </div>
+</div>
+<div class="group-394-C61RwL">
+  <div class="rectangle-116-UXFA1G"></div>
+  <div class="loans-UXFA1G">Loans</div>
+  <div class="icon-ionic-ios-arrow-up-UXFA1G"></div>
+  <div class="noun_loan_2745125-UXFA1G">
+    <div class="layer-2-zwlrTD">
+      <div class="path-374-rSq8bi"></div>
+      <div class="path-375-rSq8bi"></div>
+      <div class="path-376-rSq8bi"></div>
+      <div class="path-377-rSq8bi"></div>
+    </div>
+  </div>
+</div>
+<div class="group-387-C61RwL">
+  <div class="rectangle-113-5DyFDu"></div>
+  <div class="recruitment-5DyFDu">Recruitment</div>
+  <div class="icon-ionic-ios-arrow-up-5DyFDu"></div>
+  <div class="noun_recruit-employees_2900366-5DyFDu">
+    <div class="group-197-kthiAj">
+      <div class="path-378-Oxxb6w"></div>
+    </div>
+  </div>
+</div>
+<div class="group-393-C61RwL">
+  <div class="rectangle-114-DxsOZ5"></div>
+  <div class="fleet-management-DxsOZ5">Fleet Management</div>
+  <div class="icon-ionic-ios-arrow-up-DxsOZ5"></div>
+  <div class="noun_management_3308557-DxsOZ5">
+    <div class="group-198-DbbDLC">
+      <div class="path-379-nxQaMc"></div>
+      <div class="path-380-nxQaMc"></div>
+      <div class="path-381-nxQaMc"></div>
+    </div>
+  </div>
+</div>
+<div class="group-385-C61RwL">
+  <div class="rectangle-95-CeVtAx"></div>
+  <div class="attendance-CeVtAx">Attendance</div>
+  <div class="icon-ionic-ios-arrow-up-CeVtAx"></div>
+  <div class="noun_attendance_4027355-CeVtAx">
+    <div class="path-361-2BALjs"></div>
+    <div class="path-362-2BALjs"></div>
+    <div class="path-363-2BALjs"></div>
+    <div class="path-364-2BALjs"></div>
+    <div class="path-365-2BALjs"></div>
+    <div class="path-366-2BALjs"></div>
+    <div class="path-367-2BALjs"></div>
+    <div class="path-368-2BALjs"></div>
+  </div>
+</div>
+<div class="group-391-C61RwL">
+  <div class="rectangle-61-YfP0pO"></div>
+  <div class="leaves-YfP0pO">Leaves</div>
+  <div class="icon-ionic-ios-arrow-up-YfP0pO"></div>
+  <div class="noun_-leave_1262675-YfP0pO">
+    <div class="group-193-yAZnMx"></div>
+  </div>
+</div>
+<div class="group-392-C61RwL">
+  <div class="rectangle-112-T4L6ob"></div>
+  <div class="expense-claims-T4L6ob">Expense Claims</div>
+  <div class="icon-ionic-ios-arrow-up-T4L6ob"></div>
+  <div class="noun_claim_944743-T4L6ob">
+    <div class="group-199-anogxd">
+      <div class="path-382-gUD7G5"></div>
+    </div>
+  </div>
+</div>
+<div class="group-384-C61RwL">
+  <div class="rectangle-78-wuSVL3"></div>
+  <div class="shift-management-wuSVL3">Shift Management</div>
+  <div class="icon-ionic-ios-arrow-up-wuSVL3"></div>
+  <div class="noun_shift_3056999-wuSVL3">
+    <div class="group-200-ycXtbA">
+      <div class="path-383-LNJwfD"></div>
+      <div class="path-384-LNJwfD"></div>
+    </div>
+  </div>
+</div>
+<div class="group-390-C61RwL">
+  <div class="rectangle-59-OxhFZC"></div>
+  <div class="employee-lifecycle-OxhFZC">Employee Lifecycle</div>
+  <div class="icon-ionic-ios-arrow-up-OxhFZC"></div>
+  <div class="noun_-reuse_4297386-OxhFZC">
+    <div class="path-385-Zlo2qd"></div>
+    <div class="path-386-Zlo2qd"></div>
+  </div>
+</div>
+<div class="group-383-C61RwL">
+  <div class="rectangle-57-0EoTUw"></div>
+  <div class="employee-0EoTUw">Employee</div>
+  <div class="icon-ionic-ios-arrow-up-0EoTUw"></div>
+  <div class="noun_-employee_3038477-0EoTUw">
+    <div class="path-387-Xl8WZ8"></div>
+  </div>
+</div>
+<div class="group-366-C61RwL">
+  <div class="rectangle-57-xYRHLO"></div>
+  <div class="buying-xYRHLO">Buying</div>
+  <div class="icon-ionic-ios-arrow-up-xYRHLO"></div>
+  <div class="noun_buy_4416897-xYRHLO">
+    <div class="group-171-MeAMxJ">
+      <div class="path-240-4WBGOe"></div>
+    </div>
+  </div>
+</div>
+<div class="group-370-C61RwL">
+  <div class="rectangle-59-GoSQgn"></div>
+  <div class="items-pricing-GoSQgn">Items &amp; Pricing</div>
+  <div class="icon-ionic-ios-arrow-up-GoSQgn"></div>
+  <div class="noun_price_3423577-GoSQgn">
+    <div class="path-241-VtgFSO"></div>
+    <div class="path-242-VtgFSO"></div>
+  </div>
+</div>
+<div class="group-367-C61RwL">
+  <div class="rectangle-62-xqDERM"></div>
+  <div class="rectangle-78-xqDERM"></div>
+  <div class="settings-xqDERM">Settings</div>
+  <div class="buying-settingspurc-xqDERM">
+    Buying Settings<br />Purchase Taxes and Charges Template<br />Terms and Conditions
+  </div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-xqDERM"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-ymH4VS"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-PSmcoc"></div>
+  <div
+    class="icon-ionic-ios-arrow-up-xqDERM"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23buying,,ease-out,300', event)"
+  ></div>
+  <div class="icon-feather-settings-xqDERM">
+    <div class="path-179-kOBOPz"></div>
+    <div class="path-180-kOBOPz"></div>
+  </div>
+</div>
+<div class="group-371-C61RwL">
+  <div class="rectangle-61-8ch5td"></div>
+  <div class="supplier-8ch5td">Supplier</div>
+  <div class="icon-ionic-ios-arrow-up-8ch5td"></div>
+  <div class="noun_supplier_1923720-8ch5td">
+    <div class="path-208-0SgPRS"></div>
+  </div>
+</div>
+<div class="group-368-C61RwL">
+  <div class="rectangle-95-9tmuuW"></div>
+  <div class="supplier-scorecard-9tmuuW">Supplier Scorecard</div>
+  <div class="icon-ionic-ios-arrow-up-9tmuuW"></div>
+  <div class="noun_-report-card_4234312-9tmuuW">
+    <div class="group-172-IMzRUY">
+      <div class="path-243-x6mnxi"></div>
+    </div>
+  </div>
+</div>
+<div class="group-372-C61RwL">
+  <div class="rectangle-96-7vHbhG"></div>
+  <div class="surname-7vHbhG">Key Reports</div>
+  <div class="icon-ionic-ios-arrow-up-7vHbhG"></div>
+  <div class="icon-ionic-ios-trending-up-7vHbhG"></div>
+</div>
+<div class="group-369-C61RwL">
+  <div class="rectangle-97-gNMGaF"></div>
+  <div class="other-reports-gNMGaF">Other Reports</div>
+  <div class="icon-ionic-ios-arrow-up-gNMGaF"></div>
+  <div class="noun_other_3656613-gNMGaF">
+    <div class="path-244-y9PkDA"></div>
+    <div class="ellipse-84-y9PkDA"></div>
+    <div class="ellipse-85-y9PkDA"></div>
+    <div class="ellipse-86-y9PkDA"></div>
+  </div>
+</div>
+<div class="group-376-C61RwL">
+  <div class="rectangle-59-N4njIR"></div>
+  <div class="reports-N4njIR">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-N4njIR"></div>
+  <div class="icon-ionic-ios-trending-up-N4njIR"></div>
+</div>
+<div class="group-375-C61RwL">
+  <div class="rectangle-95-LhxxKX"></div>
+  <div class="settings-LhxxKX">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-LhxxKX"></div>
+  <div class="icon-feather-settings-LhxxKX">
+    <div class="path-179-o8XM2a"></div>
+    <div class="path-180-o8XM2a"></div>
+  </div>
+</div>
+<div class="group-377-C61RwL">
+  <div class="rectangle-61-lvXcn7"></div>
+  <div class="campaign-lvXcn7">Campaign</div>
+  <div class="icon-ionic-ios-arrow-up-lvXcn7"></div>
+  <div class="campaign_black_24dp-lvXcn7">
+    <div class="group-174-PiDzt2">
+      <div class="rectangle-100-gWxjUl"></div>
+    </div>
+    <div class="path-276-PiDzt2"></div>
+    <div class="path-277-PiDzt2"></div>
+    <div class="path-278-PiDzt2"></div>
+    <div class="path-279-PiDzt2"></div>
+    <div class="path-280-PiDzt2"></div>
+  </div>
+</div>
+<div class="group-373-C61RwL">
+  <div class="rectangle-57-kFtZxx"></div>
+  <div class="sales-pipeline-kFtZxx">Sales Pipeline</div>
+  <div class="icon-ionic-ios-arrow-up-kFtZxx"></div>
+  <div class="noun_-sales-pipeline_1845011-kFtZxx">
+    <div class="group-175-wypUfG">
+      <div class="rectangle-101-3ScUgg"></div>
+      <div class="ellipse-87-3ScUgg"></div>
+      <div class="ellipse-88-3ScUgg"></div>
+      <div class="ellipse-89-3ScUgg"></div>
+      <div class="rectangle-102-3ScUgg"></div>
+      <div class="path-281-3ScUgg"></div>
+      <div class="path-282-3ScUgg"></div>
+      <div class="path-283-3ScUgg"></div>
+      <div class="path-284-3ScUgg"></div>
+      <div class="path-285-3ScUgg"></div>
+      <div class="path-286-3ScUgg"></div>
+      <div class="path-287-3ScUgg"></div>
+      <div class="path-288-3ScUgg"></div>
+      <div class="path-289-3ScUgg"></div>
+      <div class="path-290-3ScUgg"></div>
+      <div class="path-291-3ScUgg"></div>
+      <div class="path-292-3ScUgg"></div>
+      <div class="path-293-3ScUgg"></div>
+      <div class="path-294-3ScUgg"></div>
+    </div>
+  </div>
+</div>
+<div class="group-374-C61RwL">
+  <div class="rectangle-62-81xJ7w"></div>
+  <div class="rectangle-78-81xJ7w"></div>
+  <div class="maintenance-81xJ7w">Maintenance</div>
+  <div class="maintenance-schedule-81xJ7w">Maintenance Schedule<br />Maintenance Visit<br />Warranty Claim</div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-81xJ7w"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-GCt2Le"></div>
+  <div
+    class="icon-ionic-ios-arrow-up-81xJ7w"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23crm,,ease-out,300', event)"
+  ></div>
+  <div class="noun_maintenance_3370538-81xJ7w">
+    <div class="path-295-I789FD"></div>
+    <div class="path-296-I789FD"></div>
+    <div class="path-297-I789FD"></div>
+    <div class="path-298-I789FD"></div>
+  </div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-BYhjbE"></div>
+</div>
+<div class="group-331-C61RwL">
+  <div class="rectangle-62-YYsalw"></div>
+  <div
+    class="rectangle-78-YYsalw"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23accounting,,linear,300', event)"
+  ></div>
+  <div class="general-ledger-YYsalw">General Ledger</div>
+  <div class="journal-entryjourna-YYsalw">
+    Journal Entry<br />Journal Entry Template<br />General Ledger<br />Customer Ledger Summary<br />Supplier
+    Ledger Summary
+  </div>
+  <div class="icon-open-calculator-YYsalw"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-YYsalw"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-ddmY24"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-xxSMM4"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-xGJ2ex"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-Uk7zIj"></div>
+  <div class="icon-ionic-ios-arrow-up-YYsalw"></div>
+</div>
+<div class="group-340-C61RwL">
+  <div class="rectangle-63-oAPDZS"></div>
+  <div class="financial-statements-oAPDZS">Financial Statements</div>
+  <div class="icon-ionic-ios-arrow-up-oAPDZS"></div>
+  <div class="icon-open-spreadsheet-oAPDZS"></div>
+</div>
+<div class="group-341-C61RwL">
+  <div class="rectangle-65-efqkcZ"></div>
+  <div class="settings-efqkcZ">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-efqkcZ"></div>
+  <div class="icon-feather-settings-efqkcZ">
+    <div class="path-179-2LiQvU"></div>
+    <div class="path-180-2LiQvU"></div>
+  </div>
+</div>
+<div class="group-342-C61RwL">
+  <div class="rectangle-67-nmOL5e"></div>
+  <div class="subscription-management-nmOL5e">Subscription Management</div>
+  <div class="icon-ionic-ios-arrow-up-nmOL5e"></div>
+  <div class="icon-material-dashboard-nmOL5e"></div>
+</div>
+<div class="group-344-C61RwL">
+  <div class="rectangle-71-n3jUaD"></div>
+  <div class="taxes-n3jUaD">Taxes</div>
+  <div class="icon-ionic-ios-arrow-up-n3jUaD"></div>
+  <div class="icon-metro-chart-bars-n3jUaD"></div>
+</div>
+<div class="group-343-C61RwL">
+  <div class="rectangle-69-GZjVdO"></div>
+  <div class="cost-center-and-budgeting-GZjVdO">Cost Center and Budgeting</div>
+  <div class="icon-ionic-ios-arrow-up-GZjVdO"></div>
+  <div class="icon-material-bubble-chart-GZjVdO">
+    <div class="path-181-Ai2LK9"></div>
+    <div class="path-182-Ai2LK9"></div>
+    <div class="path-183-Ai2LK9"></div>
+  </div>
+</div>
+<div class="group-338-C61RwL">
+  <div class="rectangle-59-ojnjpf"></div>
+  <div class="accounts-receivable-ojnjpf">Accounts Receivable</div>
+  <div class="icon-ionic-ios-arrow-up-ojnjpf"></div>
+  <div class="icon-awesome-sort-amount-down-ojnjpf"></div>
+</div>
+<div class="group-339-C61RwL">
+  <div class="rectangle-61-Nydink"></div>
+  <div class="accounts-payable-Nydink">Accounts Payable</div>
+  <div class="icon-ionic-ios-arrow-up-Nydink"></div>
+  <div class="icon-awesome-sort-amount-up-Nydink"></div>
+</div>
+<div class="group-330-C61RwL">
+  <div class="rectangle-57-799v6f"></div>
+  <div class="accounting-masters-799v6f">Accounting &amp; Masters</div>
+  <div class="icon-ionic-ios-arrow-up-799v6f"></div>
+  <div class="icon-open-calculator-799v6f"></div>
+</div>
+<div class="group-332-C61RwL">
+  <div class="rectangle-64-bgxjYx"></div>
+  <div class="reports-bgxjYx">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-bgxjYx"></div>
+  <div class="icon-ionic-ios-trending-up-bgxjYx"></div>
+</div>
+<div class="group-333-C61RwL">
+  <div class="rectangle-66-2w4uTg"></div>
+  <div class="multi-currency-2w4uTg">Multi Currency</div>
+  <div class="icon-ionic-ios-arrow-up-2w4uTg"></div>
+  <div class="icon-awesome-money-bill-alt-2w4uTg"></div>
+</div>
+<div class="group-334-C61RwL">
+  <div class="rectangle-68-fTVwKz"></div>
+  <div class="banking-and-payments-fTVwKz">Banking and Payments</div>
+  <div class="icon-ionic-ios-arrow-up-fTVwKz"></div>
+  <div class="icon-awesome-piggy-bank-fTVwKz"></div>
+</div>
+<div class="group-335-C61RwL">
+  <div class="rectangle-70-szKudx"></div>
+  <div class="share-management-szKudx">Share Management</div>
+  <div class="icon-ionic-ios-arrow-up-szKudx"></div>
+  <div class="icon-awesome-creative-commons-share-szKudx"></div>
+</div>
+<div class="group-336-C61RwL">
+  <div class="rectangle-72-wKxUfP"></div>
+  <div class="opening-and-closing-wKxUfP">Opening and Closing</div>
+  <div class="icon-ionic-ios-arrow-up-wKxUfP"></div>
+  <div class="icon-material-account-balance-wKxUfP"></div>
+</div>
+<div class="group-337-C61RwL">
+  <div class="rectangle-74-No7lRX"></div>
+  <div class="profitability-No7lRX">Profitability</div>
+  <div class="icon-ionic-ios-arrow-up-No7lRX"></div>
+  <div class="icon-awesome-balance-scale-left-No7lRX"></div>
+</div>
+<div class="profit-and-loss-C61RwL">Profit and Loss</div>
+<div class="group-97-C61RwL">
+  <div class="text-ixNXIO">Text</div>
+  <div class="ellipse-79-ixNXIO"></div>
+  <div class="ellipse-80-ixNXIO"></div>
+  <div class="icon-material-attach-money-ixNXIO"></div>
+</div>
+<div class="group-98-C61RwL">
+  <div class="employee-royatl">Employee</div>
+  <div class="ellipse-81-royatl"></div>
+  <div class="icon-awesome-user-tie-royatl"></div>
+</div>
+<div class="group-99-C61RwL">
+  <div class="something-ZnSQrh">Something</div>
+  <div class="ellipse-82-ZnSQrh"></div>
+  <div class="icon-feather-shopping-cart-ZnSQrh">
+    <div class="path-173-PvW1ZP"></div>
+    <div class="path-174-PvW1ZP"></div>
+    <div class="path-175-PvW1ZP"></div>
+  </div>
+</div>
+<div class="group-100-C61RwL">
+  <div class="some-text-lvfzGr">Some Text</div>
+  <div class="ellipse-83-lvfzGr"></div>
+  <div class="icon-feather-shopping-cart-lvfzGr">
+    <div class="path-173-J7WbCj"></div>
+    <div class="path-174-J7WbCj"></div>
+    <div class="path-175-J7WbCj"></div>
+  </div>
+</div>
+<div class="group-49-C61RwL">
+  <div class="path-40-WRwqIS"></div>
+</div>
+<div class="group-62-C61RwL">
+  <div class="rectangle-29-q2BeyX"></div>
+  <div class="group-61-q2BeyX">
+    <div class="group-60-MA1kr8">
+      <div class="group-58-4xciaH">
+        <div class="path-68-y51e80"></div>
+        <div class="path-69-y51e80"></div>
+        <div class="assets-y51e80">Assets</div>
+      </div>
+      <div class="group-59-4xciaH">
+        <div class="path-70-J3tiDx"></div>
+        <div class="path-71-J3tiDx"></div>
+        <div class="depreciated-J3tiDx">Depreciated</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-185-C61RwL">
+  <div class="group-48-hrEtUG">
+    <div class="path-33-mYxUJn"></div>
+    <div class="path-34-mYxUJn"></div>
+    <div class="path-35-mYxUJn"></div>
+    <div class="path-36-mYxUJn"></div>
+    <div class="path-37-mYxUJn"></div>
+  </div>
+  <div class="group-66-hrEtUG"></div>
+  <div class="group-65-hrEtUG"></div>
+  <div class="name-hrEtUG">Jan</div>
+  <div class="feb-hrEtUG">Feb</div>
+  <div class="place-hrEtUG">Mar</div>
+  <div class="apr-hrEtUG">Apr</div>
+  <div class="name-9sKrac">May</div>
+  <div class="jun-hrEtUG">Jun</div>
+  <div class="jul-hrEtUG">Jul</div>
+  <div class="aug-hrEtUG">Aug</div>
+  <div class="sep-hrEtUG">Sep</div>
+  <div class="oct-hrEtUG">Oct</div>
+  <div class="nov-hrEtUG">Nov</div>
+  <div class="dec-hrEtUG">Dec</div>
+  <div class="group-64-hrEtUG">
+    <div class="number-kyfh39">0</div>
+    <div class="number-ssKDpJ">1</div>
+    <div class="number-pJWqFa">2</div>
+    <div class="number-AZfvBV">3</div>
+    <div class="number-06z5kt">4</div>
+  </div>
+</div>
+<div class="rectangle-77-C61RwL"></div>
+<div class="assets-value-C61RwL">Assets Value</div>
+<div class="line-7-C61RwL"></div>
+<div class="group-104-VMr6Om">
+  <div class="path-33-akxxaJ"></div>
+  <div class="path-34-akxxaJ"></div>
+  <div class="path-35-akxxaJ"></div>
+  <div class="path-36-akxxaJ"></div>
+  <div class="path-37-akxxaJ"></div>
+</div>
+<div class="group-105-VMr6Om">
+  <div class="path-40-9C93It"></div>
+</div>
+<div class="group-109-VMr6Om">
+  <div class="number-H5OFpP">0</div>
+  <div class="number-bWDhcw">50</div>
+  <div class="number-6tZxIA">100</div>
+  <div class="number-NAA7NA">150</div>
+  <div class="number-xIJd0w">200</div>
+</div>
+<div class="group-111-C61RwL">
+  <div class="group-61-RZRrpm">
+    <div class="group-60-yhK4ZA">
+      <div class="path-69-h1LFXT"></div>
+      <div class="category-1-h1LFXT">Category 1</div>
+    </div>
+  </div>
+  <div class="group-110-RZRrpm">
+    <div class="group-60-vkLyon">
+      <div class="path-69-BDKcK9"></div>
+      <div class="category-2-BDKcK9">Category 2</div>
+    </div>
+  </div>
+</div>
+<div class="group-113-C61RwL">
+  <div class="text-1-Yl3YtL">Text 1</div>
+  <div class="group-112-Yl3YtL">
+    <div class="rectangle-53-7yRUn0"></div>
+    <div class="rectangle-54-7yRUn0"></div>
+  </div>
+</div>
+<div class="group-114-C61RwL">
+  <div class="text-1-iAck2H">Text 1</div>
+  <div class="group-112-iAck2H">
+    <div class="path-177-bkojxL"></div>
+    <div class="rectangle-54-bkojxL"></div>
+  </div>
+</div>
+<div class="group-115-C61RwL">
+  <div class="text-1-QE45bn">Text 1</div>
+  <div class="group-112-QE45bn">
+    <div class="rectangle-53-6n72zE"></div>
+    <div class="rectangle-54-6n72zE"></div>
+  </div>
+</div>
+<div class="group-116-C61RwL">
+  <div class="text-1-50DZSc">Text 1</div>
+  <div class="group-112-50DZSc">
+    <div class="rectangle-53-Txxw7x"></div>
+    <div class="rectangle-54-Txxw7x"></div>
+  </div>
+</div>
+<div class="group-117-C61RwL">
+  <div class="text-1-Qgw4ic">Text 1</div>
+  <div class="group-112-Qgw4ic">
+    <div class="rectangle-53-FCqk5U"></div>
+    <div class="rectangle-54-FCqk5U"></div>
+  </div>
+</div>
+<div class="filter_list_black_24dp-C61RwL">
+  <div class="path-299-7a1QyJ"></div>
+  <div class="path-300-7a1QyJ"></div>
+</div>
+<div class="more_horiz_black_24dp-C61RwL">
+  <div class="path-301-mBexrd"></div>
+  <div class="path-302-mBexrd"></div>
+</div>
+<div class="filter_list_black_24dp-VMr6Om">
+  <div class="path-299-zID4lQ"></div>
+  <div class="path-300-zID4lQ"></div>
+</div>
+<div class="more_horiz_black_24dp-VMr6Om">
+  <div class="path-301-cfVXOd"></div>
+  <div class="path-302-cfVXOd"></div>
+</div>
+<div class="month-C61RwL">Month</div>
+<div class="profit-loss-C61RwL">Profit &amp; Loss</div>
+<div class="month-VMr6Om">Month</div>
+<div class="asset-value-C61RwL">Asset Value</div>
+<div class="group-349-C61RwL">
+  <div class="rectangle-62-xA38gD"></div>
+  <div class="rectangle-78-xA38gD"></div>
+  <div class="asset-depreciation-l-xA38gD">
+    Asset Depreciation Ledger<br />Assets Depreciations and Balances<br />Asset Maintenance
+  </div>
+  <div class="reports-xA38gD">Reports</div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-xA38gD"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-U9xntk"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-MVDDme"></div>
+  <div
+    class="icon-ionic-ios-arrow-up-xA38gD"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23assets,,ease-out,300', event)"
+  ></div>
+  <div class="icon-ionic-ios-trending-up-xA38gD"></div>
+</div>
+<div class="group-348-C61RwL">
+  <div class="rectangle-57-Z3HEQV"></div>
+  <div class="assets-Z3HEQV">Assets</div>
+  <div class="icon-ionic-ios-arrow-up-Z3HEQV"></div>
+  <div class="icon-feather-shopping-bag-Z3HEQV">
+    <div class="path-7-AEiJOk"></div>
+    <div class="path-6-AEiJOk"></div>
+    <div class="path-8-AEiJOk"></div>
+  </div>
+</div>
+<div class="group-350-C61RwL">
+  <div class="rectangle-59-8oGQv2"></div>
+  <div class="maintenance-8oGQv2">Maintenance</div>
+  <div class="icon-ionic-ios-arrow-up-8oGQv2"></div>
+  <div class="build_black_24dp-8oGQv2">
+    <div class="path-189-UhB31s"></div>
+    <div class="path-190-UhB31s"></div>
+  </div>
+</div>
+<div class="group-355-C61RwL">
+  <div class="rectangle-57-P1ni8H"></div>
+  <div class="modules-P1ni8H">Modules</div>
+  <div class="icon-ionic-ios-arrow-up-P1ni8H"></div>
+  <div class="noun_module_1688184-P1ni8H">
+    <div class="group-167-VRnG3e">
+      <div class="path-235-seYmcp"></div>
+    </div>
+  </div>
+</div>
+<div class="group-356-C61RwL">
+  <div class="rectangle-62-RcKkqs"></div>
+  <div class="rectangle-78-RcKkqs"></div>
+  <div class="views-RcKkqs">Views</div>
+  <div class="reportprint-formatworkspacedashboard-RcKkqs">
+    Report<br />Print Format<br />Workspace<br />Dashboard
+  </div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-RcKkqs"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-xxYaE4"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-Xktemg"></div>
+  <div
+    class="icon-ionic-ios-arrow-up-RcKkqs"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23build,,ease-out,300', event)"
+  ></div>
+  <div class="noun_-view_1251294-RcKkqs">
+    <div class="path-236-ZjSuTQ"></div>
+    <div class="path-237-ZjSuTQ"></div>
+  </div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-2Nx21j"></div>
+</div>
+<div class="group-357-C61RwL">
+  <div class="rectangle-59-m7Inhp"></div>
+  <div class="models-m7Inhp">Models</div>
+  <div class="icon-ionic-ios-arrow-up-m7Inhp"></div>
+  <div class="noun_model_2710235-m7Inhp">
+    <div class="path-238-Yzx8ns"></div>
+  </div>
+</div>
+<div class="group-358-C61RwL">
+  <div class="rectangle-61-pgbAC4"></div>
+  <div class="scripting-pgbAC4">Scripting</div>
+  <div class="icon-ionic-ios-arrow-up-pgbAC4"></div>
+  <div class="noun_script_4414698-pgbAC4">
+    <div class="group-169-1mwxvZ">
+      <div class="path-239-i4hxuj"></div>
+      <div class="rectangle-90-i4hxuj"></div>
+      <div class="rectangle-91-i4hxuj"></div>
+      <div class="rectangle-92-i4hxuj"></div>
+    </div>
+  </div>
+</div>
+<div class="group-301-C61RwL">
+  <div class="rectangle-57-Ux3Qiz"></div>
+  <div class="accounting-masters-Ux3Qiz">Accounting &amp; Masters</div>
+  <div class="icon-ionic-ios-arrow-up-Ux3Qiz"></div>
+  <div class="icon-open-calculator-Ux3Qiz"></div>
+</div>
+<div class="group-303-C61RwL">
+  <div class="rectangle-64-Vk7DMe"></div>
+  <div class="reports-Vk7DMe">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-Vk7DMe"></div>
+  <div class="icon-ionic-ios-trending-up-Vk7DMe"></div>
+</div>
+<div class="group-304-C61RwL">
+  <div class="rectangle-66-a72gn7"></div>
+  <div class="multi-currency-a72gn7">Multi Currency</div>
+  <div class="icon-ionic-ios-arrow-up-a72gn7"></div>
+  <div class="icon-awesome-money-bill-alt-a72gn7"></div>
+</div>
+<div class="group-305-C61RwL">
+  <div class="rectangle-68-TD8ifq"></div>
+  <div class="banking-and-payments-TD8ifq">Banking and Payments</div>
+  <div class="icon-ionic-ios-arrow-up-TD8ifq"></div>
+  <div class="icon-awesome-piggy-bank-TD8ifq"></div>
+</div>
+<div class="group-306-C61RwL">
+  <div class="rectangle-70-zBX9iT"></div>
+  <div class="share-management-zBX9iT">Share Management</div>
+  <div class="icon-ionic-ios-arrow-up-zBX9iT"></div>
+  <div class="icon-awesome-creative-commons-share-zBX9iT"></div>
+</div>
+<div class="group-307-C61RwL">
+  <div class="rectangle-72-IKgeMF"></div>
+  <div class="opening-and-closing-IKgeMF">Opening and Closing</div>
+  <div class="icon-ionic-ios-arrow-up-IKgeMF"></div>
+  <div class="icon-material-account-balance-IKgeMF"></div>
+</div>
+<div class="group-308-C61RwL">
+  <div class="rectangle-74-gx7wgm"></div>
+  <div class="profitability-gx7wgm">Profitability</div>
+  <div class="icon-ionic-ios-arrow-up-gx7wgm"></div>
+  <div class="icon-awesome-balance-scale-left-gx7wgm"></div>
+</div>
+<div class="group-302-C61RwL">
+  <div class="rectangle-62-7KV0qd"></div>
+  <div
+    class="rectangle-78-7KV0qd"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23accounting,,linear,300', event)"
+  ></div>
+  <div class="general-ledger-7KV0qd">General Ledger</div>
+  <div class="journal-entryjournal-7KV0qd"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-7KV0qd"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-f9ymp9"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-5nZa0i"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-AxxdAV"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-kv0J8z"></div>
+  <div
+    class="icon-ionic-ios-arrow-up-7KV0qd"
+    onclick="Lib.autoanim_redirect('%2A,dashboard%23accounting,,ease-out,300', event)"
+  ></div>
+  <div class="icon-open-spreadsheet-7KV0qd"></div>
+</div>
+<div class="group-311-C61RwL">
+  <div class="rectangle-63-lnjA89"></div>
+  <div class="financial-statements-lnjA89">Financial Statements</div>
+  <div class="icon-ionic-ios-arrow-up-lnjA89"></div>
+  <div class="icon-open-spreadsheet-lnjA89"></div>
+</div>
+<div class="group-312-C61RwL">
+  <div class="rectangle-65-zlisdC"></div>
+  <div class="settings-zlisdC">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-zlisdC"></div>
+  <div class="icon-feather-settings-zlisdC">
+    <div class="path-179-n97kFX"></div>
+    <div class="path-180-n97kFX"></div>
+  </div>
+</div>
+<div class="group-313-C61RwL">
+  <div class="rectangle-67-qoiEeG"></div>
+  <div class="subscription-management-qoiEeG">Subscription Management</div>
+  <div class="icon-ionic-ios-arrow-up-qoiEeG"></div>
+  <div class="icon-material-dashboard-qoiEeG"></div>
+</div>
+<div class="group-315-C61RwL">
+  <div class="rectangle-71-UE7smG"></div>
+  <div class="taxes-UE7smG">Taxes</div>
+  <div class="icon-ionic-ios-arrow-up-UE7smG"></div>
+  <div class="icon-metro-chart-bars-UE7smG"></div>
+</div>
+<div class="group-314-C61RwL">
+  <div class="rectangle-69-M2agDK"></div>
+  <div class="cost-center-and-budgeting-M2agDK">Cost Center and Budgeting</div>
+  <div class="icon-ionic-ios-arrow-up-M2agDK"></div>
+  <div class="icon-material-bubble-chart-M2agDK">
+    <div class="path-181-WxwUbm"></div>
+    <div class="path-182-WxwUbm"></div>
+    <div class="path-183-WxwUbm"></div>
+  </div>
+</div>
+<div class="group-309-C61RwL">
+  <div class="rectangle-59-gJGBzK"></div>
+  <div class="accounts-receivable-gJGBzK">Accounts Receivable</div>
+  <div class="icon-ionic-ios-arrow-up-gJGBzK"></div>
+  <div class="icon-awesome-sort-amount-down-gJGBzK"></div>
+</div>
+<div class="group-310-C61RwL">
+  <div class="rectangle-61-WvwkJm"></div>
+  <div class="accounts-payable-WvwkJm">Accounts Payable</div>
+  <div class="icon-ionic-ios-arrow-up-WvwkJm"></div>
+  <div class="icon-awesome-sort-amount-up-WvwkJm"></div>
+</div>
+<div class="group-316-C61RwL">
+  <div class="rectangle-57-XSf9uo"></div>
+  <div class="accounting-masters-XSf9uo">Accounting &amp; Masters</div>
+  <div class="icon-open-calculator-XSf9uo"></div>
+  <div class="icon-ionic-ios-arrow-up-XSf9uo"></div>
+</div>
+<div class="group-325-C61RwL">
+  <div class="rectangle-63-oQh0pm"></div>
+  <div class="financial-statements-oQh0pm">Financial Statements</div>
+  <div class="icon-ionic-ios-arrow-up-oQh0pm"></div>
+  <div class="icon-open-spreadsheet-oQh0pm"></div>
+</div>
+<div class="group-326-C61RwL">
+  <div class="rectangle-65-o6uSTK"></div>
+  <div class="settings-o6uSTK">Settings</div>
+  <div class="icon-ionic-ios-arrow-up-o6uSTK"></div>
+  <div class="icon-feather-settings-o6uSTK">
+    <div class="path-179-DGxLft"></div>
+    <div class="path-180-DGxLft"></div>
+  </div>
+</div>
+<div class="group-327-C61RwL">
+  <div class="rectangle-67-hQrUyN"></div>
+  <div class="subscription-management-hQrUyN">Subscription Management</div>
+  <div class="icon-ionic-ios-arrow-up-hQrUyN"></div>
+  <div class="icon-material-dashboard-hQrUyN"></div>
+</div>
+<div class="group-329-C61RwL">
+  <div class="rectangle-71-x3qxzA"></div>
+  <div class="taxes-x3qxzA">Taxes</div>
+  <div class="icon-ionic-ios-arrow-up-x3qxzA"></div>
+  <div class="icon-metro-chart-bars-x3qxzA"></div>
+</div>
+<div class="group-328-C61RwL">
+  <div class="rectangle-69-lYafGQ"></div>
+  <div class="cost-center-and-budgeting-lYafGQ">Cost Center and Budgeting</div>
+  <div class="icon-ionic-ios-arrow-up-lYafGQ"></div>
+  <div class="icon-material-bubble-chart-lYafGQ">
+    <div class="path-181-mxlVwf"></div>
+    <div class="path-182-mxlVwf"></div>
+    <div class="path-183-mxlVwf"></div>
+  </div>
+</div>
+<div class="group-323-C61RwL">
+  <div class="rectangle-59-FaTvP2"></div>
+  <div class="accounts-receivable-FaTvP2">Accounts Receivable</div>
+  <div class="icon-ionic-ios-arrow-up-FaTvP2"></div>
+  <div class="icon-awesome-sort-amount-down-FaTvP2"></div>
+</div>
+<div class="group-324-C61RwL">
+  <div class="rectangle-61-T9E2B7"></div>
+  <div class="accounts-payable-T9E2B7">Accounts Payable</div>
+  <div class="icon-ionic-ios-arrow-up-T9E2B7"></div>
+  <div class="icon-awesome-sort-amount-up-T9E2B7"></div>
+</div>
+<div class="group-317-C61RwL">
+  <div class="rectangle-64-lqrL3p"></div>
+  <div class="reports-lqrL3p">Reports</div>
+  <div class="icon-ionic-ios-arrow-up-lqrL3p"></div>
+  <div class="icon-ionic-ios-trending-up-lqrL3p"></div>
+</div>
+<div class="group-318-C61RwL">
+  <div class="rectangle-66-UasaCO"></div>
+  <div class="multi-currency-UasaCO">Multi Currency</div>
+  <div class="icon-ionic-ios-arrow-up-UasaCO"></div>
+  <div class="icon-awesome-money-bill-alt-UasaCO"></div>
+</div>
+<div class="group-319-C61RwL">
+  <div class="rectangle-68-SujrIy"></div>
+  <div class="banking-and-payments-SujrIy">Banking and Payments</div>
+  <div class="icon-ionic-ios-arrow-up-SujrIy"></div>
+  <div class="icon-awesome-piggy-bank-SujrIy"></div>
+</div>
+<div class="group-320-C61RwL">
+  <div class="rectangle-70-YZxPN9"></div>
+  <div class="share-management-YZxPN9">Share Management</div>
+  <div class="icon-ionic-ios-arrow-up-YZxPN9"></div>
+  <div class="icon-awesome-creative-commons-share-YZxPN9"></div>
+</div>
+<div class="group-321-C61RwL">
+  <div class="rectangle-72-0TeVov"></div>
+  <div class="opening-and-closing-0TeVov">Opening and Closing</div>
+  <div class="icon-ionic-ios-arrow-up-0TeVov"></div>
+  <div class="icon-material-account-balance-0TeVov"></div>
+</div>
+<div class="group-322-C61RwL">
+  <div class="rectangle-74-lSCpox"></div>
+  <div class="profitability-lSCpox">Profitability</div>
+  <div class="icon-ionic-ios-arrow-up-lSCpox"></div>
+  <div class="icon-awesome-balance-scale-left-lSCpox"></div>
+</div>
+<div class="group-283-C61RwL">
+  <div class="rectangle-57-J6gCNZ"></div>
+  <div class="place-J6gCNZ">Stock</div>
+  <div class="icon-ionic-ios-arrow-up-J6gCNZ"></div>
+  <div class="inventory_2_black_24dp-J6gCNZ">
+    <div class="group-148-WMHDMz">
+      <div class="rectangle-87-oCj2lx"></div>
+    </div>
+    <div class="group-150-WMHDMz">
+      <div class="group-149-IOTOax">
+        <div class="path-216-14Ugof"></div>
+        <div class="rectangle-88-14Ugof"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-285-C61RwL">
+  <div class="rectangle-59-8MuKBG"></div>
+  <div class="human-resource-8MuKBG">Human Resource</div>
+  <div class="icon-ionic-ios-arrow-up-8MuKBG"></div>
+  <div class="noun_-human-resource_2486160-8MuKBG">
+    <div class="group-151-t3nlxo">
+      <div class="path-217-rgskdO"></div>
+      <div class="path-218-rgskdO"></div>
+      <div class="path-219-rgskdO"></div>
+    </div>
+  </div>
+</div>
+<div class="group-284-C61RwL">
+  <div class="rectangle-62-cwYx7I"></div>
+  <div class="rectangle-78-cwYx7I"></div>
+  <div class="crm-cwYx7I">CRM</div>
+  <div class="leadcustomer-groupterritory-cwYx7I">Lead<br />Customer Group<br />Territory</div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-cwYx7I"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-9hOSoH"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-cqqyZ4"></div>
+  <div class="icon-ionic-ios-arrow-up-cwYx7I"></div>
+  <div class="noun_crm_3950846-cwYx7I">
+    <div class="group-152-c0hPA9">
+      <div class="path-220-5hSMxN"></div>
+    </div>
+  </div>
+</div>
+<div class="group-286-C61RwL">
+  <div class="rectangle-61-xJSK3d"></div>
+  <div class="data-import-and-settings-xJSK3d">Data Import and Settings</div>
+  <div class="icon-ionic-ios-arrow-up-xJSK3d"></div>
+  <div class="noun_import-data_377982-xJSK3d">
+    <div class="group-153-S3IcYT">
+      <div class="path-221-puvfb0"></div>
+      <div class="path-222-puvfb0"></div>
+    </div>
+  </div>
+</div>
+<div class="group-279-C61RwL">
+  <div class="rectangle-57-8tgKk0"></div>
+  <div class="place-8tgKk0">Stock</div>
+  <div class="icon-ionic-ios-arrow-up-8tgKk0"></div>
+  <div class="inventory_2_black_24dp-8tgKk0">
+    <div class="group-148-nr5jFg">
+      <div class="rectangle-87-p3Tqxq"></div>
+    </div>
+    <div class="group-150-nr5jFg">
+      <div class="group-149-jCXc8D">
+        <div class="path-216-y7TIbG"></div>
+        <div class="rectangle-88-y7TIbG"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-281-C61RwL">
+  <div class="rectangle-59-UuhHxx"></div>
+  <div class="human-resource-UuhHxx">Human Resource</div>
+  <div class="icon-ionic-ios-arrow-up-UuhHxx"></div>
+  <div class="noun_-human-resource_2486160-UuhHxx">
+    <div class="group-151-jRKbIt">
+      <div class="path-217-ZyMcul"></div>
+      <div class="path-218-ZyMcul"></div>
+      <div class="path-219-ZyMcul"></div>
+    </div>
+  </div>
+</div>
+<div class="group-280-C61RwL">
+  <div class="rectangle-62-4bfUDN"></div>
+  <div class="rectangle-78-4bfUDN"></div>
+  <div class="crm-4bfUDN">CRM</div>
+  <div class="leadcustomer-groupterritory-4bfUDN">Lead<br />Customer Group<br />Territory</div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-4bfUDN"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-Gc8cua"></div>
+  <div class="icon-ionic-ios-arrow-dropright-circle-PBgjxA"></div>
+  <div class="icon-ionic-ios-arrow-up-4bfUDN"></div>
+  <div class="noun_crm_3950846-4bfUDN">
+    <div class="group-152-Peg8xf">
+      <div class="path-220-4c2CP7"></div>
+    </div>
+  </div>
+</div>
+<div class="group-282-C61RwL">
+  <div class="rectangle-61-S5uxyu"></div>
+  <div class="data-import-and-settings-S5uxyu">Data Import and Settings</div>
+  <div class="icon-ionic-ios-arrow-up-S5uxyu"></div>
+  <div class="noun_import-data_377982-S5uxyu">
+    <div class="group-153-WSj4Ia">
+      <div class="path-221-pO0rSQ"></div>
+      <div class="path-222-pO0rSQ"></div>
+    </div>
+  </div>
+</div>
+<div class="group-275-C61RwL">
+  <div class="rectangle-57-rAUMjq"></div>
+  <div class="place-rAUMjq">Stock</div>
+  <div class="icon-ionic-ios-arrow-up-rAUMjq"></div>
+  <div class="inventory_2_black_24dp-rAUMjq">
+    <div class="group-148-OTTzgD">
+      <div class="rectangle-87-t5Q70X"></div>
+    </div>
+    <div class="group-150-OTTzgD">
+      <div class="group-149-4ZtMAr">
+        <div class="path-216-imv4Ip"></div>
+        <div class="rectangle-88-imv4Ip"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="group-276-C61RwL">
+  <div class="rectangle-59-QmitQ4"></div>
+  <div class="human-resource-QmitQ4">Human Resource</div>
+  <div class="icon-ionic-ios-arrow-up-QmitQ4"></div>
+  <div class="noun_-human-resource_2486160-QmitQ4">
+    <div class="group-151-eXnkLH">
+      <div class="path-217-QeI0IW"></div>
+      <div class="path-218-QeI0IW"></div>
+      <div class="path-219-QeI0IW"></div>
+    </div>
+  </div>
+</div>
+<div class="group-278-C61RwL">
+  <div class="rectangle-61-VhQlKC"></div>
+  <div class="data-import-and-settings-VhQlKC">Data Import and Settings</div>
+  <div class="icon-ionic-ios-arrow-up-VhQlKC"></div>
+  <div class="noun_import-data_377982-VhQlKC">
+    <div class="group-153-Cak1tS">
+      <div class="path-221-Mcbxlv"></div>
+      <div class="path-222-Mcbxlv"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
